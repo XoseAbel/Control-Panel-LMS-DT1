@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -25,12 +25,13 @@
 </head>
 
 <body>
-    <div class="main-content bg-gradient-primary" style="background: linear-gradient(#5e72e4 0,#825ee4);">
+    <!-- Main section -->
+    <div class="main-section bg-gradient-primary" style="background: linear-gradient(#5e72e4 0,#825ee4);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-8 my-5">
-                    <h1 class="text-white text-center">Welcome to Argon Dashboard FREE</h1>
-                    <h1 class="text-white text-center">Laravel Live Preview</h1>
+                    <h5 class="text-white text-center font-weight-bold">Welcome to Argon Dashboard FREE</h5>
+                    <h5 class="text-white text-center font-weight-bold">Laravel Live Preview</h5>
                 </div>
             </div>
 
@@ -53,37 +54,40 @@
                                         <span class="btn-text">Google</span>
                                     </a>
                                 </div>
-                           </div>
+                            </div>
                         </div>
                         <div class="card-body px-md-5 py-md-5">
                             <div class="text-center text-muted mb-4">
-                                <small>Or sign in with credentials</small>
+                                <small><a href="#">Create new account</a> OR Sign in with these credentials:</small>
+                                <small>Username <span class="font-weight-bold">admin@argon.com</span> Password <span
+                                        class="font-weight-bold">secret</span> </small>
                             </div>
                             <form role="form">
                                 <div class="form-group mb-3">
-                                    <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         </div>
-                                        <input class="form-control" placeholder="Email" type="email">
+                                        <input class="form-control" placeholder="admin@argon.com" type="email">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                            <span class="input-group-text"><i class="fas fa-lock-open"></i></span>
                                         </div>
-                                        <input class="form-control" placeholder="Password" type="password">
+                                        <input class="form-control" placeholder="******" type="password">
                                     </div>
                                 </div>
-                                <div class="custom-control custom-control-alternative custom-checkbox">
-                                    <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                    <label class="custom-control-label" for=" customCheckLogin">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label">
                                         <span class="text-muted">Remember me</span>
                                     </label>
                                 </div>
                                 <div class="text-center">
-                                    <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                    <button type="button" class="btn btn-primary my-4"
+                                        style="background-color: #5e72e4;;">Sign in</button>
                                 </div>
                             </form>
                         </div>
@@ -98,6 +102,38 @@
                     </div>
                 </div>
             </div>
-
         </div>
+    <!-- Main Section END -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-6">
+                    <div class="copyright text-center textleft text-muted">
+                        © 2020 <a href="#" class="font-weight-bold ml-1">Creative Tim</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <ul class="nav nav-footer justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-muted">Creative Tim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-muted">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-muted">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-muted">MIT License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END-->
+
+
+
 </body>
