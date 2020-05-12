@@ -5,3 +5,7 @@
 .mt--5 {
   margin-top: -50px;
 }
+
+.card-title {
+  margin-bottom: 0.25rem;
+}
