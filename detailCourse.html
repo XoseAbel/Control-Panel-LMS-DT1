@@ -68,8 +68,29 @@
         </div>
       </div>
       <div class="row mt-5 rounded-top border mx-3 overposition">
-        <div class="col-12 bg-white">
-          <h3 class="font-weight-bold my-2">Nuevo Curso</h3>
+        <div class="col-12 bg-white d-flex flex-row">
+          <h3 class="font-weight-bold my-2 flex-grow-1">
+            Datos del curso
+          </h3>
+          <div
+            class="btn-group btn-group-sm py-2"
+            role="group"
+            aria-label="Basic example"
+          >
+            <a
+              type="button"
+              class="btn header-background border rounded text-white px-1 ml-2"
+              href="updatecourse.html"
+            >
+              Update
+            </a>
+            <button
+              type="button"
+              class="btn header-background border rounded text-white py-0 px-1 ml-2"
+            >
+              Delete
+            </button>
+          </div>
         </div>
         <div class="col-12 bg-list-grey">
           <h5 class="font-weight-bold my-2 text-secondary">
@@ -79,11 +100,12 @@
             <label class="text-label">Nombre</label>
             <input
               type="text"
-              class="rounded border cursor-out pl-2"
-              placeholder="Nombre"
+              placeholder="Diseñador Web"
+              class="rounded border cursor-out pl-2 text-placeholder"
+              disabled
             />
             <label class="text-label mt-4">Publicar en</label>
-            <select name="post-in" class="select-size text-label">
+            <select name="post-in" class="select-size text-label" disabled>
               <option value="allsections" class="option-font-size"
                 >Todas las secciones</option
               >
@@ -92,8 +114,8 @@
               >
             </select>
             <div class="d-felx flex-row attach-align mt-4">
-              <label class="text-label mr-2">Adjuntar archivos</label>
-              <button class="btn mx-1 border p-0 px-1 mt-1 mr-2">
+              <label class="text-label mr-2">Archivos</label>
+              <button class="btn mx-1 border p-0 px-1 mt-1 mr-2 d-none">
                 <i class="fas fa-paperclip"></i>
               </button>
               <select
@@ -107,16 +129,20 @@
                 <option value="image1">Image1.jpg</option>
                 <option value="presentation">Presentation.ppt</option>
               </select>
-              <button class="btn mx-1 border p-0 px-1 mt-1">
+              <button class="btn mx-1 border p-0 px-1 mt-1 d-none">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </div>
             <div class="d-flex flex-row align-items-center mt-4">
-              <input type="checkbox" class="mt-1 mr-2" />
-              <label class="mb-0 text-label">Atrasar publicacion</label>
+              <input type="checkbox" class="mt-1 mr-2" disabled />
+              <label class="mb-0 text-label">Publicacion atrasada</label>
             </div>
           </div>
-          <div class="btn-group my-5" role="group" aria-label="Basic example">
+          <div
+            class="btn-group my-5 d-none"
+            role="group"
+            aria-label="Basic example"
+          >
             <button
               type="button"
               class="btn btn-secondary mr-3 bg-success font-weight-bold text-white border-0 rounded"
