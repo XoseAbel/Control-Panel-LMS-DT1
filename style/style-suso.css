@@ -31,4 +31,7 @@
   outline: 0px;
 }
 @media (max-width: 768px) {
+  .firstrow {
+    font-size: 10px !important;
+  }
 }
