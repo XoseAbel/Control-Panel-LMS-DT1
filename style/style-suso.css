@@ -1,0 +1,34 @@
+.bg-list-grey {
+  background-color: rgb(250, 249, 249);
+}
+.select-size {
+  width: min-content;
+}
+.option-font-size {
+  font-size: 20px;
+}
+.attach-align {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pb-6 {
+  padding-bottom: 160px;
+}
+
+.overposition {
+  margin-top: -100px !important;
+}
+
+.text-label {
+  font-size: 20px;
+  color: black !important;
+}
+.text-placeholder::placeholder {
+  color: black;
+}
+.cursor-out {
+  outline: 0px;
+}
+@media (max-width: 768px) {
+}
