@@ -56,3 +56,13 @@
     justify-content: flex-end !important;
   }
 }
+
+.text-footer {
+  opacity: 75%;
+  font-size: 0.7rem !important;
+}
+@media (max-width: 769px) {
+  .text-footer {
+    font-size: 0.5rem !important;
+  }
+}
