@@ -5,7 +5,15 @@
 .mt--5 {
   margin-top: -50px;
 }
+/* superponer elementos en las listas */
+.pb-6 {
+  padding-bottom: 160px;
+}
 
+.overposition {
+  margin-top: -90px !important;
+}
+/* Fin superponer */
 .card-title {
   margin-bottom: 0.25rem;
 }
