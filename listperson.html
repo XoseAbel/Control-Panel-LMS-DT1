@@ -28,7 +28,6 @@
     ></script>
     <link rel="stylesheet" href="style/style_dashboard.css" />
     <link rel="stylesheet" href="style/style-suso.css" />
-    <link rel="stylesheet" href="style/style_dashboard_abel.css" />
   </head>
 
   <body>
@@ -63,18 +62,40 @@
         <div class="col-12 col-md-4 text-white order-5 mt-5">
           <h2>Hola Admin Admin</h2>
           <p>
-            Esta es la pagina de administracion de los cursos. Aquí podras crear
-            uno nuevo, modificar y eliminar el curso que quieras.
+            Esta es la pagina de administracion de las personas. Aquí podras
+            crear uno nuevo, modificar y eliminar los datos de la persona que
+            quieras.
           </p>
         </div>
       </div>
       <div class="row mt-5 rounded-top border mx-3 overposition">
-        <div class="col-12 bg-white">
-          <h3 class="font-weight-bold my-2">Nuevo Curso</h3>
+        <div class="col-12 bg-white d-flex flex-row">
+          <h3 class="font-weight-bold my-2 flex-grow-1">
+            Consultar datos de la persona
+          </h3>
+          <div
+            class="btn-group btn-group-sm py-2"
+            role="group"
+            aria-label="Basic example"
+          >
+            <a
+              type="button"
+              class="btn header-background border rounded text-white px-1 ml-2"
+              href="updateperson.html"
+            >
+              Update
+            </a>
+            <button
+              type="button"
+              class="btn header-background border rounded text-white py-0 px-1 ml-2"
+            >
+              Delete
+            </button>
+          </div>
         </div>
         <div class="col-12 bg-list-grey">
           <h5 class="font-weight-bold my-2 text-secondary">
-            INFORMACION DEL CURSO
+            DATOS DE LA PERSONA
           </h5>
         </div>
         <div class="col-12 bg-white">
@@ -82,44 +103,56 @@
             <label class="text-label">Nombre</label>
             <input
               type="text"
+              placeholder="Suso Pombo Castro"
               class="rounded border cursor-out pl-2 text-placeholder"
-              placeholder="Nombre"
+              disabled
             />
-            <label class="text-label mt-4">Publicar en</label>
-            <select name="post-in" class="select-size text-label">
-              <option value="allsections" class="option-font-size"
-                >Todas las secciones</option
-              >
-              <option value="selectsection" class="option-font-size"
-                >Seleccionar secciones</option
-              >
-            </select>
-            <div class="d-felx flex-row attach-align mt-4">
-              <label class="text-label mr-2">Adjuntar</label>
-              <button class="btn mx-1 border p-0 px-1 mt-1 mr-2">
-                <i class="fas fa-paperclip"></i>
-              </button>
+            <div class="d-flex flex-row mt-4">
+              <label class="text-label mr-3">Rol</label>
               <select
-                class="mt-1 mr-2 cursor-out"
-                name="docs"
-                size="3"
-                multiple
-                style="width: 200px;"
+                name="post-in"
+                class="select-size text-label"
+                style="height: 30px;"
+                disabled
               >
-                <option value="doc1">document1.doc</option>
-                <option value="image1">Image1.jpg</option>
-                <option value="presentation">Presentation.ppt</option>
+                <option value="student" class="option-font-size"
+                  >Estudiante</option
+                >
+                <option value="teacher" class="option-font-size"
+                  >Profesor</option
+                >
+                <option value="auxteacher" class="option-font-size"
+                  >Profesor Aux.</option
+                >
+                <option value="designer" class="option-font-size"
+                  >Diseñador</option
+                >
+                <option value="viewer" class="option-font-size"
+                  >Observador</option
+                >
               </select>
-              <button class="btn mx-1 border p-0 px-1 mt-1">
-                <i class="fas fa-trash-alt"></i>
-              </button>
             </div>
+            <label class="text-label mt-4">E-mail</label>
+            <input
+              type="email"
+              class="cursor-out rounded border text-placeholder pl-2"
+              placeholder="example@email.com"
+              disabled
+            />
             <div class="d-flex flex-row align-items-center mt-4">
-              <input type="checkbox" class="mt-1 mr-2" />
-              <label class="mb-0 text-label">Atrasar publicacion</label>
+              <input type="checkbox" class="mt-1 mr-2" checked disabled />
+              <label class="mb-0 text-label">Activo</label>
+              <label class="mb-0 px-1 ml-2 bg-success text-white rounded border"
+                >Si</label
+              >
             </div>
           </div>
-          <div class="btn-group my-5" role="group" aria-label="Basic example">
+          <!-- Botonos de guardar, borrar, cancelar-->
+          <!-- <div
+            class="btn-group mt-3 mb-3"
+            role="group"
+            aria-label="Basic example"
+          >
             <button
               type="button"
               class="btn btn-secondary mr-3 bg-success font-weight-bold text-white border-0 rounded"
@@ -138,7 +171,7 @@
             >
               <i class="far fa-window-close mr-1"></i>Cancelar
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- Footer -->
