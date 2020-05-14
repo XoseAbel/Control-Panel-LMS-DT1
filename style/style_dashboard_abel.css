@@ -96,3 +96,8 @@
   background-color: white;
   border-radius: 8px;
 }
+
+.a-search {
+  position: fixed;
+  bottom: 30px;
+}
