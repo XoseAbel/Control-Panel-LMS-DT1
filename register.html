@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -15,40 +15,41 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style_reg_login.css" />
+    <link rel="stylesheet" href="style/style_login_register.css" />
     <script src="https://kit.fontawesome.com/103d4b6503.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="container-fluid bg-gradient-primary" style="background: linear-gradient(to right,#5e72e4 0,#825ee4)";">
+    <div class="container-fluid bg-gradient-primary" style="background: linear-gradient(to right,#5e72e4 0,#825ee4)" ;">
+        <header>
             <div class="row justify-content-center">
-                <div class="col-12 col-md-5 mt-5" style="margin-bottom: 75px;">
-                    <h3 class="text-white text-center font-weight-bold">Bienvenidos a Argon Dashboard FREE</h3>
+                <div class="col-12 col-md-6 my-5">
+                    <h3 class="text-white text-center font-weight-bold">Bienvenidos a Argon <br> Dashboard FREE</h3>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
     <!-- Header END -->
 
     <div class="separator" style="background: linear-gradient(to right,#5e72e4 0,#825ee4)" ;>
-        <svg x="0" y="0" viewBox="0 0 2000 100">
-            <polygon points="2000 0 2000 100 0 100" style="fill: #343a40;"></polygon>
+        <svg x="0" y="0" viewBox="0 0 1600 100">
+            <polygon points="1600 0 1600 100 0 100" style="fill: #343a40;"></polygon>
         </svg>
     </div>
 
+   
     <!-- Main content -->
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-dark pb-5">
         <div class="row justify-content-center">
             <div class="col-10 col-md-8 col-lg-6 col-xl-4">
                 <!-- Card -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="card bg-light border-0 mb-0" style="margin-top: -75px;">
+                        <div class="card bg-light border-0 mb-0" style="margin-top: -65px;">
                             <div class="card-header bg-transparent pb-5">
                                 <div class="row justify-content-center">
-                                    <div class="text-muted mt-2 mb-3"><small>Iniciar sesión con</small></div>
+                                    <div class="card-header-text text-muted mt-2 mb-3"><small>Iniciar sesión con</small></div>
                                 </div>
 
                                 <div class="row justify-content-center">
@@ -65,11 +66,9 @@
                                 </div>
                             </div>
                             <div class="card-body px-md-5 py-md-5">
-
-                                <div class="text-center text-muted mb-4">
+                                <div class="card-body-text text-center text-muted mb-4">
                                     <small>Crear nueva cuenta</small>
                                 </div>
-
                                 <form role="form">
                                     <div class="form-group mb-3">
                                         <div class="input-group">
@@ -90,13 +89,12 @@
                                             <input class="form-control" placeholder="Apellidos" type="text">
                                         </div>
                                     </div>
-
                                     <div class="form-group mb-3">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Email" type="email">
+                                            <input class="form-control" placeholder="admin@argon.com" type="email">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -104,19 +102,18 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fas fa-lock-open"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Contraseña" type="password">
+                                            <input class="form-control" placeholder="******" type="password">
                                         </div>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
                                         <label class="form-check-label">
                                             <small><span class="text-muted">He leído y acepto la </span> <span><a
-                                                        href="">Política de privacidad</a></span></small>
+                                                href="">Política de privacidad</a></span></small>
                                         </label>
                                     </div>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-primary my-4"
-                                            style="background-color: #5e72e4;;">Crear cuenta</button>
+                                        <a href="dashboard.html"><button type="button" class="btn btn-primary my-4" style="background-color: #5e72e4;;">Crear cuenta</button></a>
                                     </div>
                                 </form>
                             </div>
@@ -124,46 +121,45 @@
                     </div>
                 </div>
                 <!-- Card END  -->
-            </div>
-        </div>
-    </div>
-    <!-- Main Section END -->
 
-
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid bg-dark pt-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-md-6">
-                    <div class="copyright text-center text-left text-muted">
-                        © 2020 <a href="#" class="font-weight-bold ml-1 text-muted">Creative Tim & Updivision</a>
+                <!-- Account options -->
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#" class="options-text text-light"><small>¿Olvidaste la contraseña?</small></a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a href="register.html" class="options-text text-light"><small>Crear cuenta nueva</small></a>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6">
-                    <ul class="nav nav-footer justify-content-around">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Creative Tim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Updivision</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">MIT License</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Account options END -->
+            </div>
+            </>
+        </div>
+    </div> 
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-12 d-flex flex-row justify-content-center">
+                    <div class="link-footer text-muted d-flex flex-grow-1">
+                        © 2020 Creative Tim & Updivision
+                    </div>
+                    
+                    <a href="#" class="link-footer text-muted ml-2">Creative Tim</a>
+                
+                    <a href="#" class="link-footer text-muted ml-2">Updivision</a>
+                
+                    <a href="#" class="link-footer text-muted ml-2">About Us</a>
+                
+                    <a href="#" class="link-footer text-muted ml-2">Blog</a>
+                                        
+                    <a href="#" class="link-footer text-muted ml-2">MIT License</a>
+               </div>
             </div>
         </div>
     </footer>
     <!-- Footer END-->
-
+  
 </body>
 
 </html>
