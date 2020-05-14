@@ -83,3 +83,16 @@
   color: red;
   border-top: none !important;
 }
+
+.description-box {
+  height: 70px;
+}
+
+.option-size {
+  font-size: medium;
+}
+
+.bg-graffic {
+  background-color: white;
+  border-radius: 8px;
+}
