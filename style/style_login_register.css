@@ -1,14 +1,11 @@
 .link-footer {
-    font-size: 0.7rem !important;
-  }
-@media (max-width: 769px) {
-    .link-footer {
-    font-size: 0.5rem !important;
-    }
+    font-size: 13px;
 }
+
+
 @media (max-width: 576px) {
     .link-footer {
-    font-size: 5px !important;
+        font-size: 10px;
     }
 }
 
