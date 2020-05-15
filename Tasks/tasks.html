@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="container bg-list-grey">
+    <div class="container-fluid bg-list-grey">
       <div class="row">
         <!-- LEFT MENU -->
         <div class="col-12 col-lg-2">
@@ -39,11 +39,13 @@
               class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
             >
               <a class="navbar-brand" href="#" style="width: 200px;">
-                <img src="../images/logo.png" class="navbar-brand-img img-fluid" />
+                <img
+                  src="../images/logo.png"
+                  class="navbar-brand-img img-fluid"
+                />
               </a>
             </div>
             <!-- Brand END -->
-
             <!-- Nav -->
             <div class="col-7 col-md-8 col-lg-12 order-1 order-lg-2">
               <nav
@@ -63,26 +65,26 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav d-flex flex-column">
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="../dashboard.html">
                         <i class="fas fa-desktop"></i>
                         <span class="nav-link-text ml-2">Tablero</span>
                       </a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="../Course.html">
                         <i class="fas fa-globe-europe"></i>
                         <span class="nav-link-text ml-2">Cursos</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Tasks/tasks.html">
+                      <a class="nav-link" href="tasks.html">
                         <i class="fas fa-sticky-note"></i>
                         <span class="nav-link-text ml-2">Tareas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="../persons.html">
                         <i class="fas fa-user-friends"></i>
                         <span class="nav-link-text ml-2">Personas</span>
                       </a>
@@ -94,13 +96,13 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="index.html" class="nav-link">
+                      <a href="../index.html" class="nav-link">
                         <i class="fas fa-sign-in-alt"></i>
                         <span class="nav-link-text ml-2">Iniciar sesión</span>
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a href="register.html" class="nav-link">
+                      <a href="../register.html" class="nav-link">
                         <i class="fas fa-user"></i>
                         <span class="nav-link-text ml-2">Registro</span>
                       </a>
@@ -142,18 +144,16 @@
         </div>
         <!-- Left Menu End -->
         <!-- BODY -->
-
         <div
           class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
         >
-          <!-- SEARCH AREA -->
-          <div class="row menu">
+          <div class="row menu pb-5">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
               >
-                DASHBOARD
+                TAREAS
               </h6>
             </div>
             <div
@@ -178,210 +178,289 @@
               </p>
             </div>
           </div>
-          <!-- Search Area End -->
-      <!-- MAIN CONTENT -->
-      <div class="row rounded border mx-3">
-        <div class="col-12 d-flex align-items-center py-3 bg-white">
-          <h5 class="mb-0 flex-grow-1">Tareas</h5>
-          <p
-            class="btn text-white header-background border mb-0 px-1 rounded font-weight-bold"
-            style="font-size: 10px;"
-          >
-            Añadir
-          </p>
-        </div>
-        <div class="col-12 border-top">
-          <div
-            class="row bg-light font-weight-bold py-2"
-            style="font-size: 12px; color: rgb(196, 196, 196);"
-          >
-            <div class="col-3 col-md-3 pr-0 d-flex align-items-center">
-              <p class="mb-0 firstrow">NOMBRE</p>
+          <div class="row menu pb-6 fix-problem">
+            <div class="col-12 col-md-3 mt-2">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters d-flex flex-row">
+                  <div class="col-8 pr-0 pb-1 pl-2 mt-2">
+                    <h5 class="card-title">Cursos</h5>
+                    <p class="card-text mb-0">
+                      35
+                    </p>
+                  </div>
+                  <div class="col-4 mt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #f5365c;"
+                    >
+                      <i class="fas fa-globe-europe fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col pl-2">
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >↑ 10.4% Desde el ultimo mes</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <p class="mb-0 firstrow">TIPO ENTREGA</p>
+            <div class="col-12 col-md-3 mt-2">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters d-flex flex-row">
+                  <div class="col-8 pr-0 pb-1 pl-2 mt-2">
+                    <h5 class="card-title">Tareas</h5>
+                    <p class="card-text mb-0">
+                      423
+                    </p>
+                  </div>
+                  <div class="col-4 mt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #fb6340;"
+                    >
+                      <i class="fas fa-sticky-note fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col pl-2">
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >↑ 7.4% Desde la ultima semana</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div></div>
+              </div>
             </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <p class="mb-0 firstrow">TAREA DE GRUPO</p>
+            <div class="col-12 col-md-3 mt-2">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters d-flex flex-row">
+                  <div class="col-8 pr-0 pb-1 pl-2 mt-2">
+                    <h5 class="card-title">Personas</h5>
+                    <p class="card-text mb-0">
+                      103
+                    </p>
+                  </div>
+                  <div class="col-4 mt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #2dce89;"
+                    >
+                      <i class="fas fa-user-friends fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col pl-2">
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >↑ 3.8% Desde el ultimo mes</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div></div>
+              </div>
             </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              FECHA ENTREGA
-            </div>
-          </div>
-        </div>
-        <div class="col-12 border-top bg-white">
-          <div class="row py-2 text-black" style="font-size: 14px;">
-            <div class="col-3 col-md-3 pr-0 d-flex align-items-center">
-              <a class="mb-0 link-decoration font-size-9" href="#"
-                >Landing Page</a
-              >
-            </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <a class="mb-0 text-black link-decoration font-size-9" href="#"
-                >en linea</a
-              >
-            </div>
-            <div
-              class="col-3 col-md-2 px-1 d-flex align-items-center font-size-9"
-            >
-              <p
-                class="mb-0 font-size-9 mb-0 border bg-success px-1 text-white"
-              >
-                Si
-              </p>
-            </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <label class="mb-0 font-size-9">01/06/2020</label>
-            </div>
-            <!-- <input type="checkbox" /> -->
-            <div
-              class="col-12 col-md-3 d-flex justify-content-center crud-button-align mt-2 mt-md-0"
-            >
-              <div
-                class="btn-group btn-group-sm"
-                role="group"
-                aria-label="Basic example"
-              >
-                <button
-                  type="button"
-                  class="btn header-background border rounded text-white py-0 px-1 ml-2"
-                >
-                  Modificar
-                </button>
-                <button
-                  type="button"
-                  class="btn header-background border rounded text-white py-0 px-2 ml-2"
-                >
-                  Borrar
-                </button>
+            <div class="col-12 col-md-3 mt-2">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters d-flex flex-row">
+                  <div class="col-8 pr-0 pb-1 pl-2 mt-2">
+                    <h5 class="card-title">Paginas</h5>
+                    <p class="card-text mb-0">
+                      1.378
+                    </p>
+                  </div>
+                  <div class="col-4 mt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #11cdef;"
+                    >
+                      <i class="fas fa-columns fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col pl-2">
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >↑ 11.2% Desde la ultima semana</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 border-top bg-white">
-          <div class="row py-2 text-black" style="font-size: 14px;">
-            <div class="col-3 col-md-3 pr-0 d-flex align-items-center">
-              <a class="mb-0 link-decoration font-size-9" href="#"
-                >Dashboard .js</a
-              >
-            </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <a class="mb-0 text-black link-decoration font-size-9" href="#"
-                >sin entrega</a
-              >
-            </div>
-            <div
-              class="col-3 col-md-2 px-1 d-flex align-items-center font-size-9"
-            >
-              <p
-                class="mb-0 font-size-9 mb-0 border bg-success px-1 text-white"
-              >
-                Si
-              </p>
-            </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <label class="mb-0 font-size-9">15/05/2020</label>
-            </div>
-            <!-- <input type="checkbox" /> -->
-            <div
-              class="col-12 col-md-3 d-flex justify-content-center crud-button-align mt-2 mt-md-0"
-            >
-              <div
-                class="btn-group btn-group-sm"
-                role="group"
-                aria-label="Basic example"
-              >
-                <button
-                  type="button"
-                  class="btn header-background border rounded text-white py-0 px-1 ml-2"
+          <!-- Data Area End -->
+          <!-- MAIN CONTENT -->
+          <div class="row rounded border mx-3 overposition">
+            <div class="col-12 px-0">
+              <div class="col-12 d-flex flex-row py-2 bg-white border-bottom">
+                <h5 class="flex-grow-1">Tareas</h5>
+                <a
+                  href="addTask.html"
+                  class="btn d-flex text-white header-background border mb-0 px-2 rounded font-weight-bold"
+                  style="font-size: 10px; width: min-content;"
                 >
-                  Modificar
-                </button>
-                <button
-                  type="button"
-                  class="btn header-background border rounded text-white py-0 px-2 ml-2"
-                >
-                  Borrar
-                </button>
+                  Nuevo
+                </a>
+              </div>
+              <div class="table-responsive">
+                <table class="table bg-white mb-0">
+                  <thead>
+                    <tr class="bg-list-grey">
+                      <th scope="col">NOMBRE</th>
+                      <th scope="col">TIPO ENTREGA</th>
+                      <th scope="col">TAREA GRUPO</th>
+                      <th scope="col">FECHA ENTREGA</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody class="">
+                    <tr class="">
+                      <td>
+                        <a href="detailTask.html" class="link-decoration"
+                          >Landing Page</a
+                        >
+                      </td>
+                      <td style="font-size: 12px;">
+                        en linea
+                      </td>
+                      <td>
+                        <p
+                          class="rounded bg-success mx-0 text-center text-white"
+                          style="font-size: 12px; width: 40px;"
+                        >
+                          Si
+                        </p>
+                      </td>
+                      <td style="font-size: 12px;">01/06/2020</td>
+                      <td class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          href="updateTask.html"
+                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
+                        >
+                          Modificar
+                        </a>
+                        <butaton
+                          type="button"
+                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
+                        >
+                          Borrar
+                        </butaton>
+                      </td>
+                    </tr>
+                    <tr class="">
+                      <td>
+                        <a href="detailTask.html" class="link-decoration"
+                          >Dashboard .js</a
+                        >
+                      </td>
+                      <td style="font-size: 12px;">
+                        Sin entrega
+                      </td>
+                      <td>
+                        <p
+                          class="rounded bg-success mx-0 text-center text-white"
+                          style="font-size: 12px; width: 40px;"
+                        >
+                          Si
+                        </p>
+                      </td>
+                      <td style="font-size: 12px;">15/05/2020</td>
+                      <td class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          href="updateTask.html"
+                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
+                        >
+                          Modificar
+                        </a>
+                        <butaton
+                          type="button"
+                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
+                        >
+                          Borrar
+                        </butaton>
+                      </td>
+                    </tr>
+                    <tr class="">
+                      <td>
+                        <a href="detailTask.html" class="link-decoration"
+                          >React API</a
+                        >
+                      </td>
+                      <td style="font-size: 12px;">
+                        en linea
+                      </td>
+                      <td>
+                        <p
+                          class="rounded bg-danger mx-0 text-center text-white"
+                          style="font-size: 12px; width: 40px;"
+                        >
+                          No
+                        </p>
+                      </td>
+                      <td style="font-size: 12px;">15/06/2020</td>
+                      <td class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          href="updateTask.html"
+                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
+                        >
+                          Modificar
+                        </a>
+                        <butaton
+                          type="button"
+                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
+                        >
+                          Borrar
+                        </butaton>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 border-top bg-white">
-          <div class="row py-2 text-black" style="font-size: 14px;">
-            <div class="col-3 col-md-3 pr-0 d-flex align-items-center">
-              <a class="mb-0 link-decoration font-size-9" href="#">React API</a>
-            </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <a class="mb-0 text-black link-decoration font-size-9" href="#"
-                >en linea</a
-              >
-            </div>
-            <div
-              class="col-3 col-md-2 px-1 d-flex align-items-center font-size-9"
-            >
-              <p
-                class="mb-0 font-size-9 mb-0 border bg-success px-1 text-white"
-              >
-                No
-              </p>
-            </div>
-            <div class="col-3 col-md-2 px-1 d-flex align-items-center">
-              <label class="mb-0 font-size-9">15/06/2020</label>
-            </div>
-            <!-- <input type="checkbox" /> -->
-            <div
-              class="col-12 col-md-3 d-flex justify-content-center crud-button-align mt-2 mt-md-0"
-            >
-              <div
-                class="btn-group btn-group-sm"
-                role="group"
-                aria-label="Basic example"
-              >
-                <button
-                  type="button"
-                  class="btn header-background border rounded text-white py-0 px-1 ml-2"
-                >
-                  Modificar
-                </button>
-                <button
-                  type="button"
-                  class="btn header-background border rounded text-white py-0 px-2 ml-2"
-                >
-                  Borrar
-                </button>
+          <!-- Main Content End -->
+          <!-- Footer -->
+          <div class="row">
+            <div class="col-12 d-flex flex-row my-3">
+              <div class="text-footer d-flex flex-row">
+                ® Copyright &nbsp
+                <div style="color: blueviolet;">
+                  Creative Tim & Updivision
+                </div>
+              </div>
+              <div class="text-footer ml-auto">
+                Creative Tim
+              </div>
+              <div class="text-footer ml-2">
+                Updivision
+              </div>
+              <div class="text-footer ml-2">
+                About Us
+              </div>
+              <div class="text-footer ml-2">
+                Blog
+              </div>
+              <div class="text-footer ml-2">
+                MIT License
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      <div class="row">
-        <div class="col-12 d-flex flex-row my-3">
-          <div class="text-footer d-flex flex-row">
-            ® Copyright &nbsp
-            <div style="color: blueviolet;">
-              Creative Tim & Updivision
-            </div>
-          </div>
-          <div class="text-footer ml-auto">
-            Creative Tim
-          </div>
-          <div class="text-footer ml-2">
-            Updivision
-          </div>
-          <div class="text-footer ml-2">
-            About Us
-          </div>
-          <div class="text-footer ml-2">
-            Blog
-          </div>
-          <div class="text-footer ml-2">
-            MIT License
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </body>
 </html>
