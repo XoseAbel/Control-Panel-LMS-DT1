@@ -11,13 +11,11 @@
   display: flex;
   align-items: flex-start;
 }
-
-.pb-6 {
-  padding-bottom: 160px;
+.fix-problem {
+  margin-top: -5px;
 }
-
-.overposition {
-  margin-top: -80px !important;
+.pb-6 {
+  padding-bottom: 220px;
 }
 
 .text-label {
@@ -33,5 +31,8 @@
 @media (max-width: 768px) {
   .firstrow {
     font-size: 10px !important;
+  }
+  .font-size-tableheader {
+    font-size: 20px;
   }
 }

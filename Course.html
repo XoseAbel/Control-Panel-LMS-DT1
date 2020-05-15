@@ -63,14 +63,14 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav d-flex flex-column">
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="dashboard.html">
                         <i class="fas fa-desktop"></i>
                         <span class="nav-link-text ml-2">Tablero</span>
                       </a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="Course.html">
                         <i class="fas fa-globe-europe"></i>
                         <span class="nav-link-text ml-2">Cursos</span>
                       </a>
@@ -82,7 +82,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="persons.html">
                         <i class="fas fa-user-friends"></i>
                         <span class="nav-link-text ml-2">Personas</span>
                       </a>
@@ -147,7 +147,7 @@
           class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row menu pb-3">
+          <div class="row menu pb-5">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
@@ -177,7 +177,7 @@
               </p>
             </div>
           </div>
-          <div class="row menu pb-6">
+          <div class="row menu pb-6 fix-problem">
             <div class="col-12 col-md-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
@@ -188,7 +188,10 @@
                     </p>
                   </div>
                   <div class="col-4 mt-2">
-                    <div class="row justify-content-end pr-4 pt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #f5365c;"
+                    >
                       <i class="fas fa-globe-europe fa-3x"></i>
                     </div>
                   </div>
@@ -214,7 +217,10 @@
                     </p>
                   </div>
                   <div class="col-4 mt-2">
-                    <div class="row justify-content-end pr-4 pt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #fb6340;"
+                    >
                       <i class="fas fa-sticky-note fa-3x"></i>
                     </div>
                   </div>
@@ -241,7 +247,10 @@
                     </p>
                   </div>
                   <div class="col-4 mt-2">
-                    <div class="row justify-content-end pr-4 pt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #2dce89;"
+                    >
                       <i class="fas fa-user-friends fa-3x"></i>
                     </div>
                   </div>
@@ -268,7 +277,10 @@
                     </p>
                   </div>
                   <div class="col-4 mt-2">
-                    <div class="row justify-content-end pr-4 pt-2">
+                    <div
+                      class="row justify-content-end pr-4 pt-2"
+                      style="color: #11cdef;"
+                    >
                       <i class="fas fa-columns fa-3x"></i>
                     </div>
                   </div>
@@ -292,15 +304,16 @@
             <div class="col-12 px-0">
               <div class="col-12 d-flex flex-row py-2 bg-white border-bottom">
                 <h5 class="flex-grow-1">Cursos</h5>
-                <p
-                  class="btn d-flex text-white header-background border mb-0 px-1 rounded font-weight-bold"
+                <a
+                  href="addCourse.html"
+                  class="btn d-flex text-white header-background border mb-0 px-2 rounded font-weight-bold"
                   style="font-size: 10px; width: min-content;"
                 >
                   Nuevo
-                </p>
+                </a>
               </div>
               <div class="table-responsive">
-                <table class="table table-text bg-white">
+                <table class="table bg-white mb-0">
                   <thead>
                     <tr class="bg-list-grey">
                       <th scope="col">NOMBRE</th>
@@ -313,7 +326,7 @@
                   <tbody class="">
                     <tr class="">
                       <td>
-                        <a href="#" class="link-decoration"
+                        <a href="detailCourse.html" class="link-decoration"
                           >Desarrollador Web</a
                         >
                       </td>
@@ -327,23 +340,26 @@
                       <td>Atrasada</td>
                       <td>Publicado en</td>
                       <td class="d-flex justify-content-end">
-                        <button
+                        <a
                           type="button"
+                          href="updatecourse.html"
                           class="btn bg-success border rounded text-white py-0 px-1 ml-2"
                         >
                           Modificar
-                        </button>
-                        <button
+                        </a>
+                        <butaton
                           type="button"
                           class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
                         >
                           Borrar
-                        </button>
+                        </butaton>
                       </td>
                     </tr>
                     <tr class="">
                       <td>
-                        <a href="#" class="link-decoration">Carretillero</a>
+                        <a href="detailCourse.html" class="link-decoration"
+                          >Carretillero</a
+                        >
                       </td>
                       <td>
                         <a
@@ -355,23 +371,24 @@
                       <td>Atrasada</td>
                       <td>Publicado en</td>
                       <td class="d-flex justify-content-end">
-                        <button
+                        <a
                           type="button"
+                          href="updatecourse.html"
                           class="btn bg-success border rounded text-white py-0 px-1 ml-2"
                         >
                           Modificar
-                        </button>
-                        <button
+                        </a>
+                        <a
                           type="button"
                           class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
                         >
                           Borrar
-                        </button>
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <a href="#" class="link-decoration"
+                        <a href="detailCourse.html" class="link-decoration"
                           >Manipulador alimentos</a
                         >
                       </td>
@@ -385,23 +402,24 @@
                       <td>No atrasada</td>
                       <td>Publicado en</td>
                       <td class="d-flex justify-content-end">
-                        <button
+                        <a
+                          href="updatecourse.html"
                           type="button"
                           class="btn bg-success border rounded text-white py-0 px-1 ml-2"
                         >
                           Modificar
-                        </button>
-                        <button
+                        </a>
+                        <a
                           type="button"
                           class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
                         >
                           Borrar
-                        </button>
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <a href="#" class="link-decoration"
+                        <a href="detailCourse.html" class="link-decoration"
                           >Bootstrap for dummies</a
                         >
                       </td>
@@ -415,18 +433,19 @@
                       <td>No atrasada</td>
                       <td>Publicado en</td>
                       <td class="d-flex justify-content-end">
-                        <button
+                        <a
+                          href="updatecourse.html"
                           type="button"
                           class="btn bg-success border rounded text-white py-0 px-1 ml-2"
                         >
                           Modificar
-                        </button>
-                        <button
+                        </a>
+                        <a
                           type="button"
                           class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
                         >
                           Borrar
-                        </button>
+                        </a>
                       </td>
                     </tr>
                   </tbody>

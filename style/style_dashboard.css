@@ -7,11 +7,11 @@
 }
 /* superponer elementos en las listas */
 .pb-6 {
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 
 .overposition {
-  margin-top: -90px !important;
+  margin-top: -80px !important;
 }
 /* Fin superponer */
 .card-title {
