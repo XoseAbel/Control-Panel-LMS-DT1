@@ -32,7 +32,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2">
+        <div class="col-12 col-lg-2 fix-top">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
@@ -76,7 +76,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="Tasks/tasks.html">
                         <i class="fas fa-sticky-note"></i>
                         <span class="nav-link-text ml-2">Tareas</span>
                       </a>
@@ -144,10 +144,10 @@
         <!-- BODY -->
 
         <div
-          class="col-12 col-lg-10"
+          class="col-12 col-lg-10 padding-search"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row menu pb-5">
+          <div class="row menu pb-5 fix-search">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
@@ -177,10 +177,10 @@
               </p>
             </div>
           </div>
-          <div class="row menu pb-6 fix-problem">
-            <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-5">
-              <h2>Hola Admin Admin</h2>
-              <p style="font-size: 20px;">
+          <div class="row menu pb-6 fix-problem padding-data">
+            <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-3">
+              <h4>Hola Admin Admin</h4>
+              <p style="font-size: 15px;">
                 Esta es la pagina de administracion de los cursos. Aquí podras
                 crear una nueva, modificar y eliminar los cursos que quieras.
               </p>
@@ -326,10 +326,13 @@
                 <input
                   type="text"
                   placeholder="Diseñador Web"
-                  class="rounded border cursor-out pl-2 text-placeholder"
+                  class="rounded border cursor-out pl-2 text-placeholder form-border-color"
                 />
                 <label class="text-label mt-4">Publicar en</label>
-                <select name="post-in" class="select-size text-label">
+                <select
+                  name="post-in"
+                  class="select-size rounded form-border-color text-label"
+                >
                   <option value="allsections" class="option-font-size"
                     >Todas las secciones</option
                   >
@@ -339,11 +342,13 @@
                 </select>
                 <div class="d-felx flex-row attach-align mt-4">
                   <label class="text-label mr-2">Adjuntar</label>
-                  <button class="btn mx-1 border p-0 px-1 mt-1 mr-2">
+                  <button
+                    class="btn mx-1 border p-0 px-1 mt-1 mr-2 form-border-color"
+                  >
                     <i class="fas fa-paperclip"></i>
                   </button>
                   <select
-                    class="mt-1 mr-2 cursor-out"
+                    class="mt-1 mr-2 cursor-out form-border-color rounded"
                     name="docs"
                     size="3"
                     multiple
@@ -353,7 +358,9 @@
                     <option value="image1">Image1.jpg</option>
                     <option value="presentation">Presentation.ppt</option>
                   </select>
-                  <button class="btn mx-1 border p-0 px-1 mt-1">
+                  <button
+                    class="btn mx-1 border p-0 px-1 mt-1 form-border-color"
+                  >
                     <i class="fas fa-trash-alt"></i>
                   </button>
                 </div>
