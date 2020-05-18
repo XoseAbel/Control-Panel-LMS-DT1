@@ -7,7 +7,7 @@
 }
 /* superponer elementos en las listas */
 .pb-6 {
-  padding-bottom: 8rem;
+  padding-bottom: 7rem;
 }
 
 .overposition {
@@ -53,10 +53,16 @@
   .font-size-dashboard-md {
     font-size: 15px;
   }
+  .pb-6 {
+    padding-bottom: 6rem;
+  }
 }
 @media (max-width: 768px) {
   .font-size-9 {
     font-size: 9px;
+  }
+  .pb-6 {
+    padding-bottom: 5rem;
   }
 }
 @media (min-width: 769px) {
@@ -107,14 +113,12 @@
   border-radius: 8px;
 }
 
-
 .link-footer {
   font-size: 13px;
 }
 
-
 @media (max-width: 576px) {
   .link-footer {
-      font-size: 10px;
+    font-size: 10px;
   }
 }
