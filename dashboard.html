@@ -39,7 +39,7 @@
           <div class="row align-items-center">
             <!-- Brand -->
             <div
-              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
+              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end justify-content-lg-start"
             >
               <a class="navbar-brand" href="#" style="width: 200px;">
                 <img src="images/logo.png" class="navbar-brand-img img-fluid" />
@@ -66,7 +66,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav d-flex flex-column">
                     <li class="nav-item">
-                      <a class="nav-link"  href="dashboard.html">
+                      <a class="nav-link" href="dashboard.html">
                         <i class="fas fa-desktop"></i>
                         <span class="nav-link-text ml-2">Dashboard</span>
                       </a>
@@ -103,7 +103,7 @@
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a  class="nav-link" href="register.html">
+                      <a class="nav-link" href="register.html">
                         <i class="fas fa-user"></i>
                         <span class="nav-link-text ml-2">Registro</span>
                       </a>
@@ -315,29 +315,29 @@
                   height="col-12 col-md-8"
                 ></canvas>
                 <script>
-                  var ctx = document.getElementById('myChart').getContext('2d');
+                  var ctx = document.getElementById("myChart").getContext("2d");
                   var myChart = new Chart(ctx, {
-                    type: 'line',
+                    type: "line",
                     data: {
-                      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
                       datasets: [
                         {
-                          label: 'Clientes',
+                          label: "Clientes",
                           data: [350, 389, 150, 67, 33],
-                          backgroundColor: ['rgb(132, 66, 255, 0.2)'],
-                          borderColor: ['rgb(132, 66, 255, 0.5)'],
+                          backgroundColor: ["rgb(132, 66, 255, 0.2)"],
+                          borderColor: ["rgb(132, 66, 255, 0.5)"],
                         },
                         {
-                          label: 'Curso',
+                          label: "Curso",
                           data: [70, 79, 80, 71, 73],
-                          backgroundColor: ['rgb(255, 167, 66, 0.2)'],
-                          borderColor: ['rgb(255, 167, 66, 0.5)'],
+                          backgroundColor: ["rgb(255, 167, 66, 0.2)"],
+                          borderColor: ["rgb(255, 167, 66, 0.5)"],
                         },
                         {
-                          label: 'Tareas',
+                          label: "Tareas",
                           data: [150, 111, 210, 150, 100],
-                          backgroundColor: ['rgb(59, 161, 82, 0.2)'],
-                          borderColor: ['rgb(59, 161, 82, 0.5)'],
+                          backgroundColor: ["rgb(59, 161, 82, 0.2)"],
+                          borderColor: ["rgb(59, 161, 82, 0.5)"],
                         },
                       ],
                     },
@@ -366,29 +366,29 @@
                 ></canvas>
                 <script>
                   var ctx = document
-                    .getElementById('myChart2')
-                    .getContext('2d');
+                    .getElementById("myChart2")
+                    .getContext("2d");
                   var myChart = new Chart(ctx, {
-                    type: 'pie',
+                    type: "pie",
                     data: {
                       labels: [
-                        'Desarrollador Web',
-                        'Carretillero',
-                        'Manipulador alimentos',
+                        "Desarrollador Web",
+                        "Carretillero",
+                        "Manipulador alimentos",
                       ],
                       datasets: [
                         {
-                          label: 'Cursos',
+                          label: "Cursos",
                           data: [350, 389, 150],
                           backgroundColor: [
-                            'rgb(132, 66, 255, 0.2)',
-                            'rgb(255, 167, 66, 0.5)',
-                            'rgb(59, 161, 82, 0.2)',
+                            "rgb(132, 66, 255, 0.2)",
+                            "rgb(255, 167, 66, 0.5)",
+                            "rgb(59, 161, 82, 0.2)",
                           ],
                           borderColor: [
-                            'rgb(132, 66, 255, 0.5)',
-                            'rgb(255, 167, 66, 0.5)',
-                            'rgb(59, 161, 82, 0.2)',
+                            "rgb(132, 66, 255, 0.5)",
+                            "rgb(255, 167, 66, 0.5)",
+                            "rgb(59, 161, 82, 0.2)",
                           ],
                         },
                       ],
@@ -453,7 +453,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="col-12 col-lg-4 mt-4">
+            <div class="col-12 col-lg-4 mt-4 vh-100">
               <table class="table text-table" style="background-color: white;">
                 <thead class="thead">
                   <tr>
@@ -544,22 +544,25 @@
           </div>
           <!-- Header List End -->
           <!-- FOOTER -->
-          <footer class="row align-items-center pt-5 pb-3">
+          <footer class="row align-items-end pt-5 pb-3">
             <div class="col-12 col-md-6 d-flex justify-content-center">
               <div class="link-footer text-muted">
-                © 2020 <span style="color: blueviolet;">Creative Tim & Updivision</span>
+                © 2020
+                <span style="color: blueviolet;"
+                  >Creative Tim & Updivision</span
+                >
               </div>
             </div>
-          
+
             <div class="col-12 col-md-6 d-flex justify-content-center">
               <a href="#" class="link-footer text-muted ml-2">Creative Tim</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">Updivision</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">About Us</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">Blog</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">MIT License</a>
             </div>
           </footer>
