@@ -34,7 +34,7 @@
     <div class="container-fluid bg-list-grey">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2">
+        <div class="col-12 col-lg-2 fix-top">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
@@ -146,10 +146,10 @@
         </div>
         <!-- Left Menu End -->
         <div
-          class="col-12 col-lg-10"
+          class="col-12 col-lg-10 padding-search"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row header-background pb-6">
+          <div class="row menu pb-3 fix-search">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
@@ -178,6 +178,8 @@
                 Admin Admin
               </p>
             </div>
+          </div>
+          <div class="row menu pb-6 fix-problem padding-data">
             <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-3">
               <h4>Hola Admin Admin</h4>
               <p style="font-size: 15px;">
@@ -188,7 +190,7 @@
           </div>
           <div class="row mt-5 rounded-top border mx-3 overposition">
             <div class="col-12 bg-white">
-              <h3 class="font-weight-bold my-2">Nueva Tarea</h3>
+              <h3 class="font-weight-bold my-2">Modificar Tarea</h3>
             </div>
             <div class="col-12 bg-list-grey">
               <h5 class="font-weight-bold my-2 text-secondary">
@@ -297,24 +299,27 @@
                 role="group"
                 aria-label="Basic example"
               >
-                <button
+                <a
+                  href="tasks.html"
                   type="button"
                   class="btn btn-secondary mr-3 bg-success font-weight-bold text-white border-0 rounded"
                 >
                   <i class="fas fa-save mr-1"></i>Guardar
-                </button>
-                <button
+                </a>
+                <a
+                  href="updateTask.html"
                   type="button"
                   class="btn btn-secondary mr-3 bg-warning font-weight-bold text-white border-0 rounded"
                 >
                   <i class="fas fa-undo-alt mr-1"></i>Borrar
-                </button>
-                <button
+                </a>
+                <a
+                  href="tasks.html"
                   type="button"
                   class="btn bg-danger text-white font-weight-bold border-0 rounded"
                 >
                   <i class="far fa-window-close mr-1"></i>Cancelar
-                </button>
+                </a>
               </div>
             </div>
           </div>
