@@ -128,3 +128,8 @@
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
+
+.card-text {
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
