@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/style-suso.css" />
-    <link rel="stylesheet" href="style/style_login_register.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -22,17 +17,12 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <link href="Abel_filtrado/reset.css" rel="stylesheet" />
+    <link href="Abel_filtrado/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style_dashboard.css" />
-    <script
-      src="https://kit.fontawesome.com/103d4b6503.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Shop</title>
   </head>
-
   <body>
     <div class="container-fluid">
       <div class="row">
@@ -48,7 +38,6 @@
               </a>
             </div>
             <!-- Brand END -->
-
             <!-- Nav -->
             <div class="col-7 col-md-8 col-lg-12 order-1 order-lg-2">
               <nav
@@ -75,63 +64,26 @@
                     >
                       <span>Categorías</span>
                     </h6>
-                    <li class="nav-item d-flex flex-column">
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="inlineCheckbox1"
-                          value="informatica"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox1"
-                          >Informática</label
-                        >
+                    <div class="controls">
+                      <div class="checkbox-group">
+                        <div class="checkbox">
+                          <input type="checkbox" value="all" checked />
+                          <label class="checkbox-label">Todas</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="checkbox" value=".informatica" />
+                          <label class="checkbox-label">Informática</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="checkbox" value=".marketing" />
+                          <label class="checkbox-label">Marketing</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="checkbox" value=".rrhh" />
+                          <label class="checkbox-label">RRHH</label>
+                        </div>
                       </div>
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="inlineCheckbox2"
-                          value="marketing"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox2"
-                          >Marketing</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="inlineCheckbox3"
-                          value="administracion"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox3"
-                          >Administración</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="inlineCheckbox4"
-                          value="rrhh"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox4"
-                          >RRHH</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="inlineCheckbox5"
-                          value="management"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox5"
-                          >Management</label
-                        >
-                      </div>
-                    </li>
+                    </div>
                     <h6
                       class="navbar-heading text-secondary border-bottom py-3"
                     >
@@ -183,8 +135,6 @@
           </div>
         </div>
         <!-- Left Menu End -->
-        <!-- BODY -->
-
         <div
           class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
@@ -248,26 +198,31 @@
             </div>
           </div>
           <!-- Info Area End -->
-          <!-- COURSES GRID -->
-          <div class="row">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-              <div class="card mt-3 mx-3" style="width: 18rem;">
+          <div class="container">
+            <div class="mix informatica"">
+            <div class="col-12 d-flex flex-row justify-content-center">
+              <div class="card mt-3 mx-3 d-flex flex-column flex-md-row">
                 <img
                   src="images/Curso1.PNG"
                   class="card-img-top img-fluid"
+                  style="width: 18rem;"
                   alt="Curso1"
                 />
                 <div
                   class="card-body d-flex flex-column justify-content-center"
                 >
-                  <h5 class="card-title d-flex align-self-center">
+                  <h5
+                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                  >
                     Bootstrap for Dummies
                   </h5>
                   <div class="d-flex flex-row justify-content-around">
                     <h6 class="border border-secondary rounded p-1">
                       Informática
                     </h6>
-                    <h6 class="border border-secondary rounded p-1">Online</h6>
+                    <h6 class="border border-secondary rounded p-1">
+                      Online
+                    </h6>
                   </div>
                   <p class="card-text">
                     Curso sobre Bootstrap, aprende a montar desde cero una
@@ -283,33 +238,222 @@
               </div>
             </div>
           </div>
-          <!-- Courses Grid End -->
-          <!-- FOOTER -->
-          <div class="row align-items-end pt-5 pb-3">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <div class="link-footer text-muted">
-                © 2020
-                <span style="color: blueviolet;"
-                  >Creative Tim & Updivision</span
+          <div class="mix marketing">
+            <div class="col-12 d-flex flex-row justify-content-center">
+              <div class="card mt-3 mx-3 d-flex flex-column flex-md-row">
+                <img
+                  src="images/Curso2.png"
+                  class="card-img-top img-fluid"
+                  style="width: 18rem;"
+                  alt="Curso2"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
                 >
+                  <h5
+                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                  >
+                    Marketing Digital
+                  </h5>
+                  <div class="d-flex flex-row justify-content-around">
+                    <h6 class="border border-secondary rounded p-1">
+                      Marketing
+                    </h6>
+                    <h6 class="border border-secondary rounded p-1">
+                      Semi-presencial
+                    </h6>
+                  </div>
+                  <p class="card-text">
+                    Curso sobre Marketing Digital, adquirir las claves digitales
+                    del mundo global y aplicar tu estrategia de marketing
+                    Digital.
+                  </p>
+                  <a
+                    href="detailShop.html"
+                    class="btn btn-primary font-weight-bold"
+                    >Comprar <span class="price">1.900</span>€</a
+                  >
+                </div>
               </div>
             </div>
-
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <a href="#" class="link-footer text-muted ml-2">Creative Tim</a>
-
-              <a href="#" class="link-footer text-muted ml-2">Updivision</a>
-
-              <a href="#" class="link-footer text-muted ml-2">About Us</a>
-
-              <a href="#" class="link-footer text-muted ml-2">Blog</a>
-
-              <a href="#" class="link-footer text-muted ml-2">MIT License</a>
+          </div>
+          <div class="mix marketing">
+            <div class="col-12 d-flex flex-row justify-content-center">
+              <div class="card mt-3 mx-3 d-flex flex-column flex-md-row">
+                <img
+                  src="images/Curso3.jpg"
+                  class="card-img-top img-fluid"
+                  style="width: 18rem;"
+                  alt="Curso3"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
+                >
+                  <h5
+                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                  >
+                    Dirección de Ventas
+                  </h5>
+                  <div class="d-flex flex-row justify-content-around">
+                    <h6 class="border border-secondary rounded p-1">
+                      Marketing
+                    </h6>
+                    <h6 class="border border-secondary rounded p-1">
+                      Presencial
+                    </h6>
+                  </div>
+                  <p class="card-text">
+                    Curso sobre Direccion de equipos de venta, proporcionar una
+                    visión estratégica y global de la empresa, siendo la
+                    dirección y ventas un pilar fundamental en la toma de
+                    decisiones de las organizaciones..
+                  </p>
+                  <a
+                    href="detailShop.html"
+                    class="btn btn-primary font-weight-bold"
+                    >Comprar <span class="price">6.900</span>€</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Footer End -->
+          <div class="mix rrhh">as</div>
+          <div class="mix informatica">
+            <div class="col-12 d-flex flex-row justify-content-center">
+              <div class="card mt-3 mx-3 d-flex flex-column flex-md-row">
+                <img
+                  src="images/Curso4.jpg"
+                  class="card-img-top img-fluid"
+                  style="width: 18rem;"
+                  alt="Curso4"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
+                >
+                  <h5
+                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                  >
+                    PreBootcamp HTML & CSS
+                  </h5>
+                  <div class="d-flex flex-row justify-content-around">
+                    <h6 class="border border-secondary rounded p-1">
+                      Informática
+                    </h6>
+                    <h6 class="border border-secondary rounded p-1">
+                      Online
+                    </h6>
+                  </div>
+                  <p class="card-text">
+                    Curso sobre HTML y CSS, aprende a montar desde cero una
+                    pagina web compleja. No son necesarios conocimientos previos
+                    de programacion.
+                  </p>
+                  <a
+                    href="detailShop.html"
+                    class="btn btn-primary font-weight-bold"
+                    >Comprar <span class="price">400</span>€</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mix rrhh">as</div>
+          <div class="mix informatica">
+            <div class="col-12 d-flex flex-row justify-content-center">
+              <div class="card mt-3 mx-3 d-flex flex-column flex-md-row">
+                <img
+                  src="images/Curso7.png"
+                  class="card-img-top img-fluid"
+                  style="width: 18rem;"
+                  alt="Curso7"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
+                >
+                  <h5
+                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                  >
+                    Bootcamp React
+                  </h5>
+                  <div class="d-flex flex-row justify-content-around">
+                    <h6 class="border border-secondary rounded p-1">
+                      Informática
+                    </h6>
+                    <h6 class="border border-secondary rounded p-1">
+                      Presencial
+                    </h6>
+                  </div>
+                  <p class="card-text">
+                    Curso sobre React, aprende a montar desde cero una API
+                    compleja en Typescrip. Son necesarios conocimientos previos
+                    de programacion.
+                  </p>
+                  <a
+                    href="detailShop.html"
+                    class="btn btn-primary font-weight-bold"
+                    >Comprar <span class="price">3.000</span>€</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Body End -->
+
+        <script src="Abel_filtrado/mixitup.min.js"></script>
+        <script>
+          // In this example, we must bind a 'change' event handler to
+          // our checkboxes, then interact with the mixer via
+          // its .filter() API methods.
+
+          var containerEl = document.querySelector('.container');
+          var checkboxGroup = document.querySelector('.checkbox-group');
+          var checkboxes = checkboxGroup.querySelectorAll(
+            'input[type="checkbox"]'
+          );
+          var allCheckbox = checkboxGroup.querySelector('input[value="all"]');
+
+          var mixer = mixitup(containerEl);
+
+          checkboxGroup.addEventListener('change', function (e) {
+            var selectors = [];
+            var checkbox;
+            var i;
+
+            if (e.target === allCheckbox && e.target.checked) {
+              // If the "all" checkbox was checked, uncheck all other checkboxes
+
+              for (i = 0; i < checkboxes.length; i++) {
+                checkbox = checkboxes[i];
+
+                if (checkbox !== allCheckbox) checkbox.checked = false;
+              }
+            } else {
+              // Another checkbox was changed, uncheck "all".
+
+              allCheckbox.checked = false;
+            }
+
+            // Iterate through all checkboxes, pushing the
+            // values of those that are checked into an array
+
+            for (i = 0; i < checkboxes.length; i++) {
+              checkbox = checkboxes[i];
+
+              if (checkbox.checked) selectors.push(checkbox.value);
+            }
+
+            // If there are values in the array, join it into a string
+            // using your desired logic, and send to the mixer's .filter()
+            // method, otherwise filter by 'all'
+
+            var selectorString =
+              selectors.length > 0
+                ? selectors.join(',') // or '.' for AND logic
+                : 'all';
+
+            mixer.filter(selectorString);
+          });
+        </script>
       </div>
     </div>
   </body>
