@@ -32,22 +32,21 @@
     <div class="container-fluid">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2 fijar-top">
+        <div class="col-12 col-lg-2 fix-top">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
-              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start"
+              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
             >
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="#" style="width: 200px;">
                 <img src="images/logo.png" class="navbar-brand-img img-fluid" />
               </a>
             </div>
             <!-- Brand END -->
-
             <!-- Nav -->
             <div class="col-7 col-md-8 col-lg-12 order-1 order-lg-2">
               <nav
-                class="navbar navbar-expand-lg navbar-light d-flex flex-column"
+                class="navbar navbar-expand-lg navbar-light d-flex flex-column align-items-start"
               >
                 <!-- Toggler/collapsibe Button -->
                 <button
@@ -65,7 +64,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="dashboard.html">
                         <i class="fas fa-desktop"></i>
-                        <span class="nav-link-text ml-2">Tablero</span>
+                        <span class="nav-link-text ml-2">Dashboard</span>
                       </a>
                     </li>
 
@@ -76,7 +75,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="Tasks/tasks.html">
                         <i class="fas fa-sticky-note"></i>
                         <span class="nav-link-text ml-2">Tareas</span>
                       </a>
@@ -144,15 +143,15 @@
         <!-- BODY -->
 
         <div
-          class="col-12 col-lg-10 padding-search"
+          class="col-12 col-lg-10 padding-search vh-100 footerdown-responsive"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row menu pb-3 fijar-search">
+          <div class="row menu pb-3 fix-search">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
               >
-                DASHBOARD
+                CURSOS
               </h6>
             </div>
             <div
@@ -162,7 +161,6 @@
                 type="text"
                 class="search-background pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
                 placeholder="Search"
-                style="width: 300px; height: 40px;"
               />
             </div>
             <div
@@ -173,13 +171,13 @@
                 src="images/myphoto.jpg"
                 width="25"
               />
-              <p class="mb-0 text-white pr-2" style="font-size: 12px;">
+              <p class="mb-0 text-white" style="font-size: 12px;">
                 Admin Admin
               </p>
             </div>
           </div>
           <div class="row menu pb-6 fix-problem padding-data">
-            <div class="col-12 col-md-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -188,15 +186,15 @@
                       35
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #f5365c;"
                     >
-                      <i class="fas fa-globe-europe fa-3x"></i>
+                      <i class="fas fa-globe-europe text-alert fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -208,7 +206,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -217,7 +215,7 @@
                       423
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #fb6340;"
@@ -225,7 +223,7 @@
                       <i class="fas fa-sticky-note fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -238,7 +236,7 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-12 col-md-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -247,7 +245,7 @@
                       103
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #2dce89;"
@@ -255,7 +253,7 @@
                       <i class="fas fa-user-friends fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -268,7 +266,7 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-12 col-md-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -277,7 +275,7 @@
                       1.378
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #11cdef;"
@@ -285,7 +283,7 @@
                       <i class="fas fa-columns fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -455,27 +453,33 @@
             </div>
           </div>
           <!-- Footer -->
-          <div class="row my-3">
-            <div class="col-12 d-flex flex-row mt-3">
-              <div class="text-footer d-flex flex-row">
+          <div class="row colocar-footer m-0" style="width: 95%;">
+            <div
+              class="col-12 col-md-6 mt-1 d-flex flex-row justify-content-center"
+            >
+              <p class="text-footer mb-1">
                 ® Copyright &nbsp
-                <div style="color: blueviolet;">
-                  Creative Tim & Updivision
-                </div>
-              </div>
-              <div class="text-footer ml-auto">
+              </p>
+              <p class="text-footer mb-1" style="color: blueviolet;">
+                Creative Tim & Updivision
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 px-0 mt-0 d-flex flex-row justify-content-center"
+            >
+              <a class="text-footer mb-1">
                 Creative Tim
-              </div>
-              <div class="text-footer ml-2">
+              </a>
+              <a class="text-footer ml-2 mb-1">
                 Updivision
-              </div>
-              <div class="text-footer ml-2">
+              </a>
+              <a class="text-footer ml-2 mb-1">
                 About Us
-              </div>
-              <div class="text-footer ml-2">
+              </a>
+              <a class="text-footer ml-2 mb-1">
                 Blog
-              </div>
-              <div class="text-footer ml-2">
+              </a>
+              <div class="text-footer ml-2 mb-1">
                 MIT License
               </div>
             </div>

@@ -37,12 +37,23 @@
   height: 40px;
 }
 
+.colocar-footer {
+  position: absolute;
+  bottom: 0;
+}
+
 @media (max-width: 768px) {
   .firstrow {
     font-size: 10px !important;
   }
   .font-size-tableheader {
     font-size: 20px;
+  }
+  .colocar-footer {
+    position: relative;
+  }
+  .footerdown-responsive {
+    height: max-content !important;
   }
 }
 @media (max-width: 550px) {
@@ -72,7 +83,7 @@
   }
   .padding-search {
     padding-top: 35px;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .fix-search {
     position: fixed;
