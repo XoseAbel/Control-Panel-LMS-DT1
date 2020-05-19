@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/style-suso.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -26,23 +25,28 @@
       src="https://kit.fontawesome.com/103d4b6503.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2 fix-top">
+        <div class="col-12 col-lg-2">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
-              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
+              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end justify-content-lg-start"
             >
               <a class="navbar-brand" href="#" style="width: 200px;">
                 <img src="images/logo.png" class="navbar-brand-img img-fluid" />
               </a>
             </div>
             <!-- Brand END -->
+
             <!-- Nav -->
             <div class="col-7 col-md-8 col-lg-12 order-1 order-lg-2">
               <nav
@@ -93,13 +97,13 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="index.html" class="nav-link">
+                      <a class="nav-link" href="index.html">
                         <i class="fas fa-sign-in-alt"></i>
                         <span class="nav-link-text ml-2">Iniciar sesión</span>
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a href="register.html" class="nav-link">
+                      <a class="nav-link" href="register.html">
                         <i class="fas fa-user"></i>
                         <span class="nav-link-text ml-2">Registro</span>
                       </a>
@@ -143,15 +147,16 @@
         <!-- BODY -->
 
         <div
-          class="col-12 col-lg-10 padding-search vh-100"
+          class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row menu pb-3 fix-search">
+          <!-- SEARCH AREA -->
+          <div class="row menu">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
               >
-                CURSOS
+                DASHBOARD
               </h6>
             </div>
             <div
@@ -176,8 +181,10 @@
               </p>
             </div>
           </div>
-          <div class="row menu pb-6 fix-problem padding-data">
-            <div class="col-6 col-lg-3 mt-2">
+          <!-- Search Area End -->
+          <!-- DATA AREA -->
+          <div class="row menu pb-6 pt-4">
+            <div class="col-12 col-sm-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -186,7 +193,7 @@
                       35
                     </p>
                   </div>
-                  <div class="col-4 mt-2 pb-2 pb-sm-0">
+                  <div class="col-4 mt-2">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #f5365c;"
@@ -194,7 +201,7 @@
                       <i class="fas fa-globe-europe text-alert fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters d-none d-sm-block d-mdnone">
+                  <div class="row no-gutters">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -206,7 +213,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 mt-2">
+            <div class="col-12 col-sm-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -215,7 +222,7 @@
                       423
                     </p>
                   </div>
-                  <div class="col-4 mt-2 pb-2 pb-sm-0">
+                  <div class="col-4 mt-2">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #fb6340;"
@@ -223,7 +230,7 @@
                       <i class="fas fa-sticky-note fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters d-none d-sm-block d-mdnone">
+                  <div class="row no-gutters">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -236,7 +243,7 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 mt-2">
+            <div class="col-12 col-sm-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -245,7 +252,7 @@
                       103
                     </p>
                   </div>
-                  <div class="col-4 mt-2 pb-2 pb-sm-0">
+                  <div class="col-4 mt-2">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #2dce89;"
@@ -253,7 +260,7 @@
                       <i class="fas fa-user-friends fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters d-none d-sm-block d-mdnone">
+                  <div class="row no-gutters">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -266,7 +273,7 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 mt-2">
+            <div class="col-12 col-sm-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -275,7 +282,7 @@
                       1.378
                     </p>
                   </div>
-                  <div class="col-4 mt-2 pb-2 pb-sm-0">
+                  <div class="col-4 mt-2">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #11cdef;"
@@ -283,7 +290,7 @@
                       <i class="fas fa-columns fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters d-none d-sm-block d-mdnone">
+                  <div class="row no-gutters">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -298,187 +305,270 @@
             </div>
           </div>
           <!-- Data Area End -->
-          <!-- MAIN CONTENT -->
-          <div class="row rounded border mx-3 overposition">
-            <div class="col-12 px-0">
-              <div class="col-12 d-flex flex-row py-2 bg-white border-bottom">
-                <h5 class="flex-grow-1">Cursos</h5>
-                <a
-                  href="addCourse.html"
-                  class="btn d-flex text-white header-background border mb-0 px-2 rounded font-weight-bold"
-                  style="font-size: 10px; width: min-content;"
-                >
-                  Nuevo
-                </a>
+          <!-- GRAFICS -->
+          <div class="row mt--5 pt-5 mb-3">
+            <div class="col-12 col-md-8">
+              <div class="bg-graffic">
+                <canvas
+                  id="myChart"
+                  width="col-12 col-md-8"
+                  height="col-12 col-md-8"
+                ></canvas>
+                <script>
+                  var ctx = document.getElementById("myChart").getContext("2d");
+                  var myChart = new Chart(ctx, {
+                    type: "line",
+                    data: {
+                      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+                      datasets: [
+                        {
+                          label: "Clientes",
+                          data: [350, 389, 150, 67, 33],
+                          backgroundColor: ["rgb(132, 66, 255, 0.2)"],
+                          borderColor: ["rgb(132, 66, 255, 0.5)"],
+                        },
+                        {
+                          label: "Curso",
+                          data: [70, 79, 80, 71, 73],
+                          backgroundColor: ["rgb(255, 167, 66, 0.2)"],
+                          borderColor: ["rgb(255, 167, 66, 0.5)"],
+                        },
+                        {
+                          label: "Tareas",
+                          data: [150, 111, 210, 150, 100],
+                          backgroundColor: ["rgb(59, 161, 82, 0.2)"],
+                          borderColor: ["rgb(59, 161, 82, 0.5)"],
+                        },
+                      ],
+                    },
+
+                    options: {
+                      scales: {
+                        yAxes: [
+                          {
+                            ticks: {
+                              beginAtZero: true,
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  });
+                </script>
               </div>
-              <div class="table-responsive">
-                <table class="table bg-white mb-0">
-                  <thead>
-                    <tr class="bg-list-grey">
-                      <th scope="col">NOMBRE</th>
-                      <th scope="col">ARCHIVOS</th>
-                      <th scope="col">PUBLICACION</th>
-                      <th scope="col">PUBLICADO</th>
-                      <th scope="col"></th>
-                    </tr>
-                  </thead>
-                  <tbody class="">
-                    <tr class="">
-                      <td>
-                        <a href="detailCourse.html" class="link-decoration"
-                          >Desarrollador Web</a
-                        >
-                      </td>
-                      <td>
-                        <a
-                          class="mb-0 text-black link-decoration font-size-9"
-                          href="#"
-                          >(3)</a
-                        >
-                      </td>
-                      <td>Atrasada</td>
-                      <td>Publicado en</td>
-                      <td class="d-flex justify-content-end">
-                        <a
-                          type="button"
-                          href="updatecourse.html"
-                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
-                        >
-                          Modificar
-                        </a>
-                        <butaton
-                          type="button"
-                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
-                        >
-                          Borrar
-                        </butaton>
-                      </td>
-                    </tr>
-                    <tr class="">
-                      <td>
-                        <a href="detailCourse.html" class="link-decoration"
-                          >Carretillero</a
-                        >
-                      </td>
-                      <td>
-                        <a
-                          class="mb-0 text-black link-decoration font-size-9"
-                          href="#"
-                          >(3)</a
-                        >
-                      </td>
-                      <td>Atrasada</td>
-                      <td>Publicado en</td>
-                      <td class="d-flex justify-content-end">
-                        <a
-                          type="button"
-                          href="updatecourse.html"
-                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
-                        >
-                          Modificar
-                        </a>
-                        <a
-                          type="button"
-                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
-                        >
-                          Borrar
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="detailCourse.html" class="link-decoration"
-                          >Manipulador alimentos</a
-                        >
-                      </td>
-                      <td>
-                        <a
-                          class="mb-0 text-black link-decoration font-size-9"
-                          href="#"
-                          >(1)</a
-                        >
-                      </td>
-                      <td>No atrasada</td>
-                      <td>Publicado en</td>
-                      <td class="d-flex justify-content-end">
-                        <a
-                          href="updatecourse.html"
-                          type="button"
-                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
-                        >
-                          Modificar
-                        </a>
-                        <a
-                          type="button"
-                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
-                        >
-                          Borrar
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="detailCourse.html" class="link-decoration"
-                          >Bootstrap for dummies</a
-                        >
-                      </td>
-                      <td>
-                        <a
-                          class="mb-0 text-black link-decoration font-size-9"
-                          href="#"
-                          >(4)</a
-                        >
-                      </td>
-                      <td>No atrasada</td>
-                      <td>Publicado en</td>
-                      <td class="d-flex justify-content-end">
-                        <a
-                          href="updatecourse.html"
-                          type="button"
-                          class="btn bg-success border rounded text-white py-0 px-1 ml-2"
-                        >
-                          Modificar
-                        </a>
-                        <a
-                          type="button"
-                          class="btn bg-danger border rounded text-white py-0 px-2 ml-2"
-                        >
-                          Borrar
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-graffic pb-4">
+                <canvas
+                  id="myChart2"
+                  width="col-12 col-md-4 "
+                  height="200px"
+                ></canvas>
+                <script>
+                  var ctx = document
+                    .getElementById("myChart2")
+                    .getContext("2d");
+                  var myChart = new Chart(ctx, {
+                    type: "pie",
+                    data: {
+                      labels: [
+                        "Desarrollador Web",
+                        "Carretillero",
+                        "Manipulador alimentos",
+                      ],
+                      datasets: [
+                        {
+                          label: "Cursos",
+                          data: [350, 389, 150],
+                          backgroundColor: [
+                            "rgb(132, 66, 255, 0.2)",
+                            "rgb(255, 167, 66, 0.5)",
+                            "rgb(59, 161, 82, 0.2)",
+                          ],
+                          borderColor: [
+                            "rgb(132, 66, 255, 0.5)",
+                            "rgb(255, 167, 66, 0.5)",
+                            "rgb(59, 161, 82, 0.2)",
+                          ],
+                        },
+                      ],
+                    },
+                  });
+                </script>
               </div>
             </div>
           </div>
-          <!-- Footer -->
-          <footer class="row my-3">
-            <div class="col-12 d-flex flex-row mt-3">
-              <div class="text-footer d-flex flex-row">
-                ® Copyright &nbsp
-                <div style="color: blueviolet;">
-                  Creative Tim & Updivision
-                </div>
-              </div>
-              <div class="text-footer ml-auto">
-                Creative Tim
-              </div>
-              <div class="text-footer ml-2">
-                Updivision
-              </div>
-              <div class="text-footer ml-2">
-                About Us
-              </div>
-              <div class="text-footer ml-2">
-                Blog
-              </div>
-              <div class="text-footer ml-2">
-                MIT License
+          <!-- Grafics End -->
+          <!-- HEADER LIST -->
+          <div class="row my-3">
+            <div class="col-12 col-lg-8 mt-4">
+              <table class="table text-table" style="background-color: white;">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">Cursos</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-0 px-0 px-md-2 text-table"
+                      >
+                        <a
+                          href="Course.html"
+                          style="text-decoration: none; color: white;"
+                        >
+                          Ver Todos
+                        </a>
+                      </button>
+                    </th>
+                  </tr>
+                </thead>
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Personas</th>
+                    <th scope="col">Ultimo mes</th>
+                    <th scope="col">Estadística</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Desarrollador Web</th>
+                    <td>350</td>
+                    <td>45</td>
+                    <td style="color: green;">↑ 10.4%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Carretilero</th>
+                    <td>540</td>
+                    <td>90</td>
+                    <td style="color: green;">↑ 13%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Manipulador Alimentos</th>
+                    <td>200</td>
+                    <td>10</td>
+                    <td style="color: red;">↓ 4%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12 col-lg-4 mt-4 vh-100">
+              <table class="table text-table" style="background-color: white;">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">Acceso</th>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <button
+                        type="button"
+                        class="btn btn-primary py-0 px-1 text-table"
+                      >
+                        <a
+                          href="Course.html"
+                          style="text-decoration: none; color: white;"
+                        >
+                          Ver Todos
+                        </a>
+                      </button>
+                    </th>
+                  </tr>
+                </thead>
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Media</th>
+                    <th scope="col">Personas</th>
+                    <th scope="col">Estadística</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><i class="fab fa-twitter"></i> Twitter</th>
+                    <td>7.050</td>
+                    <td>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 51%;"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          51%
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fab fa-youtube"></i> YouTube</th>
+                    <td>3.540</td>
+                    <td>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 27%;"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          27%
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <i class="fab fa-facebook-f"></i> Facebook
+                    </th>
+                    <td>2.787</td>
+                    <td>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 22%;"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          22%
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Header List End -->
+          <!-- FOOTER -->
+          <footer class="row align-items-end pt-5 pb-3">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+              <div class="link-footer text-muted">
+                © 2020
+                <span style="color: blueviolet;"
+                  >Creative Tim & Updivision</span
+                >
               </div>
             </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+              <a href="#" class="link-footer text-muted ml-2">Creative Tim</a>
+
+              <a href="#" class="link-footer text-muted ml-2">Updivision</a>
+
+              <a href="#" class="link-footer text-muted ml-2">About Us</a>
+
+              <a href="#" class="link-footer text-muted ml-2">Blog</a>
+
+              <a href="#" class="link-footer text-muted ml-2">MIT License</a>
+            </div>
           </footer>
+          <!-- Footer End -->
         </div>
+        <!-- Body End -->
       </div>
     </div>
   </body>

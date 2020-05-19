@@ -34,13 +34,13 @@
     <div class="container-fluid bg-list-grey">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2">
+        <div class="col-12 col-lg-2 fix-top">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
-              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
+              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start"
             >
-              <a class="navbar-brand" href="#" style="width: 200px;">
+              <a class="navbar-brand" href="#">
                 <img
                   src="../images/logo.png"
                   class="navbar-brand-img img-fluid"
@@ -48,10 +48,11 @@
               </a>
             </div>
             <!-- Brand END -->
+
             <!-- Nav -->
             <div class="col-7 col-md-8 col-lg-12 order-1 order-lg-2">
               <nav
-                class="navbar navbar-expand-lg navbar-light d-flex flex-column align-items-start"
+                class="navbar navbar-expand-lg navbar-light d-flex flex-column"
               >
                 <!-- Toggler/collapsibe Button -->
                 <button
@@ -149,7 +150,7 @@
           class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row header-background pb-6">
+          <div class="row menu pb-3 fix-search">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
@@ -178,6 +179,8 @@
                 Admin Admin
               </p>
             </div>
+          </div>
+          <div class="row menu pb-6 fix-problem padding-data">
             <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-3">
               <h4>Hola Admin Admin</h4>
               <p style="font-size: 15px;">
@@ -187,8 +190,26 @@
             </div>
           </div>
           <div class="row mt-5 rounded-top border mx-3 overposition">
-            <div class="col-12 bg-white">
-              <h3 class="font-weight-bold my-2">Nueva Tarea</h3>
+            <div class="col-12 bg-white d-flex flex-row">
+              <h4 class="font-weight-bold my-2 flex-grow-1">Nueva Tarea</h4>
+              <div
+                class="btn-group btn-group-sm py-2"
+                role="group"
+                aria-label="Basic example"
+              >
+                <a
+                  class="btn bg-success border rounded text-white px-1 ml-2"
+                  href="updateTask.html"
+                >
+                  Update
+                </a>
+                <button
+                  type="button"
+                  class="btn bg-danger border rounded text-white py-0 px-1 ml-2"
+                >
+                  Delete
+                </button>
+              </div>
             </div>
             <div class="col-12 bg-list-grey">
               <h5 class="font-weight-bold my-2 text-secondary">

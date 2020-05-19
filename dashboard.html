@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style-suso.css" />
+    <link rel="stylesheet" href="style/style_login_register.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -35,11 +37,11 @@
     <div class="container-fluid">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2">
+        <div class="col-12 col-lg-2 fix-top">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
-              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
+              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end justify-content-lg-start"
             >
               <a class="navbar-brand" href="#" style="width: 200px;">
                 <img src="images/logo.png" class="navbar-brand-img img-fluid" />
@@ -66,7 +68,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav d-flex flex-column">
                     <li class="nav-item">
-                      <a class="nav-link"  href="dashboard.html">
+                      <a class="nav-link" href="dashboard.html">
                         <i class="fas fa-desktop"></i>
                         <span class="nav-link-text ml-2">Dashboard</span>
                       </a>
@@ -103,7 +105,7 @@
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a  class="nav-link" href="register.html">
+                      <a class="nav-link" href="register.html">
                         <i class="fas fa-user"></i>
                         <span class="nav-link-text ml-2">Registro</span>
                       </a>
@@ -147,11 +149,11 @@
         <!-- BODY -->
 
         <div
-          class="col-12 col-lg-10"
+          class="col-12 col-lg-10 padding-search"
           style="background-color: rgb(245, 245, 245);"
         >
           <!-- SEARCH AREA -->
-          <div class="row menu">
+          <div class="row menu pb-3 fix-search">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
@@ -183,8 +185,8 @@
           </div>
           <!-- Search Area End -->
           <!-- DATA AREA -->
-          <div class="row menu pb-6 pt-4">
-            <div class="col-12 col-sm-6 col-lg-3 mt-2">
+          <div class="row menu pb-6 fix-problem padding-data">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -193,7 +195,7 @@
                       35
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #f5365c;"
@@ -201,7 +203,7 @@
                       <i class="fas fa-globe-europe text-alert fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -213,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -222,7 +224,7 @@
                       423
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #fb6340;"
@@ -230,7 +232,7 @@
                       <i class="fas fa-sticky-note fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -243,7 +245,7 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -252,7 +254,7 @@
                       103
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #2dce89;"
@@ -260,7 +262,7 @@
                       <i class="fas fa-user-friends fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -273,7 +275,7 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 mt-2">
+            <div class="col-6 col-lg-3 mt-2">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters d-flex flex-row">
                   <div class="col-8 pr-0 pb-1 pl-2 mt-2">
@@ -282,7 +284,7 @@
                       1.378
                     </p>
                   </div>
-                  <div class="col-4 mt-2">
+                  <div class="col-4 mt-2 pb-2 pb-sm-0">
                     <div
                       class="row justify-content-end pr-4 pt-2"
                       style="color: #11cdef;"
@@ -290,7 +292,7 @@
                       <i class="fas fa-columns fa-3x"></i>
                     </div>
                   </div>
-                  <div class="row no-gutters">
+                  <div class="row no-gutters d-none d-sm-block d-mdnone">
                     <div class="col pl-2">
                       <p class="card-text">
                         <small class="text-muted"
@@ -315,29 +317,29 @@
                   height="col-12 col-md-8"
                 ></canvas>
                 <script>
-                  var ctx = document.getElementById('myChart').getContext('2d');
+                  var ctx = document.getElementById("myChart").getContext("2d");
                   var myChart = new Chart(ctx, {
-                    type: 'line',
+                    type: "line",
                     data: {
-                      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
                       datasets: [
                         {
-                          label: 'Clientes',
+                          label: "Clientes",
                           data: [350, 389, 150, 67, 33],
-                          backgroundColor: ['rgb(132, 66, 255, 0.2)'],
-                          borderColor: ['rgb(132, 66, 255, 0.5)'],
+                          backgroundColor: ["rgb(132, 66, 255, 0.2)"],
+                          borderColor: ["rgb(132, 66, 255, 0.5)"],
                         },
                         {
-                          label: 'Curso',
+                          label: "Curso",
                           data: [70, 79, 80, 71, 73],
-                          backgroundColor: ['rgb(255, 167, 66, 0.2)'],
-                          borderColor: ['rgb(255, 167, 66, 0.5)'],
+                          backgroundColor: ["rgb(255, 167, 66, 0.2)"],
+                          borderColor: ["rgb(255, 167, 66, 0.5)"],
                         },
                         {
-                          label: 'Tareas',
+                          label: "Tareas",
                           data: [150, 111, 210, 150, 100],
-                          backgroundColor: ['rgb(59, 161, 82, 0.2)'],
-                          borderColor: ['rgb(59, 161, 82, 0.5)'],
+                          backgroundColor: ["rgb(59, 161, 82, 0.2)"],
+                          borderColor: ["rgb(59, 161, 82, 0.5)"],
                         },
                       ],
                     },
@@ -366,29 +368,29 @@
                 ></canvas>
                 <script>
                   var ctx = document
-                    .getElementById('myChart2')
-                    .getContext('2d');
+                    .getElementById("myChart2")
+                    .getContext("2d");
                   var myChart = new Chart(ctx, {
-                    type: 'pie',
+                    type: "pie",
                     data: {
                       labels: [
-                        'Desarrollador Web',
-                        'Carretillero',
-                        'Manipulador alimentos',
+                        "Desarrollador Web",
+                        "Carretillero",
+                        "Manipulador alimentos",
                       ],
                       datasets: [
                         {
-                          label: 'Cursos',
+                          label: "Cursos",
                           data: [350, 389, 150],
                           backgroundColor: [
-                            'rgb(132, 66, 255, 0.2)',
-                            'rgb(255, 167, 66, 0.5)',
-                            'rgb(59, 161, 82, 0.2)',
+                            "rgb(132, 66, 255, 0.2)",
+                            "rgb(255, 167, 66, 0.5)",
+                            "rgb(59, 161, 82, 0.2)",
                           ],
                           borderColor: [
-                            'rgb(132, 66, 255, 0.5)',
-                            'rgb(255, 167, 66, 0.5)',
-                            'rgb(59, 161, 82, 0.2)',
+                            "rgb(132, 66, 255, 0.5)",
+                            "rgb(255, 167, 66, 0.5)",
+                            "rgb(59, 161, 82, 0.2)",
                           ],
                         },
                       ],
@@ -453,7 +455,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="col-12 col-lg-4 mt-4">
+            <div class="col-12 col-lg-4 mt-4 vh-100">
               <table class="table text-table" style="background-color: white;">
                 <thead class="thead">
                   <tr>
@@ -544,25 +546,28 @@
           </div>
           <!-- Header List End -->
           <!-- FOOTER -->
-          <footer class="row align-items-center pt-5 pb-3">
+          <div class="row align-items-end pt-5 pb-3">
             <div class="col-12 col-md-6 d-flex justify-content-center">
               <div class="link-footer text-muted">
-                © 2020 <span style="color: blueviolet;">Creative Tim & Updivision</span>
+                © 2020
+                <span style="color: blueviolet;"
+                  >Creative Tim & Updivision</span
+                >
               </div>
             </div>
-          
+
             <div class="col-12 col-md-6 d-flex justify-content-center">
               <a href="#" class="link-footer text-muted ml-2">Creative Tim</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">Updivision</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">About Us</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">Blog</a>
-          
+
               <a href="#" class="link-footer text-muted ml-2">MIT License</a>
             </div>
-          </footer>
+          </div>
           <!-- Footer End -->
         </div>
         <!-- Body End -->

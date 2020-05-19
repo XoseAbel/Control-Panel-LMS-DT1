@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style/style-suso.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -27,176 +22,279 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style/style_dashboard.css" />
-    <link rel="stylesheet" href="style/style-suso.css" />
+    <script
+      src="https://kit.fontawesome.com/103d4b6503.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="container bg-list-grey">
-      <div class="row header-background pb-6">
-        <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
-          <h6 class="text-white mb-0 font-weight-bold font-size-dashboard-md">
-            DASHBOARD
-          </h6>
-        </div>
-        <div
-          class="col-12 col-md-7 col-lg-8 mt-3 d-flex justify-content-center justify-content-md-end order-3 order-md-2"
-        >
-          <input
-            type="text"
-            class="search-background pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
-            placeholder="Search"
-          />
-        </div>
-        <div
-          class="d-flex flex-row col-6 col-md-3 col-lg-2 mt-3 order-2 order-md-3 align-items-center justify-content-end pl-0"
-        >
-          <img
-            class="img-fluid rounded-circle m-2"
-            src="images/myphoto.jpg"
-            width="25"
-          />
-          <p class="mb-0 text-white" style="font-size: 12px;">
-            Admin Admin
-          </p>
-        </div>
-        <div class="col-12 col-md-4 text-white order-5 mt-5">
-          <h2>Hola Admin Admin</h2>
-          <p>
-            Esta es la pagina de administracion de las personas. Aquí podras
-            crear uno nuevo, modificar y eliminar los datos de la persona que
-            quieras.
-          </p>
-        </div>
-      </div>
-      <div class="row mt-5 rounded-top border mx-3 overposition">
-        <div class="col-12 bg-white d-flex flex-row">
-          <h3 class="font-weight-bold my-2 flex-grow-1">
-            Consultar datos de la persona
-          </h3>
-          <div
-            class="btn-group btn-group-sm py-2"
-            role="group"
-            aria-label="Basic example"
-          >
-            <a
-              type="button"
-              class="btn header-background border rounded text-white px-1 ml-2"
-              href="updateperson.html"
-            >
-              Update
-            </a>
-            <button
-              type="button"
-              class="btn header-background border rounded text-white py-0 px-1 ml-2"
-            >
-              Delete
-            </button>
-          </div>
-        </div>
-        <div class="col-12 bg-list-grey">
-          <h5 class="font-weight-bold my-2 text-secondary">
-            DATOS DE LA PERSONA
-          </h5>
-        </div>
-        <div class="col-12 bg-white">
-          <div class="d-flex flex-column mt-4 border-bottom pb-4">
-            <label class="text-label">Nombre</label>
-            <input
-              type="text"
-              placeholder="Suso Pombo Castro"
-              class="rounded border cursor-out pl-2 text-placeholder"
-              disabled
-            />
-            <div class="d-flex flex-row mt-4">
-              <label class="text-label mr-3">Rol</label>
-              <select
-                name="post-in"
-                class="select-size text-label"
-                style="height: 30px;"
-                disabled
-              >
-                <option value="student" class="option-font-size"
-                  >Estudiante</option
-                >
-                <option value="teacher" class="option-font-size"
-                  >Profesor</option
-                >
-                <option value="auxteacher" class="option-font-size"
-                  >Profesor Aux.</option
-                >
-                <option value="designer" class="option-font-size"
-                  >Diseñador</option
-                >
-                <option value="viewer" class="option-font-size"
-                  >Observador</option
-                >
-              </select>
-            </div>
-            <label class="text-label mt-4">E-mail</label>
-            <input
-              type="email"
-              class="cursor-out rounded border text-placeholder pl-2"
-              placeholder="example@email.com"
-              disabled
-            />
-            <div class="d-flex flex-row align-items-center mt-4">
-              <input type="checkbox" class="mt-1 mr-2" checked disabled />
-              <label class="mb-0 text-label">Activo</label>
-              <label class="mb-0 px-1 ml-2 bg-success text-white rounded border"
-                >Si</label
-              >
-            </div>
-          </div>
-          <!-- Botonos de guardar, borrar, cancelar-->
-          <!-- <div
-            class="btn-group mt-3 mb-3"
-            role="group"
-            aria-label="Basic example"
-          >
-            <button
-              type="button"
-              class="btn btn-secondary mr-3 bg-success font-weight-bold text-white border-0 rounded"
-            >
-              <i class="fas fa-save mr-1"></i>Guardar
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary mr-3 bg-warning font-weight-bold text-white border-0 rounded"
-            >
-              <i class="fas fa-undo-alt mr-1"></i>Borrar
-            </button>
-            <button
-              type="button"
-              class="btn bg-danger text-white font-weight-bold border-0 rounded"
-            >
-              <i class="far fa-window-close mr-1"></i>Cancelar
-            </button>
-          </div> -->
-        </div>
-      </div>
-      <!-- Footer -->
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 d-flex flex-row my-3">
-          <div class="text-footer d-flex flex-row">
-            ® Copyright &nbsp
-            <div style="color: blueviolet;">
-              Creative Tim & Updivision
+        <!-- LEFT MENU -->
+        <div class="col-12 col-lg-2 fix-top">
+          <div class="row align-items-center">
+            <!-- Brand -->
+            <div
+              class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start justify-content-end"
+            >
+              <a class="navbar-brand" href="#" style="width: 200px;">
+                <img src="images/logo.png" class="navbar-brand-img img-fluid" />
+              </a>
+            </div>
+            <!-- Brand END -->
+            <!-- Nav -->
+            <div class="col-7 col-md-8 col-lg-12 order-1 order-lg-2">
+              <nav
+                class="navbar navbar-expand-lg navbar-light d-flex flex-column align-items-start"
+              >
+                <!-- Toggler/collapsibe Button -->
+                <button
+                  class="navbar-toggler align-self-start"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapsibleNavbar"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav d-flex flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-desktop"></i>
+                        <span class="nav-link-text ml-2">Dashboard</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="Course.html">
+                        <i class="fas fa-globe-europe"></i>
+                        <span class="nav-link-text ml-2">Cursos</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Tasks/tasks.html">
+                        <i class="fas fa-sticky-note"></i>
+                        <span class="nav-link-text ml-2">Tareas</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="persons.html">
+                        <i class="fas fa-user-friends"></i>
+                        <span class="nav-link-text ml-2">Personas</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fas fa-columns"></i>
+                        <span class="nav-link-text ml-2">Páginas</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="nav-link-text ml-2">Iniciar sesión</span>
+                      </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="register.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span class="nav-link-text ml-2">Registro</span>
+                      </a>
+                    </li>
+                    <h6 class="navbar-heading text-secondary border-top pt-3">
+                      <span>DOCUMENTACIÓN</span>
+                    </h6>
+
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fas fa-space-shuttle"></i>
+                        <span class="nav-link-text ml-2">Empezando</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fas fa-palette"></i>
+                        <span class="nav-link-text ml-2">Fundación</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fas fa-server"></i>
+                        <span class="nav-link-text ml-2">Componentes</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span class="nav-link-text ml-2">Actualizar</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!-- Nav END -->
+          </div>
+        </div>
+        <!-- Left Menu End -->
+        <!-- BODY -->
+
+        <div
+          class="col-12 col-lg-10 padding-search"
+          style="background-color: rgb(245, 245, 245);"
+        >
+          <div class="row menu pb-3 fix-search">
+            <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
+              <h6
+                class="text-white mb-0 font-weight-bold font-size-dashboard-md"
+              >
+                PERSONAS
+              </h6>
+            </div>
+            <div
+              class="col-12 col-md-7 col-lg-8 mt-3 d-flex justify-content-center justify-content-md-end order-3 order-md-2"
+            >
+              <input
+                type="text"
+                class="search-background pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
+                placeholder="Search"
+              />
+            </div>
+            <div
+              class="d-flex flex-row col-6 col-md-3 col-lg-2 mt-3 order-2 order-md-3 align-items-center justify-content-end pl-0"
+            >
+              <img
+                class="img-fluid rounded-circle m-2"
+                src="images/myphoto.jpg"
+                width="25"
+              />
+              <p class="mb-0 text-white" style="font-size: 12px;">
+                Admin Admin
+              </p>
             </div>
           </div>
-          <div class="text-footer ml-auto">
-            Creative Tim
+          <div class="row menu pb-6 fix-problem padding-data">
+            <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-3">
+              <h4>Hola Admin Admin</h4>
+              <p style="font-size: 15px;">
+                Esta es la pagina de administracion de los cursos. Aquí podras
+                crear una nueva, modificar y eliminar los cursos que quieras.
+              </p>
+            </div>
           </div>
-          <div class="text-footer ml-2">
-            Updivision
+          <!-- MAIN CONTENT -->
+          <div class="row rounded border mx-3 overposition bg-white">
+            <div class="col-12 bg-white d-flex flex-row">
+              <h3
+                class="font-weight-bold my-2 flex-grow-1 font-size-tableheader"
+              >
+                Modificar datos
+              </h3>
+              <div
+                class="btn-group btn-group-sm py-2"
+                role="group"
+                aria-label="Basic example"
+              >
+                <a
+                  type="button"
+                  class="btn bg-success border rounded text-white px-1 ml-2"
+                  href="updateperson.html"
+                >
+                  Update
+                </a>
+                <button
+                  type="button"
+                  class="btn bg-danger border rounded text-white py-0 px-1 ml-2"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+            <div class="col-12 bg-list-grey">
+              <h5 class="font-weight-bold my-2 text-secondary">
+                DATOS DE LA PERSONA
+              </h5>
+            </div>
+            <div class="col-12 bg-white">
+              <div class="d-flex flex-column mt-4 border-bottom pb-4">
+                <label class="text-label">Nombre</label>
+                <input
+                  type="text"
+                  placeholder="Suso Pombo Castro"
+                  class="rounded border cursor-out pl-2 text-placeholder"
+                  disabled
+                />
+                <div class="d-flex flex-row mt-4">
+                  <label class="text-label mr-3">Rol</label>
+                  <select
+                    name="post-in"
+                    class="select-size text-label"
+                    style="height: 30px;"
+                    disabled
+                  >
+                    <option value="student" class="option-font-size"
+                      >Estudiante</option
+                    >
+                    <option value="teacher" class="option-font-size"
+                      >Profesor</option
+                    >
+                    <option value="auxteacher" class="option-font-size"
+                      >Profesor Aux.</option
+                    >
+                    <option value="designer" class="option-font-size"
+                      >Diseñador</option
+                    >
+                    <option value="viewer" class="option-font-size"
+                      >Observador</option
+                    >
+                  </select>
+                </div>
+                <label class="text-label mt-4">E-mail</label>
+                <input
+                  type="email"
+                  class="cursor-out rounded border text-placeholder pl-2"
+                  placeholder="example@email.com"
+                  disabled
+                />
+                <div class="d-flex flex-row align-items-center mt-4">
+                  <input type="checkbox" class="mt-1 mr-2" checked disabled />
+                  <label class="mb-0 text-label">Activo</label>
+                  <label
+                    class="mb-0 px-1 ml-2 bg-success text-white rounded border"
+                    >Si</label
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-footer ml-2">
-            About Us
-          </div>
-          <div class="text-footer ml-2">
-            Blog
-          </div>
-          <div class="text-footer ml-2">
-            MIT License
+          <!-- Footer -->
+          <div class="row my-3">
+            <div class="col-12 d-flex flex-row mt-3">
+              <div class="text-footer d-flex flex-row">
+                ® Copyright &nbsp
+                <div style="color: blueviolet;">
+                  Creative Tim & Updivision
+                </div>
+              </div>
+              <div class="text-footer ml-auto">
+                Creative Tim
+              </div>
+              <div class="text-footer ml-2">
+                Updivision
+              </div>
+              <div class="text-footer ml-2">
+                About Us
+              </div>
+              <div class="text-footer ml-2">
+                Blog
+              </div>
+              <div class="text-footer ml-2">
+                MIT License
+              </div>
+            </div>
           </div>
         </div>
       </div>

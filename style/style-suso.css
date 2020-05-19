@@ -36,6 +36,7 @@
   width: 300px !important;
   height: 40px;
 }
+
 @media (max-width: 768px) {
   .firstrow {
     font-size: 10px !important;
