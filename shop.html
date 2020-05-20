@@ -17,6 +17,10 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/103d4b6503.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="Abel_filtrado/reset.css" rel="stylesheet" />
     <link href="Abel_filtrado/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/bootstrap.min.css" />
@@ -27,7 +31,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2 fix-top">
+        <div class="col-12 col-lg-2 fix-top" style="background-color: white;">
           <div class="row align-items-center">
             <!-- Brand -->
             <div
@@ -99,48 +103,37 @@
                           />
                           <label class="checkbox-label">RRHH</label>
                         </div>
+                        <h6
+                          class="navbar-heading text-secondary border-bottom py-3"
+                        >
+                          <span>Formato</span>
+                        </h6>
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value=".online"
+                            class="check-size"
+                          />
+                          <label class="checkbox-label">Online</label>
+                        </div>
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value=".semi"
+                            class="check-size"
+                          />
+                          <label class="checkbox-label">Semi-Presencial</label>
+                        </div>
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value=".presencial"
+                            class="check-size"
+                          />
+                          <label class="checkbox-label">Presencial</label>
+                        </div>
                       </div>
                     </div>
-                    <h6
-                      class="navbar-heading text-secondary border-bottom py-3"
-                    >
-                      <span>Formato</span>
-                    </h6>
-                    <li class="nav-item d-flex flex-column">
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input check-size"
-                          type="checkbox"
-                          id="inlineCheckbox1"
-                          value="presencial"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox1"
-                          >Presencial</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input check-size"
-                          type="checkbox"
-                          id="inlineCheckbox2"
-                          value="semiPre"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox2"
-                          >Semi-presencial</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline my-1">
-                        <input
-                          class="form-check-input check-size"
-                          type="checkbox"
-                          id="inlineCheckbox3"
-                          value="onLine"
-                        />
-                        <label class="form-check-label" for="inlineCheckbox3"
-                          >Online</label
-                        >
-                      </div>
-                    </li>
                     <button type="button" class="btn btn-info mx-3 mt-3">
                       Aplicar
                     </button>
@@ -215,7 +208,7 @@
                     style="text-decoration: none; color: white;"
                   >
                     <h6 class="mb-0">Cesta</h6>
-                    <span>(0)</span>
+                    <span id="contador">0</span>
                   </a>
                 </div>
               </button>
@@ -223,424 +216,458 @@
           </div>
           <!-- Info Area End -->
           <div class="container">
-            <div class="mix informatica"">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso1.PNG"
-                  class="card-img-top mr-3"
-                  alt="Curso1"
-                  style="width: 200px; height: 200px;"
-                />
+            <div class="mix informatica online">
+              <div class="col-12 d-flex flex-row justify-content-center">
                 <div
-                  class="card-body mx-3 d-flex flex-column justify-content-center"
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
                 >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                  <img
+                    src="images/Curso1.PNG"
+                    class="card-img-top mr-3"
+                    alt="Curso1"
+                    style="width: 200px; height: 200px;"
+                  />
+                  <div
+                    class="card-body mx-3 d-flex flex-column justify-content-center"
                   >
-                    Bootstrap for Dummies
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      Informática
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Online
-                    </h6>
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                    >
+                      Bootstrap for Dummies
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        Informática
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Online
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      Curso sobre Bootstrap, aprende a montar desde cero una
+                      pagina web compleja. No son necesarios conocimientos
+                      previos de programacion.
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">300</span>€
+                      </button>
+                    </div>
                   </div>
-                  <p class="card-text">
-                    Curso sobre Bootstrap, aprende a montar desde cero una
-                    pagina web compleja. No son necesarios conocimientos previos
-                    de programacion.
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
+                </div>
+              </div>
+            </div>
+            <div class="mix marketing semi">
+              <div class="col-12 d-flex flex-row justify-content-center">
+                <div
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                >
+                  <img
+                    src="images/Curso2.png"
+                    class="card-img-top mr-3"
+                    style="width: 200px; height: 200px;"
+                    alt="Curso2"
+                  />
+                  <div
+                    class="card-body mx-3 d-flex flex-column justify-content-center"
+                  >
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                     >
-                    <a href="" class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">300</span>€</a
+                      Marketing Digital
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        Marketing
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Semi-presencial
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      Curso sobre Marketing Digital donde podras adquirir las
+                      claves digitales del mundo global y aplicar tu estrategia
+                      de marketing Digital.
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">1.900</span>€
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix rrhh semi">
+              <div class="col-12 d-flex flex-row justify-content-center">
+                <div
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                >
+                  <img
+                    src="images/Curso3.jpg"
+                    class="card-img-top mr-3"
+                    style="width: 200px; height: 200px;"
+                    alt="Curso3"
+                  />
+                  <div
+                    class="card-body mx-3 d-flex flex-column justify-content-center"
+                  >
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                     >
+                      Administrativo de Personal
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        RRHH
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Semi-presencial
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      Curso sobre Administraticion de Personal donde aprenderás
+                      a gestionar los procedimientos administrativos del
+                      personal de tu empresa.
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">850</span>€
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix marketing presencial">
+              <div class="col-12 d-flex flex-row justify-content-center">
+                <div
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                >
+                  <img
+                    src="images/Curso4.jpg"
+                    class="card-img-top mr-3"
+                    style="width: 200px; height: 200px;"
+                    alt="Curso4"
+                  />
+                  <div
+                    class="card-body mx-3 d-flex flex-column justify-content-center"
+                  >
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                    >
+                      Dirección de Ventas
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        Marketing
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Presencial
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      Curso sobre Direccion de equipos de venta, proporcionar
+                      una visión estratégica y global de la empresa, siendo la
+                      dirección y ventas un pilar fundamental en la toma de
+                      decisiones de las organizaciones..
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">6.900</span>€
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix informatica online">
+              <div class="col-12 d-flex flex-row justify-content-center">
+                <div
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                >
+                  <img
+                    src="images/Curso5.jpg"
+                    class="card-img-top mr-3"
+                    style="width: 200px; height: 200px;"
+                    alt="Curso5"
+                  />
+                  <div
+                    class="card-body d-flex flex-column justify-content-center mx-3"
+                  >
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                    >
+                      PreBootcamp HTML & CSS
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        Informática
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Online
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      Curso sobre HTML y CSS, aprende a montar desde cero una
+                      pagina web compleja. No son necesarios conocimientos
+                      previos de programacion.
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">400</span>€
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix rrhh presencial">
+              <div class="col-12 d-flex flex-row justify-content-center">
+                <div
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                >
+                  <img
+                    src="images/Curso6.jpg"
+                    class="card-img-top mr-3"
+                    style="width: 200px; height: 200px;"
+                    alt="Curso6"
+                  />
+                  <div
+                    class="card-body mx-3 d-flex flex-column justify-content-center"
+                  >
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                    >
+                      MBA en Recursos Humanos
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        RRHH
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Presencial
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      El alumno estudiará la gestión contable, tributaria y de
+                      liquidaciones, así como la estructura organizativa o la
+                      correcta ejecución de una selección de personal
+                      cualificado, entre otros aspectos.
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">5.600</span>€
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix informatica presencial">
+              <div class="col-12 d-flex flex-row justify-content-center">
+                <div
+                  class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                >
+                  <img
+                    src="images/Curso7.png"
+                    class="card-img-top mr-3"
+                    style="width: 200px; height: 200px;"
+                    alt="Curso7"
+                  />
+                  <div
+                    class="card-body mx-3 d-flex flex-column justify-content-center"
+                  >
+                    <h5
+                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                    >
+                      Bootcamp React
+                    </h5>
+                    <div class="d-flex flex-row justify-content-around">
+                      <h6 class="border border-secondary rounded p-1">
+                        Informática
+                      </h6>
+                      <h6 class="border border-secondary rounded p-1">
+                        Presencial
+                      </h6>
+                    </div>
+                    <p class="card-text">
+                      Curso sobre React, aprende a montar desde cero una API
+                      compleja en Typescrip. Son necesarios conocimientos
+                      previos de programacion.
+                    </p>
+                    <div class="d-flex flex-row justify-content-around">
+                      <a
+                        href="detailShop.html"
+                        class="btn btn-primary font-weight-bold px-4"
+                        >Ver Detalles</a
+                      >
+                      <button
+                        class="btn btn-primary font-weight-bold px-4"
+                        name="count_click"
+                      >
+                        Comprar <span class="price">3.000</span>€
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="mix marketing">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso2.png"
-                  class="card-img-top mr-3"
-                  style="width: 200px; height: 200px;"
-                  alt="Curso2"
-                />
-                <div
-                  class="card-body mx-3 d-flex flex-column justify-content-center"
-                >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                  >
-                    Marketing Digital
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      Marketing
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Semi-presencial
-                    </h6>
-                  </div>
-                  <p class="card-text">
-                    Curso sobre Marketing Digital donde podras adquirir las
-                    claves digitales del mundo global y aplicar tu estrategia de
-                    marketing Digital.
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
-                    >
-                    <a href="" class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">1.900</span>€</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mix rrhh">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso3.jpg"
-                  class="card-img-top mr-3"
-                  style="width: 200px; height: 200px;"
-                  alt="Curso3"
-                />
-                <div
-                  class="card-body mx-3 d-flex flex-column justify-content-center"
-                >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                  >
-                    Administrativo de Personal
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      RRHH
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Semi-presencial
-                    </h6>
-                  </div>
-                  <p class="card-text">
-                    Curso sobre Administraticion de Personal donde aprenderás a
-                    gestionar los procedimientos administrativos del personal de
-                    tu empresa.
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
-                    >
-                    <a href="" class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">850</span>€</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mix marketing">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso4.jpg"
-                  class="card-img-top mr-3"
-                  style="width: 200px; height: 200px;"
-                  alt="Curso4"
-                />
-                <div
-                  class="card-body mx-3 d-flex flex-column justify-content-center"
-                >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                  >
-                    Dirección de Ventas
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      Marketing
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Presencial
-                    </h6>
-                  </div>
-                  <p class="card-text">
-                    Curso sobre Direccion de equipos de venta, proporcionar una
-                    visión estratégica y global de la empresa, siendo la
-                    dirección y ventas un pilar fundamental en la toma de
-                    decisiones de las organizaciones..
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
-                    >
-                    <a href="" class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">6.900</span>€</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mix informatica">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso5.jpg"
-                  class="card-img-top mr-3"
-                  style="width: 200px; height: 200px;"
-                  alt="Curso5"
-                />
-                <div
-                  class="card-body d-flex flex-column justify-content-center mx-3"
-                >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                  >
-                    PreBootcamp HTML & CSS
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      Informática
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Online
-                    </h6>
-                  </div>
-                  <p class="card-text">
-                    Curso sobre HTML y CSS, aprende a montar desde cero una
-                    pagina web compleja. No son necesarios conocimientos previos
-                    de programacion.
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
-                    >
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">400</span>€</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mix rrhh">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso6.jpg"
-                  class="card-img-top mr-3"
-                  style="width: 200px; height: 200px;"
-                  alt="Curso6"
-                />
-                <div
-                  class="card-body mx-3 d-flex flex-column justify-content-center"
-                >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                  >
-                    MBA en Recursos Humanos
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      RRHH
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Presencial
-                    </h6>
-                  </div>
-                  <p class="card-text">
-                    El alumno estudiará la gestión contable, tributaria y de
-                    liquidaciones, así como la estructura organizativa o la
-                    correcta ejecución de una selección de personal cualificado,
-                    entre otros aspectos.
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
-                    >
-                    <a href="" class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">5.600</span>€</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mix informatica">
-            <div class="col-12 d-flex flex-row justify-content-center">
-              <div
-                class="card mx-3 d-flex flex-column align-items-center flex-md-row"
-              >
-                <img
-                  src="images/Curso7.png"
-                  class="card-img-top mr-3"
-                  style="width: 200px; height: 200px;"
-                  alt="Curso7"
-                />
-                <div
-                  class="card-body mx-3 d-flex flex-column justify-content-center"
-                >
-                  <h5
-                    class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                  >
-                    Bootcamp React
-                  </h5>
-                  <div class="d-flex flex-row justify-content-around">
-                    <h6 class="border border-secondary rounded p-1">
-                      Informática
-                    </h6>
-                    <h6 class="border border-secondary rounded p-1">
-                      Presencial
-                    </h6>
-                  </div>
-                  <p class="card-text">
-                    Curso sobre React, aprende a montar desde cero una API
-                    compleja en Typescrip. Son necesarios conocimientos previos
-                    de programacion.
-                  </p>
-                  <div class="d-flex flex-row justify-content-around">
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Ver Detalles</a
-                    >
-                    <a
-                      href="detailShop.html"
-                      class="btn btn-primary font-weight-bold px-4"
-                      >Comprar <span class="price">3.000</span>€</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <script src="Abel_filtrado/mixitup.min.js"></script>
+          <script>
+            // In this example, we must bind a 'change' event handler to
+            // our checkboxes, then interact with the mixer via
+            // its .filter() API methods.
 
-        <script src="Abel_filtrado/mixitup.min.js"></script>
-        <script>
-          // In this example, we must bind a 'change' event handler to
-          // our checkboxes, then interact with the mixer via
-          // its .filter() API methods.
+            var containerEl = document.querySelector('.container');
+            var checkboxGroup = document.querySelector('.checkbox-group');
+            var checkboxes = checkboxGroup.querySelectorAll(
+              'input[type="checkbox"]'
+            );
+            var allCheckbox = checkboxGroup.querySelector('input[value="all"]');
 
-          var containerEl = document.querySelector('.container');
-          var checkboxGroup = document.querySelector('.checkbox-group');
-          var checkboxes = checkboxGroup.querySelectorAll(
-            'input[type="checkbox"]'
-          );
-          var allCheckbox = checkboxGroup.querySelector('input[value="all"]');
+            var mixer = mixitup(containerEl);
 
-          var mixer = mixitup(containerEl);
+            checkboxGroup.addEventListener('change', function (e) {
+              var selectors = [];
+              var checkbox;
+              var i;
 
-          checkboxGroup.addEventListener('change', function (e) {
-            var selectors = [];
-            var checkbox;
-            var i;
+              if (e.target === allCheckbox && e.target.checked) {
+                // If the "all" checkbox was checked, uncheck all other checkboxes
 
-            if (e.target === allCheckbox && e.target.checked) {
-              // If the "all" checkbox was checked, uncheck all other checkboxes
+                for (i = 0; i < checkboxes.length; i++) {
+                  checkbox = checkboxes[i];
+
+                  if (checkbox !== allCheckbox) checkbox.checked = false;
+                }
+              } else {
+                // Another checkbox was changed, uncheck "all".
+
+                allCheckbox.checked = false;
+              }
+
+              // Iterate through all checkboxes, pushing the
+              // values of those that are checked into an array
 
               for (i = 0; i < checkboxes.length; i++) {
                 checkbox = checkboxes[i];
 
-                if (checkbox !== allCheckbox) checkbox.checked = false;
+                if (checkbox.checked) selectors.push(checkbox.value);
               }
-            } else {
-              // Another checkbox was changed, uncheck "all".
 
-              allCheckbox.checked = false;
-            }
+              // If there are values in the array, join it into a string
+              // using your desired logic, and send to the mixer's .filter()
+              // method, otherwise filter by 'all'
 
-            // Iterate through all checkboxes, pushing the
-            // values of those that are checked into an array
+              var selectorString =
+                selectors.length > 0
+                  ? selectors.join(',') // or '.' for AND logic
+                  : 'all';
 
-            for (i = 0; i < checkboxes.length; i++) {
-              checkbox = checkboxes[i];
-
-              if (checkbox.checked) selectors.push(checkbox.value);
-            }
-
-            // If there are values in the array, join it into a string
-            // using your desired logic, and send to the mixer's .filter()
-            // method, otherwise filter by 'all'
-
-            var selectorString =
-              selectors.length > 0
-                ? selectors.join(',') // or '.' for AND logic
-                : 'all';
-
-            mixer.filter(selectorString);
-          });
-        </script>
-        <!-- FOOTER -->
-        <div class="row colocar-footer m-0" style="width: 95%;">
-          <div
-            class="col-12 col-md-6 mt-1 d-flex flex-row justify-content-center"
-          >
-            <p class="text-footer mb-1">
-              ® Copyright &nbsp
-            </p>
-            <p class="text-footer mb-1" style="color: blueviolet;">
-              Creative Tim & Updivision
-            </p>
-          </div>
-          <div
-            class="col-12 col-md-6 px-0 mt-0 d-flex flex-row justify-content-center"
-          >
-            <a class="text-footer mb-1">
-              Creative Tim
-            </a>
-            <a class="text-footer ml-2 mb-1">
-              Updivision
-            </a>
-            <a class="text-footer ml-2 mb-1">
-              About Us
-            </a>
-            <a class="text-footer ml-2 mb-1">
-              Blog
-            </a>
-            <div class="text-footer ml-2 mb-1">
-              MIT License
+              mixer.filter(selectorString);
+            });
+          </script>
+          <script>
+            //PONE EL CONTADOR A 0
+            var count_click = 0;
+            //AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
+            function count_click_add() {
+              count_click += 1;
+              console.log(count_click);
+            } //MUESTRA CUANTOS CLICK LLEVAMOS
+            $('#count_click').text(count_click);
+            //AÑADE A TODOS LOS BOTONES CON EL NAME count_click QUE AL SER PULSADOS EJECUTEN EL CONTADOR
+            $(document).ready(function () {
+              $("button[name='count_click']").click(function () {
+                count_click_add();
+                document.getElementById('contador').innerHTML = count_click;
+              });
+            });
+          </script>
+          <!-- FOOTER -->
+          <div class="row colocar-footer m-0" style="width: 95%;">
+            <div
+              class="col-12 col-md-6 mt-1 d-flex flex-row justify-content-center"
+            >
+              <p class="text-footer mb-1">
+                ® Copyright &nbsp
+              </p>
+              <p class="text-footer mb-1" style="color: blueviolet;">
+                Creative Tim & Updivision
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 px-0 mt-0 d-flex flex-row justify-content-center"
+            >
+              <a class="text-footer mb-1">
+                Creative Tim
+              </a>
+              <a class="text-footer ml-2 mb-1">
+                Updivision
+              </a>
+              <a class="text-footer ml-2 mb-1">
+                About Us
+              </a>
+              <a class="text-footer ml-2 mb-1">
+                Blog
+              </a>
+              <div class="text-footer ml-2 mb-1">
+                MIT License
+              </div>
             </div>
           </div>
+          <!-- Footer End -->
         </div>
-        <!-- Footer End -->
       </div>
     </div>
   </body>
