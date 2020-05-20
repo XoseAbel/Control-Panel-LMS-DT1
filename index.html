@@ -1,200 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style/style_login_register.css" />
-    <script
-      src="https://kit.fontawesome.com/103d4b6503.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <div
-      class="container-fluid bg-gradient-primary"
-      style="background: linear-gradient(to right, #5e72e4 0, #825ee4);"
-    >
-      <header>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 my-5">
-            <h3 class="text-white text-center font-weight-bold">
-              Bienvenidos a Argon <br />
-              Dashboard FREE
-            </h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Argon</title>
+  <link rel="stylesheet" href="style/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/103d4b6503.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a class="navbar-brand" href="#" style="width: 150px;">
+            <img src="images/logo.png" class="navbar-brand-img img-fluid" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="shop.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="register.html">Unirse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="#">Acerca de</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </header>
-    </div>
-    <!-- Header END -->
-
-    <div
-      class="separator"
-      style="background: linear-gradient(to right, #5e72e4 0, #825ee4);"
-    >
-      <svg x="0" y="0" viewBox="0 0 1600 100">
-        <polygon
-          points="1600 0 1600 100 0 100"
-          style="fill: #343a40;"
-        ></polygon>
-      </svg>
-    </div>
-
-    <!-- Main content -->
-    <div class="container-fluid bg-dark vh-100">
-      <div class="row justify-content-center">
-        <div class="col-10 col-md-8 col-lg-6 col-xl-4">
-          <!-- Card -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card bg-light border-0 mb-0">
-                <div class="card-header bg-transparent pb-5">
-                  <div class="row justify-content-center">
-                    <div class="card-header-text text-muted mt-2 mb-3">
-                      <small>Iniciar sesión con</small>
-                    </div>
-                  </div>
-
-                  <div class="row justify-content-center">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-neutral border mr-4">
-                        <span class="btn-icon"
-                          ><i class="fab fa-github"></i
-                        ></span>
-                        <span class="btn-text">Github</span>
-                      </a>
-                      <a href="#" class="btn btn-neutral border">
-                        <span class="btn-icon"
-                          ><i class="fab fa-google"></i
-                        ></span>
-                        <span class="btn-text">Google</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-md-5 py-md-5">
-                  <div class="card-body-text text-center text-muted mb-4">
-                    <small
-                      ><a href="register.html">Crear cuenta nueva</a> | Iniciar
-                      sesión con estas credenciales: Username
-                      <span class="font-weight-bold">admin@argon.com</span>
-                      Password
-                      <span class="font-weight-bold">secret</span>
-                    </small>
-                  </div>
-                  <form role="form">
-                    <div class="form-group mb-3">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="fas fa-envelope"></i
-                          ></span>
-                        </div>
-                        <input
-                          class="form-control"
-                          placeholder="admin@argon.com"
-                          type="email"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="fas fa-lock-open"></i
-                          ></span>
-                        </div>
-                        <input
-                          class="form-control"
-                          placeholder="******"
-                          type="password"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" />
-                      <label class="form-check-label">
-                        <span class="text-muted">
-                          <small>Recuérdame</small></span
-                        >
-                      </label>
-                    </div>
-                    <div class="text-center">
-                      <a href="dashboard.html"
-                        ><button
-                          type="button"
-                          class="btn btn-primary my-4"
-                          style="background-color: #5e72e4;"
-                        >
-                          Iniciar sesión
-                        </button></a
-                      >
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card END  -->
-
-          <!-- Account options -->
-          <div class="row">
-            <div class="col-6">
-              <a href="#" class="options-text text-light"
-                ><small>¿Olvidaste la contraseña?</small></a
-              >
-            </div>
-            <div class="col-6 text-right">
-              <a href="register.html" class="options-text text-light"
-                ><small>Crear cuenta nueva</small></a
-              >
-            </div>
-          </div>
-          <!-- Account options END -->
-        </div>
+        </nav>
       </div>
     </div>
 
-    <div class="container-fluid bg-dark py-3">
-      <!-- Footer -->
-      <footer class="row align-items-center">
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-          <div class="link-footer text-muted">
-            © 2020 Creative Tim & Updivision
-          </div>
+    <div class="row">
+      <div class="card col-12">
+        <img class="card-img img-fluid" src="images/hero-slide.jpg">
+        <div class="card-img-overlay d-flex flex-column justify-content-center text-dark">
+          <h4 class="card-title mt-2 text-center text-white">Impulsa tu carrera laboral con cursos de informática,
+            marketing y recursos humanos</h4>
         </div>
-
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-          <a href="#" class="link-footer text-muted ml-2">Creative Tim</a>
-
-          <a href="#" class="link-footer text-muted ml-2">Updivision</a>
-
-          <a href="#" class="link-footer text-muted ml-2">About Us</a>
-
-          <a href="#" class="link-footer text-muted ml-2">Blog</a>
-
-          <a href="#" class="link-footer text-muted ml-2">MIT License</a>
-        </div>
-      </footer>
-      <!-- Footer END-->
+      </div>
     </div>
-  </body>
+  </div>
+
+
+  <div class="row align-items-center mt-5">
+  
+    <div class="col-6 col-lg-5">
+      <img src="/images/devices.svg" alt="" class="img-fluid">
+    </div>
+  
+    <div class="col-6 col-lg-7">
+      <div class="row justify-content-center">
+          <h3>Disponible en todos los dispositivos</h3>
+      </div>
+      <div class="row justify-content-center mt-3">
+          <a href="register.html"> <button type="button" class="btn btn-lg text-white"
+              style="background-color: #5e72e4;">Únete a Argon</button></a>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-4">
+          <img src="/images/320px-Google_Play_Store_badge_EN.svg.png" class="img-fluid" width="152" height="45">
+        </div>
+        <div class="col-4">
+          <img src="/images/320px-Download_on_the_App_Store_Badge.svg.png" class="img-fluid" width="152" height="45">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+
 </html>
