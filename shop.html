@@ -559,8 +559,8 @@
           // our checkboxes, then interact with the mixer via
           // its .filter() API methods.
 
-          var containerEl = document.querySelector('.container');
-          var checkboxGroup = document.querySelector('.checkbox-group');
+          var containerEl = document.querySelector(".container");
+          var checkboxGroup = document.querySelector(".checkbox-group");
           var checkboxes = checkboxGroup.querySelectorAll(
             'input[type="checkbox"]'
           );
@@ -568,7 +568,7 @@
 
           var mixer = mixitup(containerEl);
 
-          checkboxGroup.addEventListener('change', function (e) {
+          checkboxGroup.addEventListener("change", function (e) {
             var selectors = [];
             var checkbox;
             var i;
@@ -602,8 +602,8 @@
 
             var selectorString =
               selectors.length > 0
-                ? selectors.join(',') // or '.' for AND logic
-                : 'all';
+                ? selectors.join(",") // or '.' for AND logic
+                : "all";
 
             mixer.filter(selectorString);
           });
