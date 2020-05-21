@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style_dashboard.css" />
     <link rel="stylesheet" href="style/style-suso.css" />
+    <script src="prueba.js"></script>
     <title>Argon cursos online</title>
   </head>
   <body>
@@ -93,7 +94,7 @@
                 </div>
                 <div class="col pl-1">
                   <h6 class="mb-0">Cesta</h6>
-                  <span>(3)</span>
+                  <span id="contador">3</span>
                 </div>
               </button>
             </div>
@@ -101,166 +102,228 @@
           <!-- BODY -->
           <div class="row">
             <div class="col-12 col-md-8 col-xl-9 order-2 order-md-1 p-2">
-              <div
-                class="mix marketing col-12 d-flex flex-row justify-content-center px-0"
-                style="background-color: rgb(245, 245, 245);"
-              >
+              <div id="course1">
                 <div
-                  class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
+                  class="mix marketing col-12 d-flex flex-row justify-content-center px-0"
+                  style="background-color: rgb(245, 245, 245);"
                 >
-                  <img
-                    src="images/Curso2.png"
-                    class="card-img-top mx-1 mt-3 mt-md-0"
-                    style="width: 200px; height: 200px;"
-                    alt="Curso2"
-                  />
                   <div
-                    class="card-body mx-1 d-flex flex-column justify-content-center"
+                    class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
                   >
-                    <h5
-                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+                    <img
+                      src="images/Curso2.png"
+                      class="card-img-top mx-1 mt-3 mt-md-0"
+                      style="width: 200px; height: 200px;"
+                      alt="Curso2"
+                    />
+                    <div
+                      class="card-body mx-1 d-flex flex-column justify-content-center"
                     >
-                      Marketing Digital
-                    </h5>
-                    <div class="d-flex flex-row justify-content-center">
-                      <h6
-                        class="border border-secondary rounded p-1"
-                        style="width: max-content;"
+                      <h5
+                        class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                       >
-                        Marketing
-                      </h6>
-                      <h6
-                        class="border border-secondary rounded p-1 ml-2 ml-lg-5"
-                        style="width: max-content;"
-                      >
-                        Semi-presencial
-                      </h6>
+                        Marketing Digital
+                      </h5>
+                      <div class="d-flex flex-row justify-content-center">
+                        <h6
+                          class="border border-secondary rounded p-1"
+                          style="width: max-content;"
+                        >
+                          Marketing
+                        </h6>
+                        <h6
+                          class="border border-secondary rounded p-1 ml-2 ml-lg-5"
+                          style="width: max-content;"
+                        >
+                          Semi-presencial
+                        </h6>
+                      </div>
+                      <p class="card-text">
+                        Curso sobre Marketing Digital donde podras adquirir las
+                        claves digitales del mundo global y aplicar tu
+                        estrategia de marketing Digital.
+                      </p>
+                      <p class="text-center font-weight-bold">
+                        Precio: 500.00€
+                      </p>
+                      <div class="d-flex flex-row justify-content-center">
+                        <a
+                          href="detailShop.html"
+                          style="width: max-content;"
+                          class="btn btn-primary font-weight-bold px-2"
+                        >
+                          Detalles</a
+                        >
+                        <button
+                          onclick="muestra_oculta('course1'); mostrarnoarticles('noarticles')"
+                          class="btn btn-primary font-weight-bold px-2 ml-2 ml-lg-5"
+                          style="width: max-content;"
+                          name="count_click"
+                        >
+                          Eliminar
+                        </button>
+                      </div>
                     </div>
-                    <p class="card-text">
-                      Curso sobre Marketing Digital donde podras adquirir las
-                      claves digitales del mundo global y aplicar tu estrategia
-                      de marketing Digital.
-                    </p>
-                    <div class="d-flex flex-row justify-content-center">
-                      <a
-                        href="detailShop.html"
-                        style="width: max-content;"
-                        class="btn btn-primary font-weight-bold px-2"
+                  </div>
+                </div>
+              </div>
+              <div id="course2">
+                <div
+                  class="mix marketing col-12 d-flex flex-row justify-content-center px-0"
+                  style="background-color: rgb(245, 245, 245);"
+                >
+                  <div
+                    class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
+                  >
+                    <img
+                      src="images/Curso1.png"
+                      class="card-img-top mx-1 mt-3 mt-md-0"
+                      style="width: 200px; height: 200px;"
+                      alt="Curso2"
+                    />
+                    <div
+                      class="card-body mx-1 d-flex flex-column justify-content-center"
+                    >
+                      <h5
+                        class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                       >
-                        Detalles</a
+                        Bootstrap for dummies
+                      </h5>
+                      <div class="d-flex flex-row justify-content-center">
+                        <h6
+                          class="border border-secondary rounded p-1"
+                          style="width: max-content;"
+                        >
+                          Informática
+                        </h6>
+                        <h6
+                          class="border border-secondary rounded p-1 ml-2 ml-lg-5"
+                          style="width: max-content;"
+                        >
+                          Online
+                        </h6>
+                      </div>
+                      <p class="card-text">
+                        Curso sobre Bootstrap, aprende a montar desde cero una
+                        pagina web compleja. No son necesarios conocimientos
+                        previos de programacion.
+                      </p>
+                      <p class="font-weight-bold text-center">
+                        Precio: 300.00€
+                      </p>
+                      <div class="d-flex flex-row justify-content-center">
+                        <a
+                          href="detailShop.html"
+                          style="width: max-content;"
+                          class="btn btn-primary font-weight-bold px-2"
+                        >
+                          Detalles</a
+                        >
+                        <button
+                          onclick="muestra_oculta('course2'); mostrarnoarticles('noarticles')"
+                          class="btn btn-primary font-weight-bold px-2 ml-2 ml-lg-5"
+                          style="width: max-content;"
+                          name="count_click"
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="course3">
+                <div
+                  class="mix marketing col-12 d-flex flex-row justify-content-center px-0"
+                  style="background-color: rgb(245, 245, 245);"
+                >
+                  <div
+                    class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
+                  >
+                    <img
+                      src="images/Curso3.jpg"
+                      class="card-img-top mx-1 mt-3 mt-md-0"
+                      style="width: 200px; height: 200px;"
+                      alt="Curso2"
+                    />
+                    <div
+                      class="card-body mx-1 d-flex flex-column justify-content-center"
+                    >
+                      <h5
+                        class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                       >
-                      <a
-                        href=""
-                        class="btn btn-primary font-weight-bold px-2 ml-2 ml-lg-5"
-                        style="width: max-content;"
-                        >Eliminar</a
-                      >
+                        Administrativo de personal
+                      </h5>
+                      <div class="d-flex flex-row justify-content-center">
+                        <h6
+                          class="border border-secondary rounded p-1"
+                          style="width: max-content;"
+                        >
+                          RRHH
+                        </h6>
+                        <h6
+                          class="border border-secondary rounded p-1 ml-2 ml-lg-5"
+                          style="width: max-content;"
+                        >
+                          Semi-presencial
+                        </h6>
+                      </div>
+                      <p class="card-text">
+                        Curso sobre Marketing Digital donde podras adquirir las
+                        claves digitales del mundo global y aplicar tu
+                        estrategia de marketing Digital.
+                      </p>
+                      <p class="font-weight-bold text-center">
+                        Precio: 800.00€
+                      </p>
+                      <div class="d-flex flex-row justify-content-center">
+                        <a
+                          href="detailShop.html"
+                          style="width: max-content;"
+                          class="btn btn-primary font-weight-bold px-2"
+                        >
+                          Detalles</a
+                        >
+                        <button
+                          onclick="muestra_oculta('course3'); mostrarnoarticles('noarticles')"
+                          class="btn btn-primary font-weight-bold px-2 ml-2 ml-lg-5"
+                          style="width: max-content;"
+                          name="count_click"
+                        >
+                          Eliminar
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="mix marketing col-12 d-flex flex-row justify-content-center px-0"
-                style="background-color: rgb(245, 245, 245);"
+                style="display: none; font-size: 20px;"
+                id="noarticles"
+                class="font-weight-bold"
               >
-                <div
-                  class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
-                >
-                  <img
-                    src="images/Curso2.png"
-                    class="card-img-top mx-2"
-                    style="width: 200px; height: 200px;"
-                    alt="Curso2"
-                  />
-                  <div
-                    class="card-body mx-3 d-flex flex-column justify-content-center"
-                  >
-                    <h5
-                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                    >
-                      Marketing Digital
-                    </h5>
-                    <div class="d-flex flex-row justify-content-around">
-                      <h6 class="border border-secondary rounded p-1">
-                        Marketing
-                      </h6>
-                      <h6 class="border border-secondary rounded p-1">
-                        Semi-presencial
-                      </h6>
-                    </div>
-                    <p class="card-text">
-                      Curso sobre Marketing Digital donde podras adquirir las
-                      claves digitales del mundo global y aplicar tu estrategia
-                      de marketing Digital.
-                    </p>
-                    <div class="d-flex flex-row justify-content-around">
-                      <a
-                        href="detailShop.html"
-                        class="btn btn-primary font-weight-bold px-4"
-                        >Ver Detalles</a
-                      >
-                      <a href="" class="btn btn-primary font-weight-bold px-4"
-                        >Eliminar</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="mix marketing col-12 d-flex flex-row justify-content-center px-0"
-                style="background-color: rgb(245, 245, 245);"
-              >
-                <div
-                  class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
-                >
-                  <img
-                    src="images/Curso2.png"
-                    class="card-img-top mx-2"
-                    style="width: 200px; height: 200px;"
-                    alt="Curso2"
-                  />
-                  <div
-                    class="card-body mx-3 d-flex flex-column justify-content-center"
-                  >
-                    <h5
-                      class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
-                    >
-                      Marketing Digital
-                    </h5>
-                    <div class="d-flex flex-row justify-content-around">
-                      <h6 class="border border-secondary rounded p-1">
-                        Marketing
-                      </h6>
-                      <h6 class="border border-secondary rounded p-1">
-                        Semi-presencial
-                      </h6>
-                    </div>
-                    <p class="card-text">
-                      Curso sobre Marketing Digital donde podras adquirir las
-                      claves digitales del mundo global y aplicar tu estrategia
-                      de marketing Digital.
-                    </p>
-                    <div class="d-flex flex-row justify-content-around">
-                      <a
-                        href="detailShop.html"
-                        class="btn btn-primary font-weight-bold px-4"
-                        >Ver Detalles</a
-                      >
-                      <a href="" class="btn btn-primary font-weight-bold px-4"
-                        >Eliminar</a
-                      >
-                    </div>
-                  </div>
-                </div>
+                <p>Su cesta no contiene ningún artículo.</p>
+                <p style="font-size: 15px; font-weight: 400;">
+                  Click
+                  <a href="shop.html" class="link-decoration">aqui</a> para ver
+                  el listado de cursos que disponemos en estos momentos.
+                </p>
               </div>
             </div>
             <div class="col-12 col-md-4 col-xl-3 order-1 order-md-2 p-2 mt-2">
               <div
                 class="border rounded d-flex flex-column justify-content-center bg-white"
               >
-                <p class="mt-2 font-weight-bold" style="align-self: center;">
-                  Subtotal (3) productos: 500.00€
-                </p>
+                <div
+                  class="d-flex flex-row justify-content-center font-weight-bold"
+                >
+                  <p class="mt-2">
+                    Total (
+                  </p>
+                  <p id="contador2" class="mt-2">3</p>
+
+                  <p class="mt-2">) productos: 500.00€</p>
+                </div>
                 <a
                   href="#"
                   class="btn rounded bg-info text-white mb-2"
@@ -337,57 +400,21 @@
           </div>
           <script src="Abel_filtrado/mixitup.min.js"></script>
           <script>
-            // In this example, we must bind a 'change' event handler to
-            // our checkboxes, then interact with the mixer via
-            // its .filter() API methods.
-
-            var containerEl = document.querySelector(".container");
-            var checkboxGroup = document.querySelector(".checkbox-group");
-            var checkboxes = checkboxGroup.querySelectorAll(
-              'input[type="checkbox"]'
-            );
-            var allCheckbox = checkboxGroup.querySelector('input[value="all"]');
-
-            var mixer = mixitup(containerEl);
-
-            checkboxGroup.addEventListener("change", function (e) {
-              var selectors = [];
-              var checkbox;
-              var i;
-
-              if (e.target === allCheckbox && e.target.checked) {
-                // If the "all" checkbox was checked, uncheck all other checkboxes
-
-                for (i = 0; i < checkboxes.length; i++) {
-                  checkbox = checkboxes[i];
-
-                  if (checkbox !== allCheckbox) checkbox.checked = false;
-                }
-              } else {
-                // Another checkbox was changed, uncheck "all".
-
-                allCheckbox.checked = false;
-              }
-
-              // Iterate through all checkboxes, pushing the
-              // values of those that are checked into an array
-
-              for (i = 0; i < checkboxes.length; i++) {
-                checkbox = checkboxes[i];
-
-                if (checkbox.checked) selectors.push(checkbox.value);
-              }
-
-              // If there are values in the array, join it into a string
-              // using your desired logic, and send to the mixer's .filter()
-              // method, otherwise filter by 'all'
-
-              var selectorString =
-                selectors.length > 0
-                  ? selectors.join(",") // or '.' for AND logic
-                  : "all";
-
-              mixer.filter(selectorString);
+            //PONE EL CONTADOR A 0
+            var count_click = 3;
+            //AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
+            function count_click_add() {
+              count_click -= 1;
+            }
+            //MUESTRA CUANTOS CLICK LLEVAMOS
+            $("#count_click").text(count_click);
+            //AÑADE A TODOS LOS BOTONES CON EL NAME count_click QUE AL SER PULSADOS EJECUTEN EL CONTADOR
+            $(document).ready(function () {
+              $("button[name='count_click']").click(function () {
+                count_click_add();
+                document.getElementById("contador").innerHTML = count_click;
+                document.getElementById("contador2").innerHTML = count_click;
+              });
             });
           </script>
         </div>

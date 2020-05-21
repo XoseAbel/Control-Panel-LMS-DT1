@@ -143,6 +143,9 @@
                         claves digitales del mundo global y aplicar tu
                         estrategia de marketing Digital.
                       </p>
+                      <p class="text-center font-weight-bold">
+                        Precio: 500.00€
+                      </p>
                       <div class="d-flex flex-row justify-content-center">
                         <a
                           href="detailShop.html"
@@ -173,7 +176,7 @@
                     class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
                   >
                     <img
-                      src="images/Curso2.png"
+                      src="images/Curso1.png"
                       class="card-img-top mx-1 mt-3 mt-md-0"
                       style="width: 200px; height: 200px;"
                       alt="Curso2"
@@ -184,26 +187,29 @@
                       <h5
                         class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                       >
-                        Marketing Digital
+                        Bootstrap for dummies
                       </h5>
                       <div class="d-flex flex-row justify-content-center">
                         <h6
                           class="border border-secondary rounded p-1"
                           style="width: max-content;"
                         >
-                          Marketing
+                          Informática
                         </h6>
                         <h6
                           class="border border-secondary rounded p-1 ml-2 ml-lg-5"
                           style="width: max-content;"
                         >
-                          Semi-presencial
+                          Online
                         </h6>
                       </div>
                       <p class="card-text">
-                        Curso sobre Marketing Digital donde podras adquirir las
-                        claves digitales del mundo global y aplicar tu
-                        estrategia de marketing Digital.
+                        Curso sobre Bootstrap, aprende a montar desde cero una
+                        pagina web compleja. No son necesarios conocimientos
+                        previos de programacion.
+                      </p>
+                      <p class="font-weight-bold text-center">
+                        Precio: 300.00€
                       </p>
                       <div class="d-flex flex-row justify-content-center">
                         <a
@@ -235,7 +241,7 @@
                     class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
                   >
                     <img
-                      src="images/Curso2.png"
+                      src="images/Curso3.jpg"
                       class="card-img-top mx-1 mt-3 mt-md-0"
                       style="width: 200px; height: 200px;"
                       alt="Curso2"
@@ -246,14 +252,14 @@
                       <h5
                         class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
                       >
-                        Marketing Digital
+                        Administrativo de personal
                       </h5>
                       <div class="d-flex flex-row justify-content-center">
                         <h6
                           class="border border-secondary rounded p-1"
                           style="width: max-content;"
                         >
-                          Marketing
+                          RRHH
                         </h6>
                         <h6
                           class="border border-secondary rounded p-1 ml-2 ml-lg-5"
@@ -266,6 +272,9 @@
                         Curso sobre Marketing Digital donde podras adquirir las
                         claves digitales del mundo global y aplicar tu
                         estrategia de marketing Digital.
+                      </p>
+                      <p class="font-weight-bold text-center">
+                        Precio: 800.00€
                       </p>
                       <div class="d-flex flex-row justify-content-center">
                         <a
@@ -288,17 +297,33 @@
                   </div>
                 </div>
               </div>
-              <div style="display: none;" id="noarticles">
-                No hay articulos en su cesta
+              <div
+                style="display: none; font-size: 20px;"
+                id="noarticles"
+                class="font-weight-bold"
+              >
+                <p>Su cesta no contiene ningún artículo.</p>
+                <p style="font-size: 15px; font-weight: 400;">
+                  Click
+                  <a href="shop.html" class="link-decoration">aqui</a> para ver
+                  el listado de cursos que disponemos en estos momentos.
+                </p>
               </div>
             </div>
             <div class="col-12 col-md-4 col-xl-3 order-1 order-md-2 p-2 mt-2">
               <div
                 class="border rounded d-flex flex-column justify-content-center bg-white"
               >
-                <p class="mt-2 font-weight-bold" style="align-self: center;">
-                  Subtotal (3) productos: 500.00€
-                </p>
+                <div
+                  class="d-flex flex-row justify-content-center font-weight-bold"
+                >
+                  <p class="mt-2">
+                    Total (
+                  </p>
+                  <p id="contador2" class="mt-2">3</p>
+
+                  <p class="mt-2">) productos: 500.00€</p>
+                </div>
                 <a
                   href="#"
                   class="btn rounded bg-info text-white mb-2"
@@ -388,6 +413,7 @@
               $("button[name='count_click']").click(function () {
                 count_click_add();
                 document.getElementById("contador").innerHTML = count_click;
+                document.getElementById("contador2").innerHTML = count_click;
               });
             });
           </script>
