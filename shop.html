@@ -21,6 +21,7 @@
       src="https://kit.fontawesome.com/103d4b6503.js"
       crossorigin="anonymous"
     ></script>
+    <script src="Abel_filtrado/search.js"></script>
     <link href="Abel_filtrado/reset.css" rel="stylesheet" />
     <link href="Abel_filtrado/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/bootstrap.min.css" />
@@ -162,10 +163,13 @@
               class="col-12 col-md-7 col-lg-8 mt-3 d-flex justify-content-center justify-content-md-end order-3 order-md-2"
             >
               <input
+                id="myFilter"
                 type="text"
                 class="search-background pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
+                onkeyup="myFunction()"
                 placeholder="Search"
               />
+              <!-- cambiar texto a blanco -->
             </div>
           </div>
           <!-- Search Area End -->
@@ -220,13 +224,15 @@
             </div>
           </div>
           <!-- Info Area End -->
-          <div class="row">
+          <div class="row" id="myItems">
             <div class="col-12 col-lg-10 order-2 order-lg-1">
               <div class="container">
                 <div class="mix informatica online">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso1.PNG"
@@ -258,11 +264,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="300"
                           >
@@ -274,9 +280,11 @@
                   </div>
                 </div>
                 <div class="mix marketing semi">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso2.png"
@@ -308,11 +316,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="1900"
                           >
@@ -324,9 +332,11 @@
                   </div>
                 </div>
                 <div class="mix rrhh semi">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso3.jpg"
@@ -358,11 +368,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="850"
                           >
@@ -374,9 +384,11 @@
                   </div>
                 </div>
                 <div class="mix marketing presencial">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso4.jpg"
@@ -410,11 +422,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="6900"
                           >
@@ -426,9 +438,11 @@
                   </div>
                 </div>
                 <div class="mix informatica online">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso5.jpg"
@@ -460,11 +474,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="400"
                           >
@@ -476,9 +490,11 @@
                   </div>
                 </div>
                 <div class="mix rrhh presencial">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso6.jpg"
@@ -511,11 +527,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="5600"
                           >
@@ -527,9 +543,11 @@
                   </div>
                 </div>
                 <div class="mix informatica presencial">
-                  <div class="col-12 d-flex flex-row justify-content-center">
+                  <div
+                    class="col-12 d-flex flex-row justify-content-center px-0"
+                  >
                     <div
-                      class="card mx-3 d-flex flex-column align-items-center flex-md-row"
+                      class="card pr-3 d-flex flex-column align-items-center flex-md-row"
                     >
                       <img
                         src="images/Curso7.png"
@@ -561,11 +579,11 @@
                         <div class="d-flex flex-row justify-content-around">
                           <a
                             href="detailShop.html"
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             >Ver Detalles</a
                           >
                           <button
-                            class="btn btn-primary font-weight-bold px-4"
+                            class="btn btn-primary font-weight-bold px-2 px-md-4 mx-2 mx-md-0"
                             name="count_click"
                             value="3000"
                           >
@@ -574,6 +592,14 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="notFound" style="display: none;">
+                  <div class="col-12 card py-3">
+                    <h5>
+                      Lamentablemente no disponemos de ningun curso con ese
+                      título
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -653,32 +679,43 @@
               <script>
                 //PONE EL CONTADOR A 0
                 var count_value = 0;
+                let total = 0;
                 //AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
                 function count_value_add(event) {
                   console.log(event);
                   count_value += +event.target.value;
                   console.log(count_value);
-                } //MUESTRA CUANTOS CLICK LLEVAMOS
+                }
+                function addingDot() {
+                  count_value > 999
+                    ? (total = new Intl.NumberFormat('de-DE').format(
+                        count_value
+                      ))
+                    : (total = count_value);
+                  console.log(total + 'prueba');
+                }
+                //MUESTRA CUANTO VALUE LLEVAMOS
                 $('#count_value').text(count_value);
                 //AÑADE A TODOS LOS BOTONES CON EL NAME count_value QUE AL SER PULSADOS EJECUTEN EL CONTADOR
                 $(document).ready(function () {
                   $("button[name='count_click']").click(function (event) {
                     count_value_add(event);
-                    document.getElementById('subtotal').innerHTML = count_value;
+                    addingDot();
+                    document.getElementById('subtotal').innerHTML = total; //cambiar a total
                   });
                 });
               </script>
             </div>
             <div class="col-12 col-lg-2 order-1 order-lg-2 px-0">
               <div
-                class="menu text-white py-4 px-2 d-flex justify-content-center"
-                style="margin-top: -1px;"
+                class="border rounded d-flex flex-column justify-content-center bg-white mx-lg-0"
+                style="margin: 16px 30px 16px 30px;"
               >
                 <button
                   type="button"
-                  class="btn btn-info px-2 py-3 d-flex flex-row"
+                  class="btn px-3 py-3 d-flex flex-row justify-content-center font-weight-bold"
                 >
-                  <p class="mb-0">SUBTOTAL&nbsp;</p>
+                  <p class="mb-0">Subtotal&nbsp;</p>
                   <span id="subtotal">0</span>
                   <p class="mb-0">&nbsp;€</p>
                 </button>
