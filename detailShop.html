@@ -23,45 +23,89 @@
     ></script>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style_dashboard.css" />
-    <title>Detail</title>
+    <link rel="stylesheet" href="Abel_filtrado/style.css" />
+    <link rel="icon" type="image/jpg" href="images/logonavegador.png" />
+    <title>Details</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div
-          class="col-12 col-lg-2 fix-top"
-          style="background-color: white;"
-        ></div>
-        <div
-          class="col-12 col-lg-10"
-          style="background-color: rgb(245, 245, 245);"
-        >
+        <div class="col-12" style="background-color: rgb(245, 245, 245);">
           <!-- SEARCH AREA -->
           <div class="row menu pb-3">
             <div
-              class="col-12 col-md-4 mt-5 pt-3 mt-md-3 pt-md-0 d-flex align-items-center"
+              class="col-12 d-flex flex-column flex-md-row mt-4 justify-content-center justify-content-md-between"
             >
-              <h3 class="text-white mb-0 font-weight-bold">
-                Detalle del curso
-              </h3>
-            </div>
-            <div
-              class="col-12 col-md-7 col-lg-8 mt-3 d-flex justify-content-center justify-content-md-end order-3 order-md-2"
-            >
+              <a href="index.html">
+                <img
+                  class="align-self-center mb-3 mb-md-0"
+                  src="images/whitelogo.png"
+                  width="200"
+                />
+              </a>
               <input
                 type="text"
-                class="search-background pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
+                class="search-background order-1 order-md-2 pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
                 placeholder="Search"
+                style="align-self: center;"
               />
             </div>
           </div>
-          <div class="col-12">
-            <a href="shop.html">Volver atras</a>
-          </div>
           <!-- Search Area End -->
+          <!-- INFO AREA -->
+          <div class="row menu fix-problem">
+            <div class="col-12 col-md-5 pt-2 mt-md-4">
+              <h2 class="font-weight-bold text-white">
+                Detalles del curso
+              </h2>
+              <p class="text-white font-weight-bold">
+                Seguir comprando en argon
+                <button
+                  class="btn border rounded bg-white p-0"
+                  onclick="window.location='shop.html'"
+                >
+                  <i
+                    style="color: #5e72e4;"
+                    class="fas fa-angle-double-right mx-2 p-0"
+                  ></i>
+                </button>
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-7 d-flex justify-content-center justify-content-md-end mb-2"
+            >
+              <button
+                type="button"
+                class="btn btn-info px-2 ml-1 ml-md-3 my-0 my-md-4"
+              >
+                Iniciar sesión
+              </button>
+              <button
+                type="button"
+                class="btn btn-info px-2 ml-1 ml-md-3 my-0 my-md-4"
+              >
+                Registro
+              </button>
+              <button
+                type="button"
+                class="btn ml-1 ml-md-3 my-0 my-md-4 btn-info d-flex flex-row px-2"
+              >
+                <div
+                  class="row justify-content-start mt-1 ml-1 mr-1"
+                  style="color: rgb(245, 245, 245);"
+                >
+                  <i class="fas fa-shopping-cart text-alert fa-2x"></i>
+                </div>
+                <div class="col pl-1">
+                  <h6 class="mb-0">Cesta</h6>
+                  <span id="contador">3</span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- Info Area End -->
           <!-- MAIN AREA-->
-
-          <div class="card pr-3">
+          <div class="card mt-3">
             <div
               class="col-12 d-flex flex-column align-items-center flex-md-row"
             >
@@ -150,11 +194,10 @@
               </div>
             </div>
           </div>
-
           <!-- Main Area End-->
           <!-- COMMENTS AREA -->
           <div class="d-flex felx-row my-4">
-            <div class="col-8 card pr-5">
+            <div class="col-7 card pr-5">
               <h4>Comentarios</h4>
               <div class="row pt-3 pl-1 m-1 border">
                 <div class="col-12 d-flex flex-row">
@@ -189,8 +232,40 @@
                   </p>
                 </div>
               </div>
+              <div class="row pt-3 pl-1 m-1 border">
+                <div class="col-12 d-flex flex-row">
+                  <div class="col-1">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="col-11">
+                    <h6 class="userName">User2</h6>
+                  </div>
+                </div>
+                <div class="col-12 d-flex flex-row align-items-center">
+                  <div class="col-1 d-flex flex-row">
+                    <p class="rate m-0">5</p>
+                    <p class="m-0">/5</p>
+                  </div>
+                  <div class="col-11">
+                    <img
+                      src="images/5starts.jpg"
+                      class="img-fluid"
+                      style="height: 25px;"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 d-flex flex-row align-items-center">
+                  <p
+                    class="comment mb-0 pt-2 pb-2 font-italic"
+                    style="padding-left: 15px; font-size: 14px;"
+                  >
+                    Amazing
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-3 card ml-auto">
+            <!-- Rating + Adding comments -->
+            <div class="col-4 card ml-auto">
               <h4>Puntuación</h4>
               <div class="col d-flex flex-row my-4">
                 <p class="rate m-0">4</p>
@@ -201,7 +276,66 @@
                   style="height: 25px;"
                 />
               </div>
-              <h5>Añadir Comentario</h5>
+              <div class="col">
+                <a
+                  class="btn btn-info"
+                  data-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Añadir Comentario <i class="fas fa-caret-down"></i>
+                </a>
+
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body p-2 mb-2">
+                    <form>
+                      <div class="form-group mb-0">
+                        <label for="formGroupExampleInput"
+                          >Nombre del usuario</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nameUser"
+                          placeholder="Usuario"
+                        />
+                        <label
+                          class="mt-1 mb-0 mr-2"
+                          for="inlineFormCustomSelectPref"
+                          >Puntuación</label
+                        >
+                        <select
+                          class="custom-select my-1 mr-sm-2"
+                          id="inlineFormCustomSelectPref"
+                          placeholder="Select"
+                        >
+                          <option disabled selected value>
+                            Puntua el curso
+                          </option>
+                          <option value="5">5/5</option>
+                          <option value="4">4/5</option>
+                          <option value="3">3/5</option>
+                          <option value="2">2/5</option>
+                          <option value="1">1/5</option>
+                        </select>
+                        <label for="exampleFormControlTextarea1"
+                          >Comentarios...</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="2"
+                        ></textarea>
+                        <button type="submit" class="btn btn-info mt-2">
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Comments Area End -->
