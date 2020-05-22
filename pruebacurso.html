@@ -27,29 +27,23 @@
     <link rel="stylesheet" href="style/style_dashboard.css" />
     <link rel="stylesheet" href="style/style-suso.css" />
     <script src="prueba.js"></script>
+    <link rel="icon" type="image/jpg" href="images/logonavegador.png" />
     <title>Argon cursos online</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- LEFT MENU -->
-        <div class="col-12 col-lg-2 bg-white"></div>
-        <!-- Left Menu End -->
-        <div
-          class="col-12 col-lg-10"
-          style="background-color: rgb(245, 245, 245);"
-        >
+        <div class="col-12" style="background-color: rgb(245, 245, 245);">
           <!-- SEARCH AREA -->
           <div class="row menu pb-3">
             <div
               class="col-12 d-flex flex-column flex-md-row mt-4 justify-content-center justify-content-md-between"
             >
-              <h2
-                class="text-white mb-0 font-weight-bold order-2 order-md1 mt-5 mt-md-0"
-                style="align-self: flex-start !important;"
-              >
-                Cesta
-              </h2>
+              <img
+                class="align-self-center mb-3 mb-md-0"
+                src="images/whitelogo.png"
+                width="200"
+              />
               <input
                 type="text"
                 class="search-background order-1 order-md-2 pl-5 pr-3 rounded-pill mr-0 border border-white text-white"
@@ -62,9 +56,20 @@
           <!-- INFO AREA -->
           <div class="row menu fix-problem">
             <div class="col-12 col-md-5 pt-2 mt-md-4">
-              <p class="text-white">
-                Este es el contenido que has añadido al carrito. Puedes quitar,
-                añadir o ver los detalles de cada curso.
+              <h2 class="font-weight-bold text-white">
+                Cesta
+              </h2>
+              <p class="text-white font-weight-bold">
+                Seguir comprando en argon
+                <button
+                  class="btn border rounded bg-white p-0"
+                  onclick="window.location='shop.html'"
+                >
+                  <i
+                    style="color: #5e72e4;"
+                    class="fas fa-angle-double-right mx-2 p-0"
+                  ></i>
+                </button>
               </p>
             </div>
             <div
@@ -87,14 +92,15 @@
                 class="btn ml-1 ml-md-3 my-0 my-md-4 btn-info d-flex flex-row px-2"
               >
                 <div
-                  class="row justify-content-start mt-1 ml-1 mr-1"
+                  class="row d-flex flex-column justify-content-start mt-1 ml-1 mr-1"
                   style="color: rgb(245, 245, 245);"
                 >
                   <i class="fas fa-shopping-cart text-alert fa-2x"></i>
-                </div>
-                <div class="col pl-1">
-                  <h6 class="mb-0">Cesta</h6>
-                  <span id="contador">3</span>
+                  <div class="col pl-1 d-flex flex-row">
+                    <p class="mb-0">(</p>
+                    <p id="contador" class="mb-0">3</p>
+                    <p>)</p>
+                  </div>
                 </div>
               </button>
             </div>
@@ -108,6 +114,7 @@
                   style="background-color: rgb(245, 245, 245);"
                 >
                   <div
+                    style="width: 100%;"
                     class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
                   >
                     <img
@@ -173,6 +180,7 @@
                   style="background-color: rgb(245, 245, 245);"
                 >
                   <div
+                    style="width: 100%;"
                     class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
                   >
                     <img
@@ -238,6 +246,7 @@
                   style="background-color: rgb(245, 245, 245);"
                 >
                   <div
+                    style="width: 100%;"
                     class="card mx-3 my-2 d-flex flex-column align-items-center flex-md-row"
                   >
                     <img
@@ -325,7 +334,7 @@
                   <p class="mt-2">) productos: 500.00€</p>
                 </div>
                 <a
-                  href="#"
+                  href="paymentmethod.html"
                   class="btn rounded bg-info text-white mb-2"
                   style="width: min-content; align-self: center;"
                   >Comprar</a
