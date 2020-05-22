@@ -1,96 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argon</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/103d4b6503.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style_landing.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Argon</title>
-  <link rel="stylesheet" href="style/bootstrap.min.css" />
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/103d4b6503.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <div class="row align-items-center">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#" style="width: 150px;">
+              <img src="images/logo.png" class="navbar-brand-img img-fluid" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body>
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand" href="#" style="width: 150px;">
-            <img src="images/logo.png" class="navbar-brand-img img-fluid" />
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-dark font-weight-bold" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-dark font-weight-bold"
+                    href="shop.html"
+                    >Cursos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-dark font-weight-bold"
+                    href="register.html"
+                    >Unirse</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark font-weight-bold" href="#"
+                    >Acerca de</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Navbar END -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-dark font-weight-bold" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark font-weight-bold" href="shop.html">Cursos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark font-weight-bold" href="register.html">Unirse</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark font-weight-bold" href="#">Acerca de</a>
-              </li>
-            </ul>
+      <!-- Header -->
+      <div class="row">
+        <div class="card col-12 border-0">
+          <a href="index.html"
+            ><img class="card-img img-fluid" src="images/hero-slide.jpg"
+          /></a>
+          <div
+            class="card-img-overlay d-flex flex-column justify-content-center text-dark"
+          >
+            <h1 class="card-title mt-2 text-center text-white px-5">
+              Impulsa tu carrera laboral con cursos de informática, marketing y
+              recursos humanos
+            </h1>
           </div>
-        </nav>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="card col-12">
-        <img class="card-img img-fluid" src="images/hero-slide.jpg">
-        <div class="card-img-overlay d-flex flex-column justify-content-center text-dark">
-          <h4 class="card-title mt-2 text-center text-white">Impulsa tu carrera laboral con cursos de informática,
-            marketing y recursos humanos</h4>
         </div>
       </div>
-    </div>
-  </div>
+      <!-- Header END -->
 
-
-  <div class="row align-items-center mt-5">
-  
-    <div class="col-6 col-lg-5">
-      <img src="/images/devices.svg" alt="" class="img-fluid">
-    </div>
-  
-    <div class="col-6 col-lg-7">
-      <div class="row justify-content-center">
-          <h3>Disponible en todos los dispositivos</h3>
-      </div>
-      <div class="row justify-content-center mt-3">
-          <a href="register.html"> <button type="button" class="btn btn-lg text-white"
-              style="background-color: #5e72e4;">Únete a Argon</button></a>
-      </div>
-      <div class="row justify-content-center mt-3">
-        <div class="col-4">
-          <img src="/images/320px-Google_Play_Store_badge_EN.svg.png" class="img-fluid" width="152" height="45">
+      <!-- Information -->
+      <div class="row mt-5 align-items-center">
+        <div class="col-12 col-lg-6 d-flex justify-content-center">
+          <img
+            src="/images/dashboard.png"
+            class="img-fluid border"
+            width="500px"
+          />
         </div>
-        <div class="col-4">
-          <img src="/images/320px-Download_on_the_App_Store_Badge.svg.png" class="img-fluid" width="152" height="45">
+
+        <div class="col-12 col-lg-6 px-5 mt-3">
+          <div class="row">
+            <div class="col-12 text-justify">
+              Argon ofrece
+              <span><a href="shop.html">CURSOS ONLINE</a></span> que puedes
+              cursar para mejorar en tu trabajo. Están siempre actualizados y
+              orientados al mundo laboral. Son muy fáciles de seguir (vídeos,
+              test y foros). Su potencial reside en su capacidad para conectar
+              el conocimiento de los participantes.
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-6">
+              <div class="row justify-content-center">
+                <i class="fas fa-user-friends fa-2x text-muted"></i>
+              </div>
+              <div class="row justify-content-center">
+                <p class="students-stats">+ 500 Estudiantes</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row justify-content-center">
+                <i class="fas fa-book fa-2x text-muted"></i>
+              </div>
+              <div class="row justify-content-center">
+                <p class="courses-stats">+ 50 Cursos</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Information END-->
+
+      <!-- Devices -->
+      <div class="row align-items-center mt-5">
+        <div class="col-6 col-md-6 d-flex justify-content-center">
+          <img src="/images/devices.svg" alt="" class="img-fluid" />
+        </div>
+
+        <div class="col-6">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h1 class="text-center">
+                Disponible en todos los dispositivos
+              </h1>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <a href="register.html"
+              ><button
+                type="button"
+                class="blue-btn btn text-white font-weight-bold"
+                style="background-color: #5e72e4;"
+              >
+                Regístrate en Argon
+              </button></a
+            >
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-6 col-md-4 d-flex justify-content-center">
+              <img
+                src="/images/320px-Google_Play_Store_badge_EN.svg.png"
+                class="android-badge"
+                width="152"
+                height="45"
+              />
+            </div>
+            <div class="col-6 col-md-4 d-flex justify-content-center">
+              <img
+                src="/images/320px-Download_on_the_App_Store_Badge.svg.png"
+                class="ios-badge"
+                width="152"
+                height="45"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Devices END-->
+
+      <!-- Cursos -->
+      <div class="row justify-content-center mt-5">
+        <div
+          class="col-10 col-md-4 col-lg-3 card d-flex flex-column align-items-center mx-lg-3 my-2"
+        >
+          <img
+            src="images/Curso1.PNG"
+            class="card-img-top mr-3 img-fluid"
+            alt="Curso1"
+            style="width: 200px; height: 200px;"
+          />
+          <div class="card-body mx-3 d-flex flex-column justify-content-center">
+            <p
+              class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+            >
+              Bootstrap for Dummies
+            </p>
+
+            <div class="d-flex flex-row justify-content-around">
+              <a href="detailShop.html">
+                <button
+                  type="button"
+                  class="btn text-white mr-2"
+                  style="background-color: #5e72e4;"
+                >
+                  Ver Detalles
+                </button>
+              </a>
+              <button
+                type="button"
+                class="btn text-white"
+                style="background-color: #5e72e4;"
+              >
+                Comprar 300€
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-10 col-md-4 col-lg-3 card d-flex flex-column align-items-center my-2"
+        >
+          <img
+            src="images/Curso2.PNG"
+            class="card-img-top mr-3 img-fluid"
+            alt="Curso1"
+            style="width: 200px; height: 200px;"
+          />
+          <div class="card-body mx-3 d-flex flex-column justify-content-center">
+            <p
+              class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+            >
+              Marketing Digital
+            </p>
+
+            <div class="d-flex flex-row justify-content-around">
+              <a href="detailShop.html">
+                <button
+                  type="button"
+                  class="btn text-white mr-2"
+                  style="background-color: #5e72e4;"
+                >
+                  Ver Detalles
+                </button>
+              </a>
+              <button
+                type="button"
+                class="btn text-white"
+                style="background-color: #5e72e4;"
+              >
+                Comprar 1900€
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-10 col-md-4 col-lg-3 card d-flex flex-column align-items-center mx-lg-3 my-2"
+        >
+          <img
+            src="images/Curso3.jpg"
+            class="card-img-top mr-3 img-fluid"
+            alt="Curso3"
+            style="width: 200px; height: 200px;"
+          />
+          <div class="card-body mx-3 d-flex flex-column justify-content-center">
+            <p
+              class="card-title d-flex text-center align-self-center pb-2 pb-md-3"
+            >
+              Adtvo. de Personal
+            </p>
+
+            <div class="d-flex flex-row justify-content-around">
+              <a href="detailShop.html">
+                <button
+                  type="button"
+                  class="btn text-white mr-2"
+                  style="background-color: #5e72e4;"
+                >
+                  Ver Detalles
+                </button>
+              </a>
+              <button
+                type="button"
+                class="btn text-white"
+                style="background-color: #5e72e4;"
+              >
+                Comprar 1900€
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cursos END-->
+
+      <div class="row justify-content-center mt-5">
+        <a href="register.html"
+          ><button
+            type="button"
+            class="blue-btn btn text-white font-weight-bold"
+            style="background-color: #5e72e4;"
+          >
+            Ir a ver el resto de cursos
+          </button></a
+        >
+      </div>
     </div>
-  </div>
-
-
-  </div>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,49 @@
+@media (max-width: 576px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  .blue-btn {
+    font-size: 10px;
+  }
+
+  .students-stats {
+    font-size: 14px;
+  }
+
+  .courses-stats {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .blue-btn {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1500px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .blue-btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .android-badge {
+    width: 70px;
+    height: 20px;
+  }
+
+  .ios-badge {
+    width: 70px;
+    height: 20px;
+  }
+}
