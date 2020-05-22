@@ -14,6 +14,24 @@
   .courses-stats {
     font-size: 14px;
   }
+
+  .android-badge {
+    width: 70px;
+    height: 20px;
+  }
+
+  .ios-badge {
+    width: 70px;
+    height: 20px;
+  }
+
+  .footer-heading {
+    font-size: 14px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -24,6 +42,16 @@
   .blue-btn {
     font-size: 15px;
   }
+
+  .android-badge {
+    width: 80px;
+    height: 25px;
+  }
+
+  .ios-badge {
+    width: 80px;
+    height: 25px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1500px) {
@@ -33,17 +61,5 @@
 
   .blue-btn {
     font-size: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .android-badge {
-    width: 70px;
-    height: 20px;
-  }
-
-  .ios-badge {
-    width: 70px;
-    height: 20px;
   }
 }
