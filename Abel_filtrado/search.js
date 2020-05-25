@@ -17,12 +17,12 @@ function myFunction() {
       counter = counter - 1;
     }
   }
-  const menssage = cardContainer.getElementsByClassName('notFound');
+  const message = cardContainer.getElementsByClassName('notFound');
   console.log(counter);
-  console.log(menssage);
+  console.log(message);
   if (counter <= 0) {
-    menssage[0].style.display = '';
+    message[0].style.display = '';
   } else {
-    menssage[0].style.display = 'none';
+    message[0].style.display = 'none';
   }
 }

@@ -21,6 +21,7 @@
       src="https://kit.fontawesome.com/103d4b6503.js"
       crossorigin="anonymous"
     ></script>
+    <script src="addingComment.js"></script>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style_dashboard.css" />
     <link rel="stylesheet" href="Abel_filtrado/style.css" />
@@ -197,7 +198,8 @@
           <!-- Main Area End-->
           <!-- COMMENTS AREA -->
           <div class="d-flex felx-row my-4">
-            <div class="col-7 card pr-5">
+            <!-- Comments Area -->
+            <div class="col-7 card pr-5" id="commentArea">
               <h4>Comentarios</h4>
               <div class="row pt-3 pl-1 m-1 border">
                 <div class="col-12 d-flex flex-row">
@@ -210,7 +212,7 @@
                 </div>
                 <div class="col-12 d-flex flex-row align-items-center">
                   <div class="col-1 d-flex flex-row">
-                    <p class="rate m-0">4</p>
+                    <p class="rated m-0">4</p>
                     <p class="m-0">/5</p>
                   </div>
                   <div class="col-11">
@@ -232,7 +234,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row pt-3 pl-1 m-1 border">
+              <div class="row pt-3 pl-1 m-1 border example" id="example">
                 <div class="col-12 d-flex flex-row">
                   <div class="col-1">
                     <i class="fas fa-user"></i>
@@ -243,20 +245,20 @@
                 </div>
                 <div class="col-12 d-flex flex-row align-items-center">
                   <div class="col-1 d-flex flex-row">
-                    <p class="rate m-0">5</p>
+                    <p class="rated m-0">5</p>
                     <p class="m-0">/5</p>
                   </div>
                   <div class="col-11">
                     <img
                       src="images/5starts.jpg"
-                      class="img-fluid"
+                      class="img-fluid img-starts"
                       style="height: 25px;"
                     />
                   </div>
                 </div>
                 <div class="col-12 d-flex flex-row align-items-center">
                   <p
-                    class="comment mb-0 pt-2 pb-2 font-italic"
+                    class="commented mb-0 pt-2 pb-2 font-italic"
                     style="padding-left: 15px; font-size: 14px;"
                   >
                     Amazing
@@ -280,17 +282,16 @@
                 <a
                   class="btn btn-info"
                   data-toggle="collapse"
-                  href="#collapseExample"
+                  href="#collapseComment"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="collapseExample"
+                  aria-controls="collapseComment"
                 >
                   Añadir Comentario <i class="fas fa-caret-down"></i>
                 </a>
-
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="collapseComment">
                   <div class="card card-body p-2 mb-2">
-                    <form>
+                    <form id="addComments">
                       <div class="form-group mb-0">
                         <label for="formGroupExampleInput"
                           >Nombre del usuario</label
@@ -308,10 +309,10 @@
                         >
                         <select
                           class="custom-select my-1 mr-sm-2"
-                          id="inlineFormCustomSelectPref"
+                          id="rating"
                           placeholder="Select"
                         >
-                          <option disabled selected value>
+                          <option disabled selected value="0">
                             Puntua el curso
                           </option>
                           <option value="5">5/5</option>
@@ -320,21 +321,54 @@
                           <option value="2">2/5</option>
                           <option value="1">1/5</option>
                         </select>
-                        <label for="exampleFormControlTextarea1"
-                          >Comentarios...</label
-                        >
+                        <label for="FormControlTextarea1">Comentarios...</label>
                         <textarea
                           class="form-control"
-                          id="exampleFormControlTextarea1"
+                          id="FormControlTextarea1"
                           rows="2"
                         ></textarea>
-                        <button type="submit" class="btn btn-info mt-2">
-                          Enviar
-                        </button>
                       </div>
                     </form>
+                    <button
+                      onclick="javascript:comment();"
+                      type="button"
+                      class="btn btn-info mt-2"
+                    >
+                      Enviar
+                    </button>
                   </div>
                 </div>
+                <!-- ALERT -->
+                <div
+                  class="toast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                  data-delay="10000"
+                >
+                  <div class="toast-header">
+                    <img
+                      src="images/logonavegador.png"
+                      style="width: 24px;"
+                      class="rounded mr-2 img-fluid"
+                      alt=""
+                    />
+                    <strong class="mr-auto">Argon</strong>
+                    <button
+                      type="button"
+                      class="ml-2 mb-1 close"
+                      data-dismiss="toast"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body">
+                    Por favor, completa todos los campos para añadir el nuevo
+                    comentario.
+                  </div>
+                </div>
+                <!-- Alert End -->
               </div>
             </div>
           </div>
