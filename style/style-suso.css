@@ -51,6 +51,14 @@
   bottom: 0;
 }
 
+.paycard-size {
+  width: 50px;
+}
+
+.form-payment {
+  width: 80%;
+}
+
 @media (max-width: 768px) {
   .firstrow {
     font-size: 10px !important;
@@ -63,6 +71,9 @@
   }
   .footerdown-responsive {
     height: max-content !important;
+  }
+  .form-payment {
+    width: 250px !important;
   }
 }
 @media (max-width: 550px) {
@@ -81,6 +92,9 @@
   }
   .padding-data {
     padding-top: 150px;
+  }
+  .paycard-size {
+    width: 40px !important;
   }
 }
 @media (max-width: 768px) and (min-width: 651px) {
