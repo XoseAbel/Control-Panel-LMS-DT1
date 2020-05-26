@@ -14,13 +14,3 @@ function mostrarnoarticles(id) {
     numarticles.style.display = "block";
   }
 }
-
-function payconfirm() {
-  var mensaje;
-  var opcion = confirm("Va a comprar estos articulos. ¿Esta seguro?");
-  if (opcion == true) {
-    window.location = "register.html";
-  } else {
-    mensaje = "Has clickado Cancelar";
-  }
-}
