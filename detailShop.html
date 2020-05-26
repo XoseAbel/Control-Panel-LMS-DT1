@@ -54,7 +54,7 @@
           </div>
           <!-- Search Area End -->
           <!-- INFO AREA -->
-          <div class="row menu fix-problem">
+          <div class="row menu">
             <div class="col-12 col-md-5 pt-2 mt-md-4">
               <h2 class="font-weight-bold text-white">
                 Detalles del curso
@@ -75,33 +75,45 @@
             <div
               class="col-12 col-md-7 d-flex justify-content-center justify-content-md-end mb-2"
             >
-              <button
-                type="button"
-                class="btn btn-info px-2 ml-1 ml-md-3 my-0 my-md-4"
-              >
-                Iniciar sesión
-              </button>
-              <button
-                type="button"
-                class="btn btn-info px-2 ml-1 ml-md-3 my-0 my-md-4"
-              >
-                Registro
-              </button>
-              <button
-                type="button"
-                class="btn ml-1 ml-md-3 my-0 my-md-4 btn-info d-flex flex-row px-2"
-              >
-                <div
-                  class="row justify-content-start mt-1 ml-1 mr-1"
-                  style="color: rgb(245, 245, 245);"
+              <a href="" style="text-decoration: none; color: white;">
+                <button
+                  type="button"
+                  class="btn btn-info px-2 ml-1 ml-md-3 my-0 my-md-4"
+                  style="height: 60px;"
                 >
-                  <i class="fas fa-shopping-cart text-alert fa-2x"></i>
-                </div>
-                <div class="col pl-1">
-                  <h6 class="mb-0">Cesta</h6>
-                  <span id="contador">3</span>
-                </div>
-              </button>
+                  Iniciar sesión
+                </button></a
+              >
+              <a href="" style="text-decoration: none; color: white;">
+                <button
+                  type="button"
+                  class="btn btn-info px-2 ml-1 ml-md-3 my-0 my-md-4"
+                  style="height: 60px;"
+                >
+                  Registro
+                </button></a
+              >
+              <a
+                href="./trolleylist.html"
+                style="text-decoration: none; color: white;"
+              >
+                <button
+                  type="button"
+                  class="btn ml-1 ml-md-3 my-0 my-md-4 btn-info d-flex flex-row px-2"
+                  style="height: 60px;"
+                >
+                  <div
+                    class="row justify-content-start mt-1 ml-1 mr-1"
+                    style="color: rgb(245, 245, 245);"
+                  >
+                    <i class="fas fa-shopping-cart text-alert fa-2x"></i>
+                  </div>
+                  <div class="col pl-1">
+                    <h6 class="mb-0">Cesta</h6>
+                    <span id="contador">3</span>
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
           <!-- Info Area End -->
@@ -197,11 +209,11 @@
           </div>
           <!-- Main Area End-->
           <!-- COMMENTS AREA -->
-          <div class="d-flex felx-row my-4">
+          <div class="my-4 d-flex flex-column flex-md-row">
             <!-- Comments Area -->
-            <div class="col-7 card pr-5" id="commentArea">
+            <div class="col-12 col-md-7 card pr-5 py-3" id="commentArea">
               <h4>Comentarios</h4>
-              <div class="row pt-3 pl-1 m-1 border">
+              <div class="row pt-3 pl-1 m-1 border bg-grey-rounded">
                 <div class="col-12 d-flex flex-row">
                   <div class="col-1">
                     <i class="fas fa-user"></i>
@@ -234,7 +246,10 @@
                   </p>
                 </div>
               </div>
-              <div class="row pt-3 pl-1 m-1 border example" id="example">
+              <div
+                class="row pt-3 pl-1 m-1 border bg-grey-rounded example"
+                id="example"
+              >
                 <div class="col-12 d-flex flex-row">
                   <div class="col-1">
                     <i class="fas fa-user"></i>
@@ -267,14 +282,15 @@
               </div>
             </div>
             <!-- Rating + Adding comments -->
-            <div class="col-4 card ml-auto">
-              <h4>Puntuación</h4>
+            <div class="col-12 col-md-4 card ml-auto py-3 my-4 my-md-0">
+              <h4>Puntuación media</h4>
               <div class="col d-flex flex-row my-4">
-                <p class="rate m-0">4</p>
-                <p class="m-0">/5</p>
+                <p class="m-0" id="result">4,5</p>
+                <p class="m-0 pl-1">/5</p>
                 <img
-                  src="images/4starts.jpg"
-                  class="img-fluid"
+                  src="images/5starts.jpg"
+                  class="img-fluid pl-2"
+                  id="img-result"
                   style="height: 25px;"
                 />
               </div>

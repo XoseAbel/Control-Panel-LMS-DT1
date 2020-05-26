@@ -42,6 +42,40 @@ function addComment() {
   iDiv = origin.cloneNode(true);
   changeComment(name, rate, textComment, iDiv);
 }
+let createArrayRate = () => {
+  rateArray = document.getElementsByClassName('rated');
+  let average = 0;
+  for (var i = 0; i < rateArray.length; i++) {
+    let newValue = rateArray[i].innerText;
+    newValue = +newValue;
+    average = average + newValue;
+  }
+  average = average / rateArray.length;
+  average = Math.round(average * 10) / 10;
+  document.getElementById('result').innerHTML = average;
+  average = Math.round(average);
+  //Change starts imagen result
+  let imgResult = document.getElementById('img-result');
+  switch (average) {
+    case 1:
+      $(imgResult).attr('src', 'images/1starts.jpg');
+      break;
+    case 2:
+      $(imgResult).attr('src', 'images/2starts.jpg');
+      break;
+    case 3:
+      $(imgResult).attr('src', 'images/3starts.jpg');
+      break;
+    case 4:
+      $(imgResult).attr('src', 'images/4starts.jpg');
+      break;
+    case 5:
+      $(imgResult).attr('src', 'images/5starts.jpg');
+      break;
+    default:
+      console.log('error');
+  }
+};
 
 function comment() {
   name = document.getElementById('nameUser');
@@ -53,8 +87,3 @@ function comment() {
   $('#addComments')[0].reset();
   createArrayRate();
 }
-
-let createArrayRate = () => {
-  rateArray = document.getElementsByClassName('rated');
-  console.log(rateArray);
-};

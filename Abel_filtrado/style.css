@@ -156,3 +156,8 @@ body {
   width: 300px !important;
   height: 40px;
 }
+
+.bg-grey-rounded {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.25rem;
+}
