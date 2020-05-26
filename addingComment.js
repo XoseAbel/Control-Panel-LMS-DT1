@@ -52,7 +52,9 @@ let createArrayRate = () => {
   }
   average = average / rateArray.length;
   average = Math.round(average * 10) / 10;
-  document.getElementById('result').innerHTML = average;
+  document.getElementById('result').innerHTML = Intl.NumberFormat(
+    'de-DE'
+  ).format(average);
   average = Math.round(average);
   //Change starts imagen result
   let imgResult = document.getElementById('img-result');

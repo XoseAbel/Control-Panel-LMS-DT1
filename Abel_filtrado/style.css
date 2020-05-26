@@ -161,3 +161,7 @@ body {
   background-color: rgb(245, 245, 245);
   border-radius: 0.25rem;
 }
+
+.text-size-1 {
+  font-size: 1rem;
+}
