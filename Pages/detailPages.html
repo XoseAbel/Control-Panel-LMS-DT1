@@ -192,8 +192,26 @@
             </div>
           </div>
           <div class="row mt-5 rounded-top border mx-3 overposition">
-            <div class="col-12 bg-white">
-              <h3 class="font-weight-bold my-2">Nueva Página</h3>
+            <div class="col-12 bg-white d-flex flex-row">
+              <h4 class="font-weight-bold my-2 flex-grow-1">Nueva Página</h4>
+              <div
+                class="btn-group btn-group-sm py-2"
+                role="group"
+                aria-label="Basic example"
+              >
+                <a
+                  class="btn bg-success border rounded text-white px-1 ml-2"
+                  href="updatePages.html"
+                >
+                  Update
+                </a>
+                <button
+                  type="button"
+                  class="btn bg-danger border rounded text-white py-0 px-1 ml-2"
+                >
+                  Delete
+                </button>
+              </div>
             </div>
             <div class="col-12 bg-list-grey">
               <h5 class="font-weight-bold my-2 text-secondary">
@@ -209,6 +227,7 @@
                     class="form-control"
                     id="fcontent"
                     placeholder="Nombre de la página"
+                    disabled
                   />
                 </div>
 
@@ -219,6 +238,7 @@
                     class="form-control"
                     id="fcontent"
                     placeholder="Descripción del contenido"
+                    disabled
                   />
                 </div>
 
@@ -229,12 +249,13 @@
                     class="form-control"
                     id="fcontent"
                     placeholder=""
+                    disabled
                   />
                 </div>
 
                 <div class="form-group">
                   <label for="publish">Publicar</label>
-                  <select id="options" name="options">
+                  <select id="options" name="options" disabled>
                     <option value="si">Si</option>
                     <option value="no">No</option>
                   </select>
@@ -242,7 +263,7 @@
 
                 <div class="form-group">
                   <label for="publish">Notificar</label>
-                  <select id="options" name="options">
+                  <select id="options" name="options" disabled>
                     <option value="si">Si</option>
                     <option value="no">No</option>
                   </select>
@@ -255,6 +276,7 @@
                     class="btn btn-primary mt-0"
                     data-toggle="modal"
                     data-target="#exampleModal"
+                    disabled
                   >
                     Subir archivos
                   </button>
@@ -265,6 +287,7 @@
                     multiple
                     style="width: 200px;"
                     id="fileselect"
+                    diasabled
                   >
                     <option id="document1.doc" name="document1.doc"
                       >document1.doc</option
@@ -273,6 +296,7 @@
                   <button
                     onclick="erase()"
                     class="btn btn-primary border rounded ml-2"
+                    disabled
                   >
                     <i class="fas fa-trash-alt"></i>
                   </button>
