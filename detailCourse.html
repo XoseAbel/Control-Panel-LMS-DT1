@@ -26,6 +26,9 @@
       src="https://kit.fontawesome.com/103d4b6503.js"
       crossorigin="anonymous"
     ></script>
+    <script src="prueba.js"></script>
+    <link rel="icon" type="image/jpg" href="images/logonavegador.png" />
+    <title>Argon Cursos</title>
   </head>
 
   <body>
@@ -88,7 +91,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">
+                      <a class="nav-link" href="pages/pages.html">
                         <i class="fas fa-columns"></i>
                         <span class="nav-link-text ml-2">Páginas</span>
                       </a>
@@ -271,29 +274,99 @@
                     >Semi-presencial</option
                   >
                 </select>
-                <div class="d-felx flex-row attach-align mt-4">
-                  <label class="text-label mr-2">Archivos</label>
+
+                <div class="d-flex align-items-start mt-3">
                   <button
-                    class="btn mx-1 border p-0 px-1 mt-1 mr-2 d-none rounded form-border-color"
+                    type="button"
+                    style="width: max-content;"
+                    class="btn btn-primary mt-0"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    disabled
                   >
-                    <i class="fas fa-paperclip"></i>
+                    Subir archivos
                   </button>
                   <select
-                    class="mt-1 mr-2 cursor-out rounded form-border-color"
+                    class="mt-0 ml-2 cursor-out"
                     name="docs"
                     size="3"
                     multiple
                     style="width: 200px;"
+                    id="fileselect"
+                    diasabled
                   >
-                    <option value="doc1">document1.doc</option>
-                    <option value="image1">Image1.jpg</option>
-                    <option value="presentation">Presentation.ppt</option>
+                    <option id="document1.doc" name="document1.doc"
+                      >document1.doc</option
+                    >
                   </select>
                   <button
-                    class="btn mx-1 border p-0 px-1 mt-1 d-none rounded form-border-color"
+                    onclick="erase()"
+                    class="btn btn-primary border rounded ml-2"
+                    disabled
                   >
                     <i class="fas fa-trash-alt"></i>
                   </button>
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Modal title
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input"
+                              id="customFile"
+                            />
+                            <label
+                              id="filename"
+                              class="custom-file-label"
+                              for="customFile"
+                              value=""
+                              >Seleccionar archivo</label
+                            >
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          onclick="addFile();"
+                          data-dismiss="modal"
+                        >
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="d-flex flex-row align-items-center mt-4">
                   <input type="checkbox" class="mt-1 mr-2" disabled />
@@ -361,5 +434,18 @@
         </div>
       </div>
     </div>
+    <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this)
+          .siblings(".custom-file-label")
+          .addClass("selected")
+          .html(fileName);
+        let name = document.getElementById("filename");
+        name.setAttribute("value", fileName);
+        console.log(name);
+      });
+    </script>
   </body>
 </html>
