@@ -26,13 +26,13 @@
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style_dashboard.css" />
     <link rel="stylesheet" href="style/style-suso.css" />
-    <script src="prueba.js"></script>
+    <script src="functionsjs.js"></script>
     <link rel="icon" type="image/jpg" href="images/logonavegador.png" />
     <title>Argon Cursos</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row vh-100">
         <div class="col-12" style="background-color: rgb(245, 245, 245);">
           <!-- SEARCH AREA -->
           <div class="row menu pb-3">
@@ -91,6 +91,7 @@
               </button>
               <button
                 type="button"
+                onclick="window.location='trolleylist.html'"
                 class="btn ml-1 ml-md-3 my-0 my-md-4 btn-info d-flex flex-row px-2"
               >
                 <div
@@ -115,10 +116,11 @@
                     type="radio"
                     class="form-check-input"
                     name="paymethod"
-                    value="option1"
+                    value="ccard"
                     checked
+                    onclick="paymentmethod('ccard')"
                   />
-                  <label class="form-check-label" for="option1"
+                  <label class="form-check-label" for="ccard"
                     >Tarjeta de débito / crédito</label
                   >
                 </div>
@@ -127,25 +129,25 @@
                     type="radio"
                     class="form-check-input"
                     name="paymethod"
-                    value="option2"
-                    disabled
+                    value="paypal"
+                    onclick="paymentmethod('paypal')"
                   />
-                  <label class="form-check-label" for="option2">Paypal</label>
+                  <label class="form-check-label" for="paypal">Paypal</label>
                 </div>
                 <div class="form-check">
                   <input
                     type="radio"
                     class="form-check-input"
                     name="paymethod"
-                    value="option3"
-                    disabled
+                    value="transfer"
+                    onclick="paymentmethod('transfer')"
                   />
-                  <label class="form-check-label" for="option3"
+                  <label class="form-check-label" for="transfer"
                     >Transferncia bancaria</label
                   >
                 </div>
               </div>
-              <div class="row mt-5 border bg-white mx-1">
+              <div id="ccard" class="row mt-5 border bg-white mx-1">
                 <div class="col-12 col-md-8">
                   <div class="form-check form-payment d-flex flex-column pl-0">
                     <label class="mt-3">Número de tarjeta</label>
@@ -227,7 +229,7 @@
                   </div>
                 </div>
                 <div
-                  class="border-top mt-3 d-flex w-100 justify-content-center mx-5 mb-3"
+                  class="mt-3 d-flex w-100 justify-content-center mr-5 ml-5 mb-3 border-top"
                 >
                   <button
                     type="button"
@@ -243,58 +245,110 @@
                     href="trolleylist.html"
                     >Cancelar</a
                   >
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            <div>
-                              <img
-                                src="images/logo.png"
-                                class="img-fluid"
-                                style="width: 50%;"
-                              />
-                            </div>
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                </div>
+              </div>
+              <div
+                id="paypal"
+                class="row select-payment mt-5 border bg-white mx-1"
+              >
+                <div class="col-12 d-flex flex-column form-check mb-3">
+                  <label class="mt-3">Cuenta de PayPal </label>
+                  <input type="text" class="border rounded form-payment" />
+                  <div class="d-flex flex-row mt-3">
+                    <button
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      class="btn btn-success mr-3"
+                      style="width: min-content;"
+                    >
+                      Pagar
+                    </button>
+                    <a
+                      class="btn btn-danger"
+                      href="trolleylist.html"
+                      style="width: min-content;"
+                    >
+                      Cancelar
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="transfer"
+                class="row select-payment mt-5 border bg-white mx-1"
+              >
+                <div class="col-12 d-flex flex-column form-check mb-3">
+                  <label class="mt-3">Numero de cuenta (IBAN incluido)</label>
+                  <input type="text" class="border rounded form-payment" />
+                  <div class="d-flex flex-row mt-3">
+                    <button
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      class="btn btn-success mr-3"
+                    >
+                      Pagar
+                    </button>
+                    <a
+                      class="btn btn-danger"
+                      href="trolleylist.html"
+                      style="width: min-content;"
+                    >
+                      Cancelar
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        <div>
+                          <img
+                            src="images/logo.png"
+                            class="img-fluid"
+                            style="width: 50%;"
+                          />
                         </div>
-                        <div class="modal-body bg-light">
-                          <h5 class="font-weight-bold">
-                            ¿Está seguro de la compra?
-                          </h5>
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-dismiss="modal"
-                          >
-                            Cancelar
-                          </button>
-                          <button
-                            type="button"
-                            role="link"
-                            class="btn btn-primary"
-                            onclick="window.location='register.html'"
-                          >
-                            Comprar
-                          </button>
-                        </div>
-                      </div>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body bg-light">
+                      <h5 class="font-weight-bold">
+                        ¿Está seguro de la compra?
+                      </h5>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button
+                        type="button"
+                        role="link"
+                        class="btn btn-primary"
+                        onclick="window.location='register.html'"
+                      >
+                        Comprar
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -321,6 +375,37 @@
                     <h3>500€</h3>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="row position-footer2 m-0 mt-3" style="width: 95%;">
+            <div
+              class="col-12 col-md-6 mt-1 d-flex flex-row justify-content-center"
+            >
+              <p class="text-footer mb-1">
+                ® Copyright &nbsp
+              </p>
+              <p class="text-footer mb-1" style="color: blueviolet;">
+                Creative Tim & Updivision
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 px-0 mt-0 d-flex flex-row justify-content-center"
+            >
+              <a class="text-footer mb-1">
+                Creative Tim
+              </a>
+              <a class="text-footer ml-2 mb-1">
+                Updivision
+              </a>
+              <a class="text-footer ml-2 mb-1">
+                About Us
+              </a>
+              <a class="text-footer ml-2 mb-1">
+                Blog
+              </a>
+              <div class="text-footer ml-2 mb-1">
+                MIT License
               </div>
             </div>
           </div>
