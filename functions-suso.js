@@ -14,6 +14,35 @@ function mostrarnoarticles(id) {
     numarticles.style.display = "block";
   }
 }
+
+function paymentmethod(id) {
+  let card = document.getElementById("ccard");
+  let transfer = document.getElementById("transfer");
+  let paypal = document.getElementById("paypal");
+  switch (id) {
+    case "ccard":
+      console.log(id);
+      // card.style.display = "flex";
+      // card.style.flexDirection = "column";
+      card.style.display = "inline-flex";
+      transfer.style.display = "none";
+      paypal.style.display = "none";
+      break;
+    case "paypal":
+      console.log(id);
+      card.style.display = "none";
+      transfer.style.display = "none";
+      paypal.style.display = "block";
+      break;
+    case "transfer":
+      console.log(id);
+      card.style.display = "none";
+      transfer.style.display = "block";
+      paypal.style.display = "none";
+      break;
+  }
+}
+
 function addFile() {
   let name = document.getElementById("filename");
   let name2 = name.getAttribute("value");
@@ -23,12 +52,9 @@ function addFile() {
   foption.name = name2;
   foption.id = name2;
   selectoption.appendChild(foption);
-  console.log(foption);
-  console.log(name2);
 }
 
 function erase() {
   let name = document.getElementById("fileselect");
-  console.log(name.value);
   name.remove(name.selectedIndex);
 }
