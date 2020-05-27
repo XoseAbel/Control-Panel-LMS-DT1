@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/style-suso.css" />
+    <link rel="icon" type="image/jpg" href="../images/logonavegador.png" />
+    <title>Argon Cursos</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
+      ø
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -21,18 +28,12 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style/style_dashboard.css" />
-    <script
-      src="https://kit.fontawesome.com/103d4b6503.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="prueba.js"></script>
-    <link rel="icon" type="image/jpg" href="images/logonavegador.png" />
-    <title>Argon Cursos</title>
+    <link rel="stylesheet" href="../style/style-suso.css" />
+    <link rel="stylesheet" href="../style/style_dashboard.css" />
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid bg-list-grey">
       <div class="row">
         <!-- LEFT MENU -->
         <div class="col-12 col-lg-2 fix-top">
@@ -41,8 +42,11 @@
             <div
               class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start"
             >
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png" class="navbar-brand-img img-fluid" />
+              <a class="navbar-brand" href="../index.html">
+                <img
+                  src="../images/logo.png"
+                  class="navbar-brand-img img-fluid"
+                />
               </a>
             </div>
             <!-- Brand END -->
@@ -66,44 +70,44 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav d-flex flex-column">
                     <li class="nav-item">
-                      <a class="nav-link" href="dashboard.html">
+                      <a class="nav-link" href="../dashboard.html">
                         <i class="fas fa-desktop"></i>
                         <span class="nav-link-text ml-2">Dashboard</span>
                       </a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="Course.html">
+                      <a class="nav-link" href="../Course.html">
                         <i class="fas fa-globe-europe"></i>
                         <span class="nav-link-text ml-2">Cursos</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Tasks/tasks.html">
+                      <a class="nav-link" href="../Tasks/tasks.html">
                         <i class="fas fa-sticky-note"></i>
                         <span class="nav-link-text ml-2">Tareas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="persons.html">
+                      <a class="nav-link" href="../persons.html">
                         <i class="fas fa-user-friends"></i>
                         <span class="nav-link-text ml-2">Personas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/pages.html">
+                      <a class="nav-link" href="../Pages/pages.html">
                         <i class="fas fa-columns"></i>
                         <span class="nav-link-text ml-2">Páginas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="login.html" class="nav-link">
+                      <a href="../login.html" class="nav-link">
                         <i class="fas fa-sign-in-alt"></i>
                         <span class="nav-link-text ml-2">Iniciar sesión</span>
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a href="register.html" class="nav-link">
+                      <a href="../register.html" class="nav-link">
                         <i class="fas fa-user"></i>
                         <span class="nav-link-text ml-2">Registro</span>
                       </a>
@@ -144,10 +148,8 @@
           </div>
         </div>
         <!-- Left Menu End -->
-        <!-- BODY -->
-
         <div
-          class="col-12 col-lg-10 padding-search"
+          class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
         >
           <div class="row menu pb-3 fix-search">
@@ -155,7 +157,7 @@
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
               >
-                CURSOS
+                PÁGINAS
               </h6>
             </div>
             <div
@@ -172,7 +174,7 @@
             >
               <img
                 class="img-fluid rounded-circle m-2"
-                src="images/myphoto.jpg"
+                src="../images/myphoto.jpg"
                 width="25"
               />
               <p class="mb-0 text-white" style="font-size: 12px;">
@@ -184,64 +186,89 @@
             <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-3">
               <h4>Hola Admin Admin</h4>
               <p style="font-size: 15px;">
-                Esta es la pagina de administracion de los cursos. Aquí podras
-                crear una nueva, modificar y eliminar los cursos que quieras.
+                Esta es la pagina de administracion de las páginas. Aquí podras
+                crear una nueva, modificar y eliminar las páginas que quieras.
               </p>
             </div>
           </div>
-          <!-- Data Area End -->
-          <!-- MAIN CONTENT -->
-          <div class="row rounded border mx-3 overposition">
-            <div class="col-12 bg-white">
-              <h3 class="font-weight-bold my-2">Nuevo Curso</h3>
+          <div class="row mt-5 rounded-top border mx-3 overposition">
+            <div class="col-12 bg-white d-flex flex-row">
+              <h4 class="font-weight-bold my-2 flex-grow-1">Nueva Página</h4>
+              <div
+                class="btn-group btn-group-sm py-2"
+                role="group"
+                aria-label="Basic example"
+              >
+                <a
+                  class="btn bg-success border rounded text-white px-1 ml-2"
+                  href="updatePages.html"
+                >
+                  Update
+                </a>
+                <button
+                  type="button"
+                  class="btn bg-danger border rounded text-white py-0 px-1 ml-2"
+                >
+                  Delete
+                </button>
+              </div>
             </div>
             <div class="col-12 bg-list-grey">
               <h5 class="font-weight-bold my-2 text-secondary">
-                INFORMACION DEL CURSO
+                INFORMACION DE LA PÁGINA
               </h5>
             </div>
             <div class="col-12 bg-white">
               <div class="d-flex flex-column mt-4 border-bottom pb-4">
-                <label class="text-label">Nombre</label>
-                <input
-                  type="text"
-                  class="rounded border cursor-out pl-2 text-placeholder"
-                  placeholder="Nombre"
-                  style="border: 1px solid rgb(172, 172, 172) !important;"
-                />
-                <label class="text-label mt-4">Publicar en</label>
-                <select name="post-in" class="rounded select-size text-label">
-                  <option value="allsections" class="option-font-size"
-                    >Todas las secciones</option
-                  >
-                  <option value="selectsection" class="option-font-size"
-                    >Seleccionar secciones</option
-                  >
-                </select>
-                <label class="text-label mt-4">Categoría</label>
-                <select name="post-in" class="rounded select-size text-label">
-                  <option value="allsections" class="option-font-size"
-                    >Informática</option
-                  >
-                  <option value="selectsection" class="option-font-size"
-                    >Marketing</option
-                  >
-                  <option value="allsections" class="option-font-size"
-                    >RRHH</option
-                  >
-                </select>
-                <label class="text-label mt-4">Modalidad</label>
-                <select name="post-in" class="rounded select-size text-label">
-                  <option value="allsections" class="option-font-size"
-                    >Online</option
-                  >
-                  <option value="selectsection" class="option-font-size"
-                    >Presencial</option
-                  >
-                  <option value="allsections" class="option-font-size"
-                    >Semi-presencial</option
-                  >
-                </select>
+                <div class="form-group">
+                  <label for="fname">Nombre de la página</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fcontent"
+                    placeholder="Nombre de la página"
+                    disabled
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="fname">Descripción del contenido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fcontent"
+                    placeholder="Descripción del contenido"
+                    disabled
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="fname">Enlace (opcional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fcontent"
+                    placeholder=""
+                    disabled
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="publish">Publicar</label>
+                  <select id="options" name="options" disabled>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="publish">Notificar</label>
+                  <select id="options" name="options" disabled>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
                 <div class="d-flex align-items-start mt-3">
                   <button
                     type="button"
@@ -249,6 +276,7 @@
                     class="btn btn-primary mt-0"
                     data-toggle="modal"
                     data-target="#exampleModal"
+                    disabled
                   >
                     Subir archivos
                   </button>
@@ -259,6 +287,7 @@
                     multiple
                     style="width: 200px;"
                     id="fileselect"
+                    diasabled
                   >
                     <option id="document1.doc" name="document1.doc"
                       >document1.doc</option
@@ -267,6 +296,7 @@
                   <button
                     onclick="erase()"
                     class="btn btn-primary border rounded ml-2"
+                    disabled
                   >
                     <i class="fas fa-trash-alt"></i>
                   </button>
@@ -332,11 +362,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="d-flex flex-row align-items-center mt-4">
-                  <input type="checkbox" class="mt-1 mr-2" />
-                  <label class="mb-0 text-label">Atrasar publicacion</label>
-                </div>
               </div>
               <div
                 class="btn-group my-5"
@@ -344,22 +369,22 @@
                 aria-label="Basic example"
               >
                 <a
-                  href="Course.html"
+                  href="../Pages/pages.html"
                   type="button"
                   class="btn btn-secondary mr-3 bg-success font-weight-bold text-white border-0 rounded"
                 >
                   <i class="fas fa-save mr-1"></i>Guardar
                 </a>
                 <a
-                  type="button"
-                  href="addCourse.html"
+                  href="#"
+                  type="reset"
                   class="btn btn-secondary mr-3 bg-warning font-weight-bold text-white border-0 rounded"
                 >
                   <i class="fas fa-undo-alt mr-1"></i>Borrar
                 </a>
                 <a
+                  href="../Pages/pages.html"
                   type="button"
-                  href="Course.html"
                   class="btn bg-danger text-white font-weight-bold border-0 rounded"
                 >
                   <i class="far fa-window-close mr-1"></i>Cancelar
@@ -368,53 +393,33 @@
             </div>
           </div>
           <!-- Footer -->
-          <div class="row mt-2 position-footer2" style="width: 100%;">
-            <div
-              class="col-12 col-md-6 mt-1 d-flex flex-row justify-content-center"
-            >
-              <p class="text-footer mb-1">
+          <div class="row">
+            <div class="col-12 d-flex flex-row my-3">
+              <div class="text-footer d-flex flex-row">
                 ® Copyright &nbsp
-              </p>
-              <p class="text-footer mb-1" style="color: blueviolet;">
-                Creative Tim & Updivision
-              </p>
-            </div>
-            <div
-              class="col-12 col-md-6 px-0 mt-0 d-flex flex-row justify-content-center"
-            >
-              <a class="text-footer mb-1">
+                <div style="color: blueviolet;">
+                  Creative Tim & Updivision
+                </div>
+              </div>
+              <div class="text-footer ml-auto">
                 Creative Tim
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 Updivision
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 About Us
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 Blog
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 MIT License
-              </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      // Add the following code if you want the name of the file appear on select
-      $(".custom-file-input").on("change", function () {
-        var fileName = $(this).val().split("\\").pop();
-        $(this)
-          .siblings(".custom-file-label")
-          .addClass("selected")
-          .html(fileName);
-        let name = document.getElementById("filename");
-        name.setAttribute("value", fileName);
-        console.log(name);
-      });
-    </script>
-    <script></script>
   </body>
 </html>

@@ -59,6 +59,17 @@
   width: 80%;
 }
 
+@media (max-width: 1080px) {
+  .position-footer {
+    position: relative;
+  }
+}
+@media (max-width: 900px) {
+  .footerdown-responsive {
+    height: max-content !important;
+  }
+}
+
 @media (max-width: 768px) {
   .firstrow {
     font-size: 10px !important;
@@ -66,12 +77,10 @@
   .font-size-tableheader {
     font-size: 20px;
   }
-  .position-footer {
+  /* .position-footer {
     position: relative;
-  }
-  .footerdown-responsive {
-    height: max-content !important;
-  }
+  } */
+
   .form-payment {
     width: 250px !important;
   }

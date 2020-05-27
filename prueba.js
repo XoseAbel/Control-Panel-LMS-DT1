@@ -14,3 +14,21 @@ function mostrarnoarticles(id) {
     numarticles.style.display = "block";
   }
 }
+function addFile() {
+  let name = document.getElementById("filename");
+  let name2 = name.getAttribute("value");
+  let foption = document.createElement("option");
+  let selectoption = document.getElementById("fileselect");
+  foption.text = name2;
+  foption.name = name2;
+  foption.id = name2;
+  selectoption.appendChild(foption);
+  console.log(foption);
+  console.log(name2);
+}
+
+function erase() {
+  let name = document.getElementById("fileselect");
+  console.log(name.value);
+  name.remove(name.selectedIndex);
+}

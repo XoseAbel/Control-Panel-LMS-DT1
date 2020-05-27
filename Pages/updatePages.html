@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/style-suso.css" />
+    <link rel="icon" type="image/jpg" href="../images/logonavegador.png" />
+    <title>Argon Cursos</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
+      ø
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -21,18 +28,12 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style/style_dashboard.css" />
-    <script
-      src="https://kit.fontawesome.com/103d4b6503.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="prueba.js"></script>
-    <link rel="icon" type="image/jpg" href="images/logonavegador.png" />
-    <title>Argon Cursos</title>
+    <link rel="stylesheet" href="../style/style-suso.css" />
+    <link rel="stylesheet" href="../style/style_dashboard.css" />
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid bg-list-grey">
       <div class="row">
         <!-- LEFT MENU -->
         <div class="col-12 col-lg-2 fix-top">
@@ -41,8 +42,11 @@
             <div
               class="col-5 col-md-4 col-lg-12 order-2 order-lg-1 d-flex align-self-start"
             >
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png" class="navbar-brand-img img-fluid" />
+              <a class="navbar-brand" href="../index.html">
+                <img
+                  src="../images/logo.png"
+                  class="navbar-brand-img img-fluid"
+                />
               </a>
             </div>
             <!-- Brand END -->
@@ -66,44 +70,44 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav d-flex flex-column">
                     <li class="nav-item">
-                      <a class="nav-link" href="dashboard.html">
+                      <a class="nav-link" href="../dashboard.html">
                         <i class="fas fa-desktop"></i>
-                        <span class="nav-link-text ml-2">Tablero</span>
+                        <span class="nav-link-text ml-2">Dashboard</span>
                       </a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="Course.html">
+                      <a class="nav-link" href="../Course.html">
                         <i class="fas fa-globe-europe"></i>
                         <span class="nav-link-text ml-2">Cursos</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Tasks/tasks.html">
+                      <a class="nav-link" href="../Tasks/tasks.html">
                         <i class="fas fa-sticky-note"></i>
                         <span class="nav-link-text ml-2">Tareas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="persons.html">
+                      <a class="nav-link" href="../persons.html">
                         <i class="fas fa-user-friends"></i>
                         <span class="nav-link-text ml-2">Personas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Pages/pages.html">
+                      <a class="nav-link" href="../Pages/pages.html">
                         <i class="fas fa-columns"></i>
                         <span class="nav-link-text ml-2">Páginas</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="login.html" class="nav-link">
+                      <a href="../login.html" class="nav-link">
                         <i class="fas fa-sign-in-alt"></i>
                         <span class="nav-link-text ml-2">Iniciar sesión</span>
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a href="register.html" class="nav-link">
+                      <a href="../register.html" class="nav-link">
                         <i class="fas fa-user"></i>
                         <span class="nav-link-text ml-2">Registro</span>
                       </a>
@@ -144,18 +148,16 @@
           </div>
         </div>
         <!-- Left Menu End -->
-        <!-- BODY -->
-
         <div
-          class="col-12 col-lg-10 padding-search"
+          class="col-12 col-lg-10"
           style="background-color: rgb(245, 245, 245);"
         >
-          <div class="row menu pb-5 fix-search">
+          <div class="row menu pb-3 fix-search">
             <div class="col-6 col-md-2 mt-3 order-1 d-flex align-items-center">
               <h6
                 class="text-white mb-0 font-weight-bold font-size-dashboard-md"
               >
-                PERSONAS
+                PÁGINAS
               </h6>
             </div>
             <div
@@ -172,7 +174,7 @@
             >
               <img
                 class="img-fluid rounded-circle m-2"
-                src="images/myphoto.jpg"
+                src="../images/myphoto.jpg"
                 width="25"
               />
               <p class="mb-0 text-white" style="font-size: 12px;">
@@ -184,62 +186,157 @@
             <div class="col-12 col-md-6 col-lg-5 text-white order-5 mt-3">
               <h4>Hola Admin Admin</h4>
               <p style="font-size: 15px;">
-                Esta es la pagina de administracion de las personas. Aquí podras
-                crear uno nuevo, modificar y eliminar los datos de la persona
-                que quieras.
+                Esta es la pagina de administracion de las páginas. Aquí podras
+                crear una nueva, modificar y eliminar las páginas que quieras.
               </p>
             </div>
           </div>
-          <div class="row rounded border mx-3 overposition">
+          <div class="row mt-5 rounded-top border mx-3 overposition">
             <div class="col-12 bg-white">
-              <h3 class="font-weight-bold my-2">Nueva Persona</h3>
+              <h3 class="font-weight-bold my-2">Modificar Página</h3>
             </div>
             <div class="col-12 bg-list-grey">
               <h5 class="font-weight-bold my-2 text-secondary">
-                DATOS DE LA PERSONA
+                INFORMACION DE LA PÁGINA
               </h5>
             </div>
             <div class="col-12 bg-white">
               <div class="d-flex flex-column mt-4 border-bottom pb-4">
-                <label class="text-label">Nombre</label>
-                <input
-                  type="text"
-                  class="rounded border cursor-out pl-2 text-placeholder form-border-color"
-                  placeholder="Nombre"
-                />
-                <div class="d-flex flex-row mt-4">
-                  <label class="text-label mr-3">Rol</label>
-                  <select
-                    name="post-in"
-                    class="select-size text-label form-border-color rounded"
-                    style="height: 30px;"
-                  >
-                    <option value="student" class="option-font-size"
-                      >Estudiante</option
-                    >
-                    <option value="teacher" class="option-font-size"
-                      >Profesor</option
-                    >
-                    <option value="auxteacher" class="option-font-size"
-                      >Profesor Aux.</option
-                    >
-                    <option value="designer" class="option-font-size"
-                      >Diseñador</option
-                    >
-                    <option value="viewer" class="option-font-size"
-                      >Observador</option
-                    >
+                <div class="form-group">
+                  <label for="fname">Nombre de la página</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fcontent"
+                    placeholder="Nombre de la página"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="fname">Descripción del contenido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fcontent"
+                    placeholder="Descripción del contenido"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="fname">Enlace (opcional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fcontent"
+                    placeholder=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="publish">Publicar</label>
+                  <select id="options" name="options">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
                   </select>
                 </div>
-                <label class="text-label mt-4">E-mail</label>
-                <input
-                  type="email"
-                  class="cursor-out rounded border text-placeholder pl-2 form-border-color"
-                  placeholder="example@email.com"
-                />
-                <div class="d-flex flex-row align-items-center mt-4">
-                  <input type="checkbox" class="mt-1 mr-2" />
-                  <label class="mb-0 text-label">Activo</label>
+
+                <div class="form-group">
+                  <label for="publish">Notificar</label>
+                  <select id="options" name="options">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="d-flex align-items-start mt-3">
+                  <button
+                    type="button"
+                    style="width: max-content;"
+                    class="btn btn-primary mt-0"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    Subir archivos
+                  </button>
+                  <select
+                    class="mt-0 ml-2 cursor-out"
+                    name="docs"
+                    size="3"
+                    multiple
+                    style="width: 200px;"
+                    id="fileselect"
+                  >
+                    <option id="document1.doc" name="document1.doc"
+                      >document1.doc</option
+                    >
+                  </select>
+                  <button
+                    onclick="erase()"
+                    class="btn btn-primary border rounded ml-2"
+                  >
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Modal title
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input"
+                              id="customFile"
+                            />
+                            <label
+                              id="filename"
+                              class="custom-file-label"
+                              for="customFile"
+                              value=""
+                              >Seleccionar archivo</label
+                            >
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          onclick="addFile();"
+                          data-dismiss="modal"
+                        >
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -248,21 +345,21 @@
                 aria-label="Basic example"
               >
                 <a
-                  href="persons.html"
+                  href="../Pages/pages.html"
                   type="button"
                   class="btn btn-secondary mr-3 bg-success font-weight-bold text-white border-0 rounded"
                 >
                   <i class="fas fa-save mr-1"></i>Guardar
                 </a>
                 <a
-                  href="addperson.html"
-                  type="button"
+                  href="#"
+                  type="reset"
                   class="btn btn-secondary mr-3 bg-warning font-weight-bold text-white border-0 rounded"
                 >
                   <i class="fas fa-undo-alt mr-1"></i>Borrar
                 </a>
                 <a
-                  href="persons.html"
+                  href="../Pages/pages.html"
                   type="button"
                   class="btn bg-danger text-white font-weight-bold border-0 rounded"
                 >
@@ -272,35 +369,29 @@
             </div>
           </div>
           <!-- Footer -->
-          <div class="row mt-2 position-footer2" style="width: 100%;">
-            <div
-              class="col-12 col-md-6 mt-1 d-flex flex-row justify-content-center"
-            >
-              <p class="text-footer mb-1">
+          <div class="row">
+            <div class="col-12 d-flex flex-row my-3">
+              <div class="text-footer d-flex flex-row">
                 ® Copyright &nbsp
-              </p>
-              <p class="text-footer mb-1" style="color: blueviolet;">
-                Creative Tim & Updivision
-              </p>
-            </div>
-            <div
-              class="col-12 col-md-6 px-0 mt-0 d-flex flex-row justify-content-center"
-            >
-              <a class="text-footer mb-1">
+                <div style="color: blueviolet;">
+                  Creative Tim & Updivision
+                </div>
+              </div>
+              <div class="text-footer ml-auto">
                 Creative Tim
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 Updivision
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 About Us
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 Blog
-              </a>
-              <a class="text-footer ml-2 mb-1">
+              </div>
+              <div class="text-footer ml-2">
                 MIT License
-              </a>
+              </div>
             </div>
           </div>
         </div>
