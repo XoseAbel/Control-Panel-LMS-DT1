@@ -1,7 +1,9 @@
 .menu {
   background-color: #5e72e4;
 }
-
+a:hover {
+  text-decoration: none;
+}
 .mt--5 {
   margin-top: -7rem;
 }
