@@ -220,7 +220,7 @@
             </div>
             <div class="col-12 bg-list-grey">
               <h5 class="font-weight-bold my-2 text-secondary">
-                INFORMACION DE LA PÁGINA
+                INFORMACIÓN DE LA PÁGINA
               </h5>
             </div>
             <div class="col-12 bg-white">
@@ -318,7 +318,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
+                          Subir archivos
                         </h5>
                         <button
                           type="button"
@@ -353,7 +353,7 @@
                           class="btn btn-secondary"
                           data-dismiss="modal"
                         >
-                          Close
+                          Cancelar
                         </button>
                         <button
                           type="button"
@@ -361,7 +361,7 @@
                           onclick="addFile();"
                           data-dismiss="modal"
                         >
-                          Save changes
+                          Aceptar
                         </button>
                       </div>
                     </div>
@@ -426,5 +426,18 @@
         </div>
       </div>
     </div>
+    <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this)
+          .siblings(".custom-file-label")
+          .addClass("selected")
+          .html(fileName);
+        let name = document.getElementById("filename");
+        name.setAttribute("value", fileName);
+      });
+    </script>
+    <script></script>
   </body>
 </html>
