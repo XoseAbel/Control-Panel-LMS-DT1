@@ -63,28 +63,36 @@
   display: none;
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 900px) and (max-width: 1080px) {
   .position-footer {
-    position: relative;
+    position: relative !important;
   }
-}
-@media (max-width: 900px) {
   .footerdown-responsive {
     height: max-content !important;
   }
 }
-
+@media (min-width: 769px) and (max-width: 899px) {
+  .position-footer {
+    position: relative !important;
+  }
+  .footerdown-responsive {
+    height: max-content !important;
+  }
+}
 @media (max-width: 768px) {
   .firstrow {
     font-size: 10px !important;
+    display: inline-block;
   }
   .font-size-tableheader {
     font-size: 20px;
   }
-  /* .position-footer {
+  .position-footer {
     position: relative;
-  } */
-
+  }
+  .footerdown-responsive {
+    height: max-content !important;
+  }
   .form-payment {
     width: 250px !important;
   }
