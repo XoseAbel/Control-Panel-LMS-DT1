@@ -165,3 +165,9 @@ body {
 .text-size-1 {
   font-size: 1rem;
 }
+
+.card-img-top {
+  border-radius: 10px !important;
+  height: 120px !important;
+  width: 120px !important;
+}
