@@ -4,6 +4,11 @@
 a:hover {
   text-decoration: none;
 }
+[type="search"] {
+  outline: 0px !important;
+  border: 1px solid;
+}
+
 .mt--5 {
   margin-top: -7rem;
 }
