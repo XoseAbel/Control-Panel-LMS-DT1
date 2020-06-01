@@ -63,6 +63,15 @@
   display: none;
 }
 
+.most-popular {
+  border: 1px solid black;
+  border-left: 5px solid;
+  text-align: left !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
 @media (min-width: 900px) and (max-width: 1080px) {
   .position-footer {
     position: relative !important;
